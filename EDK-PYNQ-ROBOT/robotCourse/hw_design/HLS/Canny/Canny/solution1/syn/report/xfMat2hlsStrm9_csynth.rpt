@@ -1,0 +1,194 @@
+
+
+================================================================
+== Vivado HLS Report for 'xfMat2hlsStrm9'
+================================================================
+* Date:           Tue Dec 30 00:00:35 2025
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        Canny
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     8.510|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+--------+-----+--------+---------+
+    |    Latency   |   Interval   | Pipeline|
+    | min |   max  | min |   max  |   Type  |
+    +-----+--------+-----+--------+---------+
+    |    5|  921604|    5|  921604|   none  |
+    +-----+--------+-----+--------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+-----+--------+----------+-----------+-----------+------------+----------+
+        |          |    Latency   | Iteration|  Initiation Interval  |    Trip    |          |
+        | Loop Name| min |   max  |  Latency |  achieved |   target  |    Count   | Pipelined|
+        +----------+-----+--------+----------+-----------+-----------+------------+----------+
+        |- L1      |    1|  921600|         2|          1|          1| 1 ~ 921600 |    yes   |
+        +----------+-----+--------+----------+-----------+-----------+------------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      3|       0|    193|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|      -|       -|      -|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|    165|
+|Register         |        -|      -|     257|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|      3|     257|    358|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|      1|   ~0   |   ~0  |
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+-------+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+-------+---+----+------------+------------+
+    |tmp_i_i_i_i_fu_162_p2             |     *    |      3|  0|  20|          32|          32|
+    |indvars_iv_next_i_i_s_fu_237_p2   |     +    |      0|  0|  37|           1|          30|
+    |p_neg_i_i_i_i_fu_186_p2           |     -    |      0|  0|  39|           1|          32|
+    |p_neg_t_i_i_i_i_fu_206_p2         |     -    |      0|  0|  37|           1|          30|
+    |ap_block_pp0_stage0_01001         |    and   |      0|  0|   2|           1|           1|
+    |ap_block_state5_pp0_stage0_iter1  |    and   |      0|  0|   2|           1|           1|
+    |tmp_3_i_i_i_i_fu_227_p2           |   icmp   |      0|  0|  18|          31|          31|
+    |ap_block_state1                   |    or    |      0|  0|   2|           1|           1|
+    |dstStrm_V_V_din                   |  select  |      0|  0|   2|           1|           2|
+    |loop_count_fu_212_p3              |  select  |      0|  0|  30|           1|          30|
+    |ap_enable_pp0                     |    xor   |      0|  0|   2|           1|           2|
+    |ap_enable_reg_pp0_iter1           |    xor   |      0|  0|   2|           2|           1|
+    +----------------------------------+----------+-------+---+----+------------+------------+
+    |Total                             |          |      3|  0| 193|          74|         193|
+    +----------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +---------------------------------------------+----+-----------+-----+-----------+
+    |                     Name                    | LUT| Input Size| Bits| Total Bits|
+    +---------------------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                                    |  33|          6|    1|          6|
+    |ap_done                                      |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1                      |  15|          3|    1|          3|
+    |ap_phi_mux_idx_out_i_i_i_i_phi_fu_154_p4     |   9|          2|   30|         60|
+    |ap_phi_mux_indvars_iv_i_i_i_i_phi_fu_142_p4  |   9|          2|   30|         60|
+    |dstPtr_V_offset_blk_n                        |   9|          2|    1|          2|
+    |dstPtr_V_offset_out_blk_n                    |   9|          2|    1|          2|
+    |dstStrm_V_V_blk_n                            |   9|          2|    1|          2|
+    |idx_out_i_i_i_i_reg_150                      |   9|          2|   30|         60|
+    |indvars_iv_i_i_i_i_reg_138                   |   9|          2|   30|         60|
+    |real_start                                   |   9|          2|    1|          2|
+    |srcMat_cols_blk_n                            |   9|          2|    1|          2|
+    |srcMat_cols_out_blk_n                        |   9|          2|    1|          2|
+    |srcMat_rows_blk_n                            |   9|          2|    1|          2|
+    |srcMat_rows_out_blk_n                        |   9|          2|    1|          2|
+    +---------------------------------------------+----+-----------+-----+-----------+
+    |Total                                        | 165|         35|  131|        267|
+    +---------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------------+----+----+-----+-----------+
+    |              Name             | FF | LUT| Bits| Const Bits|
+    +-------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                      |   5|   0|    5|          0|
+    |ap_done_reg                    |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter0        |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1        |   1|   0|    1|          0|
+    |cols_reg_257                   |  32|   0|   32|          0|
+    |idx_out_i_i_i_i_reg_150        |  30|   0|   30|          0|
+    |indvars_iv_i_i_i_i_reg_138     |  30|   0|   30|          0|
+    |indvars_iv_next_i_i_s_reg_291  |  30|   0|   30|          0|
+    |loop_count_cast_i_i_s_reg_277  |  31|   0|   31|          0|
+    |rows_reg_252                   |  32|   0|   32|          0|
+    |start_once_reg                 |   1|   0|    1|          0|
+    |tmp_2_reg_272                  |   1|   0|    1|          0|
+    |tmp_3_i_i_i_i_reg_282          |   1|   0|    1|          0|
+    |tmp_i_i_i_i_reg_262            |  32|   0|   32|          0|
+    |tmp_reg_267                    |  29|   0|   29|          0|
+    +-------------------------------+----+----+-----+-----------+
+    |Total                          | 257|   0|  257|          0|
+    +-------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------------------+-----+-----+------------+---------------------+--------------+
+|          RTL Ports         | Dir | Bits|  Protocol  |    Source Object    |    C Type    |
++----------------------------+-----+-----+------------+---------------------+--------------+
+|ap_clk                      |  in |    1| ap_ctrl_hs |    xfMat2hlsStrm9   | return value |
+|ap_rst                      |  in |    1| ap_ctrl_hs |    xfMat2hlsStrm9   | return value |
+|ap_start                    |  in |    1| ap_ctrl_hs |    xfMat2hlsStrm9   | return value |
+|start_full_n                |  in |    1| ap_ctrl_hs |    xfMat2hlsStrm9   | return value |
+|ap_done                     | out |    1| ap_ctrl_hs |    xfMat2hlsStrm9   | return value |
+|ap_continue                 |  in |    1| ap_ctrl_hs |    xfMat2hlsStrm9   | return value |
+|ap_idle                     | out |    1| ap_ctrl_hs |    xfMat2hlsStrm9   | return value |
+|ap_ready                    | out |    1| ap_ctrl_hs |    xfMat2hlsStrm9   | return value |
+|start_out                   | out |    1| ap_ctrl_hs |    xfMat2hlsStrm9   | return value |
+|start_write                 | out |    1| ap_ctrl_hs |    xfMat2hlsStrm9   | return value |
+|srcMat_rows_dout            |  in |   32|   ap_fifo  |     srcMat_rows     |    pointer   |
+|srcMat_rows_empty_n         |  in |    1|   ap_fifo  |     srcMat_rows     |    pointer   |
+|srcMat_rows_read            | out |    1|   ap_fifo  |     srcMat_rows     |    pointer   |
+|srcMat_cols_dout            |  in |   32|   ap_fifo  |     srcMat_cols     |    pointer   |
+|srcMat_cols_empty_n         |  in |    1|   ap_fifo  |     srcMat_cols     |    pointer   |
+|srcMat_cols_read            | out |    1|   ap_fifo  |     srcMat_cols     |    pointer   |
+|srcMat_data_V_address0      | out |   20|  ap_memory |    srcMat_data_V    |     array    |
+|srcMat_data_V_ce0           | out |    1|  ap_memory |    srcMat_data_V    |     array    |
+|srcMat_data_V_q0            |  in |    1|  ap_memory |    srcMat_data_V    |     array    |
+|dstStrm_V_V_din             | out |    8|   ap_fifo  |     dstStrm_V_V     |    pointer   |
+|dstStrm_V_V_full_n          |  in |    1|   ap_fifo  |     dstStrm_V_V     |    pointer   |
+|dstStrm_V_V_write           | out |    1|   ap_fifo  |     dstStrm_V_V     |    pointer   |
+|srcMat_rows_out_din         | out |   32|   ap_fifo  |   srcMat_rows_out   |    pointer   |
+|srcMat_rows_out_full_n      |  in |    1|   ap_fifo  |   srcMat_rows_out   |    pointer   |
+|srcMat_rows_out_write       | out |    1|   ap_fifo  |   srcMat_rows_out   |    pointer   |
+|srcMat_cols_out_din         | out |   32|   ap_fifo  |   srcMat_cols_out   |    pointer   |
+|srcMat_cols_out_full_n      |  in |    1|   ap_fifo  |   srcMat_cols_out   |    pointer   |
+|srcMat_cols_out_write       | out |    1|   ap_fifo  |   srcMat_cols_out   |    pointer   |
+|dstPtr_V_offset_dout        |  in |   32|   ap_fifo  |   dstPtr_V_offset   |    pointer   |
+|dstPtr_V_offset_empty_n     |  in |    1|   ap_fifo  |   dstPtr_V_offset   |    pointer   |
+|dstPtr_V_offset_read        | out |    1|   ap_fifo  |   dstPtr_V_offset   |    pointer   |
+|dstPtr_V_offset_out_din     | out |   32|   ap_fifo  | dstPtr_V_offset_out |    pointer   |
+|dstPtr_V_offset_out_full_n  |  in |    1|   ap_fifo  | dstPtr_V_offset_out |    pointer   |
+|dstPtr_V_offset_out_write   | out |    1|   ap_fifo  | dstPtr_V_offset_out |    pointer   |
++----------------------------+-----+-----+------------+---------------------+--------------+
+

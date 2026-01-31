@@ -1,0 +1,116 @@
+
+ PARAMETER VERSION = 2.2.0
+
+
+BEGIN OS
+ PARAMETER OS_NAME = standalone
+ PARAMETER OS_VER = 6.8
+ PARAMETER PROC_INSTANCE = car_iop_arduino_mb
+END
+
+
+BEGIN PROCESSOR
+ PARAMETER DRIVER_NAME = cpu
+ PARAMETER DRIVER_VER = 2.8
+ PARAMETER HW_INSTANCE = car_iop_arduino_mb
+ PARAMETER compiler_flags =  -mlittle-endian -mno-xl-soft-mul -mhard-float -mno-xl-soft-div -mcpu=v11.0
+END
+
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = generic
+ PARAMETER DRIVER_VER = 2.0
+ PARAMETER HW_INSTANCE = car_iop_arduino_AXI_Encoder_0
+END
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = generic
+ PARAMETER DRIVER_VER = 2.0
+ PARAMETER HW_INSTANCE = car_iop_arduino_AXI_Encoder_1
+END
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = generic
+ PARAMETER DRIVER_VER = 2.0
+ PARAMETER HW_INSTANCE = car_iop_arduino_AXI_PWM_Servo
+END
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = generic
+ PARAMETER DRIVER_VER = 2.0
+ PARAMETER HW_INSTANCE = car_iop_arduino_AXI_ultrasonic_ranger_0
+END
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = gpio
+ PARAMETER DRIVER_VER = 4.3
+ PARAMETER HW_INSTANCE = car_iop_arduino_arduino_gpio
+END
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = iic
+ PARAMETER DRIVER_VER = 3.5
+ PARAMETER HW_INSTANCE = car_iop_arduino_axi_iic_0
+END
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = gpio
+ PARAMETER DRIVER_VER = 4.3
+ PARAMETER HW_INSTANCE = car_iop_arduino_intr
+END
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = generic
+ PARAMETER DRIVER_VER = 2.0
+ PARAMETER HW_INSTANCE = car_iop_arduino_io_switch
+END
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = intc
+ PARAMETER DRIVER_VER = 3.8
+ PARAMETER HW_INSTANCE = car_iop_arduino_mb_intc
+END
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = bram
+ PARAMETER DRIVER_VER = 4.2
+ PARAMETER HW_INSTANCE = car_iop_arduino_microblaze_0_local_memory_dlmb_bram_if_cntlr
+END
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = generic
+ PARAMETER DRIVER_VER = 2.0
+ PARAMETER HW_INSTANCE = car_iop_arduino_motor_driver_0_AXI_PWM_Motor
+END
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = generic
+ PARAMETER DRIVER_VER = 2.0
+ PARAMETER HW_INSTANCE = car_iop_arduino_motor_driver_0_axi_motor_ctrl_sel_0
+END
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = generic
+ PARAMETER DRIVER_VER = 2.0
+ PARAMETER HW_INSTANCE = car_iop_arduino_motor_driver_1_AXI_PWM_Motor
+END
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = generic
+ PARAMETER DRIVER_VER = 2.0
+ PARAMETER HW_INSTANCE = car_iop_arduino_motor_driver_1_axi_motor_ctrl_sel_0
+END
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = tmrctr
+ PARAMETER DRIVER_VER = 4.5
+ PARAMETER HW_INSTANCE = car_iop_arduino_timer_subsystem_timer_0
+END
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = tmrctr
+ PARAMETER DRIVER_VER = 4.5
+ PARAMETER HW_INSTANCE = car_iop_arduino_timer_subsystem_timer_1
+END
+
+

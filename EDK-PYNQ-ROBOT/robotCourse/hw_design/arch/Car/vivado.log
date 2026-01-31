@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Jul  2 15:22:05 2021
+# Process ID: 1912
+# Current directory: D:/AE/项目/robotCourse-master/robotCourse-master/hw_design/arch/Car
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7920 D:\AE\项目\robotCourse-master\robotCourse-master\hw_design\arch\Car\Car.xpr
+# Log file: D:/AE/项目/robotCourse-master/robotCourse-master/hw_design/arch/Car/vivado.log
+# Journal file: D:/AE/项目/robotCourse-master/robotCourse-master/hw_design/arch/Car\vivado.jou
+#-----------------------------------------------------------
+start_gui
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jul  2 15:22:58 2021...

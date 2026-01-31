@@ -1,0 +1,1130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Canny_accel.wdb" id="1">
+         <top_modules>
+            <top_module name="apa_Canny_accel_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0ns"></ZoomStartTime>
+      <ZoomEndTime time="2000ns"></ZoomEndTime>
+      <Cursor1Time time="0ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="257"></NameColumnWidth>
+      <ValueColumnWidth column_width="84"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wvobject type="group" fp_name="AESL_inst_Canny_accel_group">
+      <obj_property name="label">AESL_inst_Canny_accel</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Block_Mat_exit45_pro_U0/Block_Mat_exit45_pro_U0_activity">
+         <obj_property name="ElementShortName">Block_Mat_exit45_pro_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Block_Mat_exit45_pro_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/Array2xfMat_U0_activity">
+         <obj_property name="ElementShortName">Array2xfMat_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Array2xfMat_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/binary_threshold_U0/binary_threshold_U0_activity">
+         <obj_property name="ElementShortName">binary_threshold_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">binary_threshold_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/xfMat2Array_U0_activity">
+         <obj_property name="ElementShortName">xfMat2Array_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">xfMat2Array_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="group" fp_name="Block_Mat_exit45_pro_U0_group">
+         <obj_property name="label">Block_Mat_exit45_pro_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="Block_Mat_exit45_pro_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="Block_Mat_exit45_pro_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Block_Mat_exit45_pro_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Block_Mat_exit45_pro_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Block_Mat_exit45_pro_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Block_Mat_exit45_pro_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Block_Mat_exit45_pro_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="imgInput_rows_out_group">
+               <obj_property name="label">imgInput_rows_out(imgInput_rows_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Block_Mat_exit45_pro_U0/imgInput_rows_out_blk_n">
+                  <obj_property name="ElementShortName">imgInput_rows_out_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">imgInput_rows_out_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Block_Mat_exit45_pro_U0/imgInput_rows_out_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Block_Mat_exit45_pro_U0/imgInput_rows_out_full_n">
+                  <obj_property name="ElementShortName">imgInput_rows_out_full_n</obj_property>
+                  <obj_property name="ObjectShortName">imgInput_rows_out_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Block_Mat_exit45_pro_U0/imgInput_rows_out_write">
+                  <obj_property name="ElementShortName">imgInput_rows_out_write</obj_property>
+                  <obj_property name="ObjectShortName">imgInput_rows_out_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="imgInput_cols_out_group">
+               <obj_property name="label">imgInput_cols_out(imgInput_cols_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Block_Mat_exit45_pro_U0/imgInput_cols_out_blk_n">
+                  <obj_property name="ElementShortName">imgInput_cols_out_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">imgInput_cols_out_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Block_Mat_exit45_pro_U0/imgInput_cols_out_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Block_Mat_exit45_pro_U0/imgInput_cols_out_full_n">
+                  <obj_property name="ElementShortName">imgInput_cols_out_full_n</obj_property>
+                  <obj_property name="ObjectShortName">imgInput_cols_out_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Block_Mat_exit45_pro_U0/imgInput_cols_out_write">
+                  <obj_property name="ElementShortName">imgInput_cols_out_write</obj_property>
+                  <obj_property name="ObjectShortName">imgInput_cols_out_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="imgOutput_rows_out_group">
+               <obj_property name="label">imgOutput_rows_out(imgOutput_rows_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Block_Mat_exit45_pro_U0/imgOutput_rows_out_blk_n">
+                  <obj_property name="ElementShortName">imgOutput_rows_out_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">imgOutput_rows_out_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Block_Mat_exit45_pro_U0/imgOutput_rows_out_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Block_Mat_exit45_pro_U0/imgOutput_rows_out_full_n">
+                  <obj_property name="ElementShortName">imgOutput_rows_out_full_n</obj_property>
+                  <obj_property name="ObjectShortName">imgOutput_rows_out_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Block_Mat_exit45_pro_U0/imgOutput_rows_out_write">
+                  <obj_property name="ElementShortName">imgOutput_rows_out_write</obj_property>
+                  <obj_property name="ObjectShortName">imgOutput_rows_out_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="imgOutput_cols_out_group">
+               <obj_property name="label">imgOutput_cols_out(imgOutput_cols_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Block_Mat_exit45_pro_U0/imgOutput_cols_out_blk_n">
+                  <obj_property name="ElementShortName">imgOutput_cols_out_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">imgOutput_cols_out_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Block_Mat_exit45_pro_U0/imgOutput_cols_out_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Block_Mat_exit45_pro_U0/imgOutput_cols_out_full_n">
+                  <obj_property name="ElementShortName">imgOutput_cols_out_full_n</obj_property>
+                  <obj_property name="ObjectShortName">imgOutput_cols_out_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Block_Mat_exit45_pro_U0/imgOutput_cols_out_write">
+                  <obj_property name="ElementShortName">imgOutput_cols_out_write</obj_property>
+                  <obj_property name="ObjectShortName">imgOutput_cols_out_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="low_threshold_out_group">
+               <obj_property name="label">low_threshold_out(low_threshold_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Block_Mat_exit45_pro_U0/low_threshold_out_blk_n">
+                  <obj_property name="ElementShortName">low_threshold_out_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">low_threshold_out_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Block_Mat_exit45_pro_U0/low_threshold_out_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Block_Mat_exit45_pro_U0/low_threshold_out_full_n">
+                  <obj_property name="ElementShortName">low_threshold_out_full_n</obj_property>
+                  <obj_property name="ObjectShortName">low_threshold_out_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Block_Mat_exit45_pro_U0/low_threshold_out_write">
+                  <obj_property name="ElementShortName">low_threshold_out_write</obj_property>
+                  <obj_property name="ObjectShortName">low_threshold_out_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="img_inp_V_out_group">
+               <obj_property name="label">img_inp_V_out(img_inp_V_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Block_Mat_exit45_pro_U0/img_inp_V_out_blk_n">
+                  <obj_property name="ElementShortName">img_inp_V_out_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">img_inp_V_out_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Block_Mat_exit45_pro_U0/img_inp_V_out_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Block_Mat_exit45_pro_U0/img_inp_V_out_full_n">
+                  <obj_property name="ElementShortName">img_inp_V_out_full_n</obj_property>
+                  <obj_property name="ObjectShortName">img_inp_V_out_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Block_Mat_exit45_pro_U0/img_inp_V_out_write">
+                  <obj_property name="ElementShortName">img_inp_V_out_write</obj_property>
+                  <obj_property name="ObjectShortName">img_inp_V_out_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="img_out_V_out_group">
+               <obj_property name="label">img_out_V_out(img_out_V_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Block_Mat_exit45_pro_U0/img_out_V_out_blk_n">
+                  <obj_property name="ElementShortName">img_out_V_out_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">img_out_V_out_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Block_Mat_exit45_pro_U0/img_out_V_out_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Block_Mat_exit45_pro_U0/img_out_V_out_full_n">
+                  <obj_property name="ElementShortName">img_out_V_out_full_n</obj_property>
+                  <obj_property name="ObjectShortName">img_out_V_out_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Block_Mat_exit45_pro_U0/img_out_V_out_write">
+                  <obj_property name="ElementShortName">img_out_V_out_write</obj_property>
+                  <obj_property name="ObjectShortName">img_out_V_out_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="Array2xfMat_U0_group">
+         <obj_property name="label">Array2xfMat_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="protoinst" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/Array2hlsStrm54_U0/Array2hlsStrm54_U0_activity">
+            <obj_property name="ElementShortName">Array2hlsStrm54_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">Array2hlsStrm54_U0_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/hlsStrm2xfMat_U0/hlsStrm2xfMat_U0_activity">
+            <obj_property name="ElementShortName">hlsStrm2xfMat_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">hlsStrm2xfMat_U0_activity</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="Array2xfMat_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="srcPtr_V_offset_group">
+               <obj_property name="label">srcPtr_V_offset(img_inp_V_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/srcPtr_V_offset_dout">
+                  <obj_property name="ElementShortName">srcPtr_V_offset_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">srcPtr_V_offset_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/srcPtr_V_offset_empty_n">
+                  <obj_property name="ElementShortName">srcPtr_V_offset_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">srcPtr_V_offset_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/srcPtr_V_offset_read">
+                  <obj_property name="ElementShortName">srcPtr_V_offset_read</obj_property>
+                  <obj_property name="ObjectShortName">srcPtr_V_offset_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="dstMat_rows_group">
+               <obj_property name="label">dstMat_rows(imgInput_rows_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/dstMat_rows_dout">
+                  <obj_property name="ElementShortName">dstMat_rows_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">dstMat_rows_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/dstMat_rows_empty_n">
+                  <obj_property name="ElementShortName">dstMat_rows_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">dstMat_rows_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/dstMat_rows_read">
+                  <obj_property name="ElementShortName">dstMat_rows_read</obj_property>
+                  <obj_property name="ObjectShortName">dstMat_rows_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="dstMat_cols_group">
+               <obj_property name="label">dstMat_cols(imgInput_cols_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/dstMat_cols_dout">
+                  <obj_property name="ElementShortName">dstMat_cols_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">dstMat_cols_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/dstMat_cols_empty_n">
+                  <obj_property name="ElementShortName">dstMat_cols_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">dstMat_cols_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/dstMat_cols_read">
+                  <obj_property name="ElementShortName">dstMat_cols_read</obj_property>
+                  <obj_property name="ObjectShortName">dstMat_cols_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Array2xfMat_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Array2xfMat_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="dstMat_data_V_group">
+               <obj_property name="label">dstMat_data_V(imgInput_data_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/dstMat_data_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/dstMat_data_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/dstMat_data_V_ce0">
+                  <obj_property name="ElementShortName">dstMat_data_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">dstMat_data_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/dstMat_data_V_we0">
+                  <obj_property name="ElementShortName">dstMat_data_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">dstMat_data_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="dstMat_rows_out_group">
+               <obj_property name="label">dstMat_rows_out(imgInput_rows_c13_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/dstMat_rows_out_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/dstMat_rows_out_full_n">
+                  <obj_property name="ElementShortName">dstMat_rows_out_full_n</obj_property>
+                  <obj_property name="ObjectShortName">dstMat_rows_out_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/dstMat_rows_out_write">
+                  <obj_property name="ElementShortName">dstMat_rows_out_write</obj_property>
+                  <obj_property name="ObjectShortName">dstMat_rows_out_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="dstMat_cols_out_group">
+               <obj_property name="label">dstMat_cols_out(imgInput_cols_c14_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/dstMat_cols_out_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/dstMat_cols_out_full_n">
+                  <obj_property name="ElementShortName">dstMat_cols_out_full_n</obj_property>
+                  <obj_property name="ObjectShortName">dstMat_cols_out_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/dstMat_cols_out_write">
+                  <obj_property name="ElementShortName">dstMat_cols_out_write</obj_property>
+                  <obj_property name="ObjectShortName">dstMat_cols_out_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Array2hlsStrm54_U0_group">
+            <obj_property name="label">Array2hlsStrm54_U0</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="Array2hlsStrm54_U0_Input_group">
+               <obj_property name="label">Input Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="scalar_dstMat_cols_group">
+                  <obj_property name="label">scalar_dstMat_cols(imgInput_cols_c_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/Array2hlsStrm54_U0/scalar_dstMat_cols_blk_n">
+                     <obj_property name="ElementShortName">scalar_dstMat_cols_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">scalar_dstMat_cols_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/Array2hlsStrm54_U0/scalar_dstMat_cols_dout">
+                     <obj_property name="ElementShortName">scalar_dstMat_cols_dout[31:0]</obj_property>
+                     <obj_property name="ObjectShortName">scalar_dstMat_cols_dout[31:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/Array2hlsStrm54_U0/scalar_dstMat_cols_empty_n">
+                     <obj_property name="ElementShortName">scalar_dstMat_cols_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">scalar_dstMat_cols_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/Array2hlsStrm54_U0/scalar_dstMat_cols_read">
+                     <obj_property name="ElementShortName">scalar_dstMat_cols_read</obj_property>
+                     <obj_property name="ObjectShortName">scalar_dstMat_cols_read</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="scalar_dstMat_rows_group">
+                  <obj_property name="label">scalar_dstMat_rows(imgInput_rows_c_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/Array2hlsStrm54_U0/scalar_dstMat_rows_blk_n">
+                     <obj_property name="ElementShortName">scalar_dstMat_rows_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">scalar_dstMat_rows_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/Array2hlsStrm54_U0/scalar_dstMat_rows_dout">
+                     <obj_property name="ElementShortName">scalar_dstMat_rows_dout[31:0]</obj_property>
+                     <obj_property name="ObjectShortName">scalar_dstMat_rows_dout[31:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/Array2hlsStrm54_U0/scalar_dstMat_rows_empty_n">
+                     <obj_property name="ElementShortName">scalar_dstMat_rows_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">scalar_dstMat_rows_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/Array2hlsStrm54_U0/scalar_dstMat_rows_read">
+                     <obj_property name="ElementShortName">scalar_dstMat_rows_read</obj_property>
+                     <obj_property name="ObjectShortName">scalar_dstMat_rows_read</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="srcPtr_V_offset_group">
+                  <obj_property name="label">srcPtr_V_offset(img_inp_V_c_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/Array2hlsStrm54_U0/srcPtr_V_offset_blk_n">
+                     <obj_property name="ElementShortName">srcPtr_V_offset_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">srcPtr_V_offset_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/Array2hlsStrm54_U0/srcPtr_V_offset_dout">
+                     <obj_property name="ElementShortName">srcPtr_V_offset_dout[31:0]</obj_property>
+                     <obj_property name="ObjectShortName">srcPtr_V_offset_dout[31:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/Array2hlsStrm54_U0/srcPtr_V_offset_empty_n">
+                     <obj_property name="ElementShortName">srcPtr_V_offset_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">srcPtr_V_offset_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/Array2hlsStrm54_U0/srcPtr_V_offset_read">
+                     <obj_property name="ElementShortName">srcPtr_V_offset_read</obj_property>
+                     <obj_property name="ObjectShortName">srcPtr_V_offset_read</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="Array2hlsStrm54_U0_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/Array2hlsStrm54_U0/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/Array2hlsStrm54_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/Array2hlsStrm54_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/Array2hlsStrm54_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="Array2hlsStrm54_U0_Output_group">
+               <obj_property name="label">Output Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="dstMat_cols_out_group">
+                  <obj_property name="label">dstMat_cols_out(imgInput_cols_c14_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/Array2hlsStrm54_U0/dstMat_cols_out_blk_n">
+                     <obj_property name="ElementShortName">dstMat_cols_out_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">dstMat_cols_out_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/Array2hlsStrm54_U0/dstMat_cols_out_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/Array2hlsStrm54_U0/dstMat_cols_out_full_n">
+                     <obj_property name="ElementShortName">dstMat_cols_out_full_n</obj_property>
+                     <obj_property name="ObjectShortName">dstMat_cols_out_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/Array2hlsStrm54_U0/dstMat_cols_out_write">
+                     <obj_property name="ElementShortName">dstMat_cols_out_write</obj_property>
+                     <obj_property name="ObjectShortName">dstMat_cols_out_write</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="dstMat_rows_out_group">
+                  <obj_property name="label">dstMat_rows_out(imgInput_rows_c13_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/Array2hlsStrm54_U0/dstMat_rows_out_blk_n">
+                     <obj_property name="ElementShortName">dstMat_rows_out_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">dstMat_rows_out_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/Array2hlsStrm54_U0/dstMat_rows_out_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/Array2hlsStrm54_U0/dstMat_rows_out_full_n">
+                     <obj_property name="ElementShortName">dstMat_rows_out_full_n</obj_property>
+                     <obj_property name="ObjectShortName">dstMat_rows_out_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/Array2hlsStrm54_U0/dstMat_rows_out_write">
+                     <obj_property name="ElementShortName">dstMat_rows_out_write</obj_property>
+                     <obj_property name="ObjectShortName">dstMat_rows_out_write</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="strm_V_V_i_group">
+                  <obj_property name="label">strm_V_V_i(strm_V_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/Array2hlsStrm54_U0/strm_V_V_i_blk_n">
+                     <obj_property name="ElementShortName">strm_V_V_i_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">strm_V_V_i_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/Array2hlsStrm54_U0/strm_V_V_i_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/Array2hlsStrm54_U0/strm_V_V_i_full_n">
+                     <obj_property name="ElementShortName">strm_V_V_i_full_n</obj_property>
+                     <obj_property name="ObjectShortName">strm_V_V_i_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/Array2hlsStrm54_U0/strm_V_V_i_write">
+                     <obj_property name="ElementShortName">strm_V_V_i_write</obj_property>
+                     <obj_property name="ObjectShortName">strm_V_V_i_write</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="dstMat_rows_c_i_group">
+                  <obj_property name="label">dstMat_rows_c_i(dstMat_rows_c_i_i_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/Array2hlsStrm54_U0/dstMat_rows_c_i_blk_n">
+                     <obj_property name="ElementShortName">dstMat_rows_c_i_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">dstMat_rows_c_i_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/Array2hlsStrm54_U0/dstMat_rows_c_i_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/Array2hlsStrm54_U0/dstMat_rows_c_i_full_n">
+                     <obj_property name="ElementShortName">dstMat_rows_c_i_full_n</obj_property>
+                     <obj_property name="ObjectShortName">dstMat_rows_c_i_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/Array2hlsStrm54_U0/dstMat_rows_c_i_write">
+                     <obj_property name="ElementShortName">dstMat_rows_c_i_write</obj_property>
+                     <obj_property name="ObjectShortName">dstMat_rows_c_i_write</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="dstMat_cols_c_i_group">
+                  <obj_property name="label">dstMat_cols_c_i(dstMat_cols_c_i_i_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/Array2hlsStrm54_U0/dstMat_cols_c_i_blk_n">
+                     <obj_property name="ElementShortName">dstMat_cols_c_i_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">dstMat_cols_c_i_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/Array2hlsStrm54_U0/dstMat_cols_c_i_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/Array2hlsStrm54_U0/dstMat_cols_c_i_full_n">
+                     <obj_property name="ElementShortName">dstMat_cols_c_i_full_n</obj_property>
+                     <obj_property name="ObjectShortName">dstMat_cols_c_i_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/Array2hlsStrm54_U0/dstMat_cols_c_i_write">
+                     <obj_property name="ElementShortName">dstMat_cols_c_i_write</obj_property>
+                     <obj_property name="ObjectShortName">dstMat_cols_c_i_write</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="hlsStrm2xfMat_U0_group">
+            <obj_property name="label">hlsStrm2xfMat_U0</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="hlsStrm2xfMat_U0_Input_group">
+               <obj_property name="label">Input Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="srcStrm_V_V_group">
+                  <obj_property name="label">srcStrm_V_V(strm_V_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/hlsStrm2xfMat_U0/srcStrm_V_V_blk_n">
+                     <obj_property name="ElementShortName">srcStrm_V_V_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">srcStrm_V_V_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/hlsStrm2xfMat_U0/srcStrm_V_V_dout">
+                     <obj_property name="ElementShortName">srcStrm_V_V_dout[7:0]</obj_property>
+                     <obj_property name="ObjectShortName">srcStrm_V_V_dout[7:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/hlsStrm2xfMat_U0/srcStrm_V_V_empty_n">
+                     <obj_property name="ElementShortName">srcStrm_V_V_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">srcStrm_V_V_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/hlsStrm2xfMat_U0/srcStrm_V_V_read">
+                     <obj_property name="ElementShortName">srcStrm_V_V_read</obj_property>
+                     <obj_property name="ObjectShortName">srcStrm_V_V_read</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="dstMat_rows_group">
+                  <obj_property name="label">dstMat_rows(dstMat_rows_c_i_i_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/hlsStrm2xfMat_U0/dstMat_rows_blk_n">
+                     <obj_property name="ElementShortName">dstMat_rows_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">dstMat_rows_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/hlsStrm2xfMat_U0/dstMat_rows_dout">
+                     <obj_property name="ElementShortName">dstMat_rows_dout[31:0]</obj_property>
+                     <obj_property name="ObjectShortName">dstMat_rows_dout[31:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/hlsStrm2xfMat_U0/dstMat_rows_empty_n">
+                     <obj_property name="ElementShortName">dstMat_rows_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">dstMat_rows_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/hlsStrm2xfMat_U0/dstMat_rows_read">
+                     <obj_property name="ElementShortName">dstMat_rows_read</obj_property>
+                     <obj_property name="ObjectShortName">dstMat_rows_read</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="dstMat_cols_group">
+                  <obj_property name="label">dstMat_cols(dstMat_cols_c_i_i_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/hlsStrm2xfMat_U0/dstMat_cols_blk_n">
+                     <obj_property name="ElementShortName">dstMat_cols_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">dstMat_cols_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/hlsStrm2xfMat_U0/dstMat_cols_dout">
+                     <obj_property name="ElementShortName">dstMat_cols_dout[31:0]</obj_property>
+                     <obj_property name="ObjectShortName">dstMat_cols_dout[31:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/hlsStrm2xfMat_U0/dstMat_cols_empty_n">
+                     <obj_property name="ElementShortName">dstMat_cols_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">dstMat_cols_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/hlsStrm2xfMat_U0/dstMat_cols_read">
+                     <obj_property name="ElementShortName">dstMat_cols_read</obj_property>
+                     <obj_property name="ObjectShortName">dstMat_cols_read</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="hlsStrm2xfMat_U0_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/hlsStrm2xfMat_U0/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/hlsStrm2xfMat_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/hlsStrm2xfMat_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/hlsStrm2xfMat_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="hlsStrm2xfMat_U0_Output_group">
+               <obj_property name="label">Output Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="dstMat_data_V_group">
+                  <obj_property name="label">dstMat_data_V(imgInput_data_V_U, PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/hlsStrm2xfMat_U0/dstMat_data_V_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/hlsStrm2xfMat_U0/dstMat_data_V_d0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/hlsStrm2xfMat_U0/dstMat_data_V_ce0">
+                     <obj_property name="ElementShortName">dstMat_data_V_ce0</obj_property>
+                     <obj_property name="ObjectShortName">dstMat_data_V_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/Array2xfMat_U0/hlsStrm2xfMat_U0/dstMat_data_V_we0">
+                     <obj_property name="ElementShortName">dstMat_data_V_we0</obj_property>
+                     <obj_property name="ObjectShortName">dstMat_data_V_we0</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="binary_threshold_U0_group">
+         <obj_property name="label">binary_threshold_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="binary_threshold_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="src_rows_group">
+               <obj_property name="label">src_rows(imgInput_rows_c13_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/binary_threshold_U0/src_rows_blk_n">
+                  <obj_property name="ElementShortName">src_rows_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">src_rows_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/binary_threshold_U0/src_rows_dout">
+                  <obj_property name="ElementShortName">src_rows_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">src_rows_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/binary_threshold_U0/src_rows_empty_n">
+                  <obj_property name="ElementShortName">src_rows_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">src_rows_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/binary_threshold_U0/src_rows_read">
+                  <obj_property name="ElementShortName">src_rows_read</obj_property>
+                  <obj_property name="ObjectShortName">src_rows_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="src_cols_group">
+               <obj_property name="label">src_cols(imgInput_cols_c14_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/binary_threshold_U0/src_cols_blk_n">
+                  <obj_property name="ElementShortName">src_cols_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">src_cols_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/binary_threshold_U0/src_cols_dout">
+                  <obj_property name="ElementShortName">src_cols_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">src_cols_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/binary_threshold_U0/src_cols_empty_n">
+                  <obj_property name="ElementShortName">src_cols_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">src_cols_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/binary_threshold_U0/src_cols_read">
+                  <obj_property name="ElementShortName">src_cols_read</obj_property>
+                  <obj_property name="ObjectShortName">src_cols_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="src_data_V_group">
+               <obj_property name="label">src_data_V(imgInput_data_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/binary_threshold_U0/src_data_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/binary_threshold_U0/src_data_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/binary_threshold_U0/src_data_V_ce0">
+                  <obj_property name="ElementShortName">src_data_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">src_data_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="threshold_group">
+               <obj_property name="label">threshold(low_threshold_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/binary_threshold_U0/threshold_blk_n">
+                  <obj_property name="ElementShortName">threshold_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">threshold_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/binary_threshold_U0/threshold_dout">
+                  <obj_property name="ElementShortName">threshold_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">threshold_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/binary_threshold_U0/threshold_empty_n">
+                  <obj_property name="ElementShortName">threshold_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">threshold_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/binary_threshold_U0/threshold_read">
+                  <obj_property name="ElementShortName">threshold_read</obj_property>
+                  <obj_property name="ObjectShortName">threshold_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="binary_threshold_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/binary_threshold_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/binary_threshold_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/binary_threshold_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/binary_threshold_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="binary_threshold_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="dst_data_V_group">
+               <obj_property name="label">dst_data_V(imgOutput_data_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/binary_threshold_U0/dst_data_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/binary_threshold_U0/dst_data_V_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/binary_threshold_U0/dst_data_V_ce0">
+                  <obj_property name="ElementShortName">dst_data_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">dst_data_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/binary_threshold_U0/dst_data_V_we0">
+                  <obj_property name="ElementShortName">dst_data_V_we0</obj_property>
+                  <obj_property name="ObjectShortName">dst_data_V_we0</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="xfMat2Array_U0_group">
+         <obj_property name="label">xfMat2Array_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="protoinst" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/xfMat2hlsStrm9_U0/xfMat2hlsStrm9_U0_activity">
+            <obj_property name="ElementShortName">xfMat2hlsStrm9_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">xfMat2hlsStrm9_U0_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/hlsStrm2Array_U0/hlsStrm2Array_U0_activity">
+            <obj_property name="ElementShortName">hlsStrm2Array_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">hlsStrm2Array_U0_activity</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="xfMat2Array_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="srcMat_rows_group">
+               <obj_property name="label">srcMat_rows(imgOutput_rows_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/srcMat_rows_dout">
+                  <obj_property name="ElementShortName">srcMat_rows_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">srcMat_rows_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/srcMat_rows_empty_n">
+                  <obj_property name="ElementShortName">srcMat_rows_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">srcMat_rows_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/srcMat_rows_read">
+                  <obj_property name="ElementShortName">srcMat_rows_read</obj_property>
+                  <obj_property name="ObjectShortName">srcMat_rows_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="srcMat_cols_group">
+               <obj_property name="label">srcMat_cols(imgOutput_cols_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/srcMat_cols_dout">
+                  <obj_property name="ElementShortName">srcMat_cols_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">srcMat_cols_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/srcMat_cols_empty_n">
+                  <obj_property name="ElementShortName">srcMat_cols_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">srcMat_cols_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/srcMat_cols_read">
+                  <obj_property name="ElementShortName">srcMat_cols_read</obj_property>
+                  <obj_property name="ObjectShortName">srcMat_cols_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="srcMat_data_V_group">
+               <obj_property name="label">srcMat_data_V(imgOutput_data_V_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/srcMat_data_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/srcMat_data_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/srcMat_data_V_ce0">
+                  <obj_property name="ElementShortName">srcMat_data_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">srcMat_data_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="dstPtr_V_offset_group">
+               <obj_property name="label">dstPtr_V_offset(img_out_V_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/dstPtr_V_offset_dout">
+                  <obj_property name="ElementShortName">dstPtr_V_offset_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">dstPtr_V_offset_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/dstPtr_V_offset_empty_n">
+                  <obj_property name="ElementShortName">dstPtr_V_offset_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">dstPtr_V_offset_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/dstPtr_V_offset_read">
+                  <obj_property name="ElementShortName">dstPtr_V_offset_read</obj_property>
+                  <obj_property name="ObjectShortName">dstPtr_V_offset_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="xfMat2Array_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="xfMat2Array_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="xfMat2hlsStrm9_U0_group">
+            <obj_property name="label">xfMat2hlsStrm9_U0</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="xfMat2hlsStrm9_U0_Input_group">
+               <obj_property name="label">Input Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="srcMat_rows_group">
+                  <obj_property name="label">srcMat_rows(imgOutput_rows_c_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/xfMat2hlsStrm9_U0/srcMat_rows_blk_n">
+                     <obj_property name="ElementShortName">srcMat_rows_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">srcMat_rows_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/xfMat2hlsStrm9_U0/srcMat_rows_dout">
+                     <obj_property name="ElementShortName">srcMat_rows_dout[31:0]</obj_property>
+                     <obj_property name="ObjectShortName">srcMat_rows_dout[31:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/xfMat2hlsStrm9_U0/srcMat_rows_empty_n">
+                     <obj_property name="ElementShortName">srcMat_rows_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">srcMat_rows_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/xfMat2hlsStrm9_U0/srcMat_rows_read">
+                     <obj_property name="ElementShortName">srcMat_rows_read</obj_property>
+                     <obj_property name="ObjectShortName">srcMat_rows_read</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="srcMat_cols_group">
+                  <obj_property name="label">srcMat_cols(imgOutput_cols_c_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/xfMat2hlsStrm9_U0/srcMat_cols_blk_n">
+                     <obj_property name="ElementShortName">srcMat_cols_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">srcMat_cols_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/xfMat2hlsStrm9_U0/srcMat_cols_dout">
+                     <obj_property name="ElementShortName">srcMat_cols_dout[31:0]</obj_property>
+                     <obj_property name="ObjectShortName">srcMat_cols_dout[31:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/xfMat2hlsStrm9_U0/srcMat_cols_empty_n">
+                     <obj_property name="ElementShortName">srcMat_cols_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">srcMat_cols_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/xfMat2hlsStrm9_U0/srcMat_cols_read">
+                     <obj_property name="ElementShortName">srcMat_cols_read</obj_property>
+                     <obj_property name="ObjectShortName">srcMat_cols_read</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="srcMat_data_V_group">
+                  <obj_property name="label">srcMat_data_V(imgOutput_data_V_U, PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/xfMat2hlsStrm9_U0/srcMat_data_V_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/xfMat2hlsStrm9_U0/srcMat_data_V_q0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/xfMat2hlsStrm9_U0/srcMat_data_V_ce0">
+                     <obj_property name="ElementShortName">srcMat_data_V_ce0</obj_property>
+                     <obj_property name="ObjectShortName">srcMat_data_V_ce0</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="dstPtr_V_offset_group">
+                  <obj_property name="label">dstPtr_V_offset(img_out_V_c_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/xfMat2hlsStrm9_U0/dstPtr_V_offset_blk_n">
+                     <obj_property name="ElementShortName">dstPtr_V_offset_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">dstPtr_V_offset_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/xfMat2hlsStrm9_U0/dstPtr_V_offset_dout">
+                     <obj_property name="ElementShortName">dstPtr_V_offset_dout[31:0]</obj_property>
+                     <obj_property name="ObjectShortName">dstPtr_V_offset_dout[31:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/xfMat2hlsStrm9_U0/dstPtr_V_offset_empty_n">
+                     <obj_property name="ElementShortName">dstPtr_V_offset_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">dstPtr_V_offset_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/xfMat2hlsStrm9_U0/dstPtr_V_offset_read">
+                     <obj_property name="ElementShortName">dstPtr_V_offset_read</obj_property>
+                     <obj_property name="ObjectShortName">dstPtr_V_offset_read</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="xfMat2hlsStrm9_U0_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/xfMat2hlsStrm9_U0/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/xfMat2hlsStrm9_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/xfMat2hlsStrm9_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/xfMat2hlsStrm9_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="xfMat2hlsStrm9_U0_Output_group">
+               <obj_property name="label">Output Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="dstStrm_V_V_group">
+                  <obj_property name="label">dstStrm_V_V(strm_V_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/xfMat2hlsStrm9_U0/dstStrm_V_V_blk_n">
+                     <obj_property name="ElementShortName">dstStrm_V_V_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">dstStrm_V_V_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/xfMat2hlsStrm9_U0/dstStrm_V_V_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/xfMat2hlsStrm9_U0/dstStrm_V_V_full_n">
+                     <obj_property name="ElementShortName">dstStrm_V_V_full_n</obj_property>
+                     <obj_property name="ObjectShortName">dstStrm_V_V_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/xfMat2hlsStrm9_U0/dstStrm_V_V_write">
+                     <obj_property name="ElementShortName">dstStrm_V_V_write</obj_property>
+                     <obj_property name="ObjectShortName">dstStrm_V_V_write</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="srcMat_rows_out_group">
+                  <obj_property name="label">srcMat_rows_out(srcMat_rows_c_i_i_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/xfMat2hlsStrm9_U0/srcMat_rows_out_blk_n">
+                     <obj_property name="ElementShortName">srcMat_rows_out_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">srcMat_rows_out_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/xfMat2hlsStrm9_U0/srcMat_rows_out_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/xfMat2hlsStrm9_U0/srcMat_rows_out_full_n">
+                     <obj_property name="ElementShortName">srcMat_rows_out_full_n</obj_property>
+                     <obj_property name="ObjectShortName">srcMat_rows_out_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/xfMat2hlsStrm9_U0/srcMat_rows_out_write">
+                     <obj_property name="ElementShortName">srcMat_rows_out_write</obj_property>
+                     <obj_property name="ObjectShortName">srcMat_rows_out_write</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="srcMat_cols_out_group">
+                  <obj_property name="label">srcMat_cols_out(srcMat_cols_c_i_i_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/xfMat2hlsStrm9_U0/srcMat_cols_out_blk_n">
+                     <obj_property name="ElementShortName">srcMat_cols_out_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">srcMat_cols_out_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/xfMat2hlsStrm9_U0/srcMat_cols_out_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/xfMat2hlsStrm9_U0/srcMat_cols_out_full_n">
+                     <obj_property name="ElementShortName">srcMat_cols_out_full_n</obj_property>
+                     <obj_property name="ObjectShortName">srcMat_cols_out_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/xfMat2hlsStrm9_U0/srcMat_cols_out_write">
+                     <obj_property name="ElementShortName">srcMat_cols_out_write</obj_property>
+                     <obj_property name="ObjectShortName">srcMat_cols_out_write</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="dstPtr_V_offset_out_group">
+                  <obj_property name="label">dstPtr_V_offset_out(dstPtr_V_offset_c_i_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/xfMat2hlsStrm9_U0/dstPtr_V_offset_out_blk_n">
+                     <obj_property name="ElementShortName">dstPtr_V_offset_out_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">dstPtr_V_offset_out_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/xfMat2hlsStrm9_U0/dstPtr_V_offset_out_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/xfMat2hlsStrm9_U0/dstPtr_V_offset_out_full_n">
+                     <obj_property name="ElementShortName">dstPtr_V_offset_out_full_n</obj_property>
+                     <obj_property name="ObjectShortName">dstPtr_V_offset_out_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/xfMat2hlsStrm9_U0/dstPtr_V_offset_out_write">
+                     <obj_property name="ElementShortName">dstPtr_V_offset_out_write</obj_property>
+                     <obj_property name="ObjectShortName">dstPtr_V_offset_out_write</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="hlsStrm2Array_U0_group">
+            <obj_property name="label">hlsStrm2Array_U0</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="hlsStrm2Array_U0_Input_group">
+               <obj_property name="label">Input Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="srcStrm_V_V_group">
+                  <obj_property name="label">srcStrm_V_V(strm_V_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/hlsStrm2Array_U0/srcStrm_V_V_blk_n">
+                     <obj_property name="ElementShortName">srcStrm_V_V_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">srcStrm_V_V_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/hlsStrm2Array_U0/srcStrm_V_V_dout">
+                     <obj_property name="ElementShortName">srcStrm_V_V_dout[7:0]</obj_property>
+                     <obj_property name="ObjectShortName">srcStrm_V_V_dout[7:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/hlsStrm2Array_U0/srcStrm_V_V_empty_n">
+                     <obj_property name="ElementShortName">srcStrm_V_V_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">srcStrm_V_V_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/hlsStrm2Array_U0/srcStrm_V_V_read">
+                     <obj_property name="ElementShortName">srcStrm_V_V_read</obj_property>
+                     <obj_property name="ObjectShortName">srcStrm_V_V_read</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="dstPtr_V_offset_group">
+                  <obj_property name="label">dstPtr_V_offset(dstPtr_V_offset_c_i_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/hlsStrm2Array_U0/dstPtr_V_offset_blk_n">
+                     <obj_property name="ElementShortName">dstPtr_V_offset_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">dstPtr_V_offset_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/hlsStrm2Array_U0/dstPtr_V_offset_dout">
+                     <obj_property name="ElementShortName">dstPtr_V_offset_dout[31:0]</obj_property>
+                     <obj_property name="ObjectShortName">dstPtr_V_offset_dout[31:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/hlsStrm2Array_U0/dstPtr_V_offset_empty_n">
+                     <obj_property name="ElementShortName">dstPtr_V_offset_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">dstPtr_V_offset_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/hlsStrm2Array_U0/dstPtr_V_offset_read">
+                     <obj_property name="ElementShortName">dstPtr_V_offset_read</obj_property>
+                     <obj_property name="ObjectShortName">dstPtr_V_offset_read</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="srcMat_rows_group">
+                  <obj_property name="label">srcMat_rows(srcMat_rows_c_i_i_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/hlsStrm2Array_U0/srcMat_rows_blk_n">
+                     <obj_property name="ElementShortName">srcMat_rows_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">srcMat_rows_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/hlsStrm2Array_U0/srcMat_rows_dout">
+                     <obj_property name="ElementShortName">srcMat_rows_dout[31:0]</obj_property>
+                     <obj_property name="ObjectShortName">srcMat_rows_dout[31:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/hlsStrm2Array_U0/srcMat_rows_empty_n">
+                     <obj_property name="ElementShortName">srcMat_rows_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">srcMat_rows_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/hlsStrm2Array_U0/srcMat_rows_read">
+                     <obj_property name="ElementShortName">srcMat_rows_read</obj_property>
+                     <obj_property name="ObjectShortName">srcMat_rows_read</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="srcMat_cols_group">
+                  <obj_property name="label">srcMat_cols(srcMat_cols_c_i_i_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/hlsStrm2Array_U0/srcMat_cols_blk_n">
+                     <obj_property name="ElementShortName">srcMat_cols_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">srcMat_cols_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/hlsStrm2Array_U0/srcMat_cols_dout">
+                     <obj_property name="ElementShortName">srcMat_cols_dout[31:0]</obj_property>
+                     <obj_property name="ObjectShortName">srcMat_cols_dout[31:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/hlsStrm2Array_U0/srcMat_cols_empty_n">
+                     <obj_property name="ElementShortName">srcMat_cols_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">srcMat_cols_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/hlsStrm2Array_U0/srcMat_cols_read">
+                     <obj_property name="ElementShortName">srcMat_cols_read</obj_property>
+                     <obj_property name="ObjectShortName">srcMat_cols_read</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="hlsStrm2Array_U0_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/hlsStrm2Array_U0/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/hlsStrm2Array_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/hlsStrm2Array_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Canny_accel_top/AESL_inst_Canny_accel/xfMat2Array_U0/hlsStrm2Array_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="hlsStrm2Array_U0_Output_group">
+               <obj_property name="label">Output Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

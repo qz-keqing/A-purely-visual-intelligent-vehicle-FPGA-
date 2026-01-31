@@ -1,0 +1,193 @@
+
+
+================================================================
+== Vivado HLS Report for 'binary_threshold'
+================================================================
+* Date:           Tue Dec 30 00:00:35 2025
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        Canny
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     8.510|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    ?|    ?|    ?|    ?|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |          |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name| min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |- Loop 1  |    ?|    ?|         5|          1|          1|     ?|    yes   |
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      6|       0|    390|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|      -|       -|      -|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|    126|
+|Register         |        0|      -|     617|     32|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|      6|     617|    548|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|      2|   ~0   |      1|
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-------------------------------+----------+-------+---+----+------------+------------+
+    |         Variable Name         | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-------------------------------+----------+-------+---+----+------------+------------+
+    |bound_fu_130_p2                |     *    |      3|  0|  20|          32|          32|
+    |tmp_16_i_mid2_fu_187_p2        |     *    |      3|  0|  20|          32|          31|
+    |i_fu_156_p2                    |     +    |      0|  0|  38|          31|           1|
+    |indvar_flatten_next_fu_150_p2  |     +    |      0|  0|  71|          64|           1|
+    |j_i_op_fu_170_p2               |     +    |      0|  0|  38|          31|           1|
+    |tmp_17_i_fu_203_p2             |     +    |      0|  0|  39|          32|          32|
+    |exitcond_flatten_fu_145_p2     |   icmp   |      0|  0|  29|          64|          64|
+    |tmp_20_i_fu_217_p2             |   icmp   |      0|  0|  18|          32|          32|
+    |tmp_i_fu_140_p2                |   icmp   |      0|  0|  18|          32|          32|
+    |ap_block_state1                |    or    |      0|  0|   2|           1|           1|
+    |j_fu_176_p3                    |  select  |      0|  0|  31|           1|          31|
+    |j_i_cast_mid2_fu_192_p3        |  select  |      0|  0|  31|           1|          31|
+    |tmp_16_i_mid2_v_v_fu_162_p3    |  select  |      0|  0|  31|           1|          31|
+    |ap_enable_pp0                  |    xor   |      0|  0|   2|           1|           2|
+    |ap_enable_reg_pp0_iter1        |    xor   |      0|  0|   2|           2|           1|
+    +-------------------------------+----------+-------+---+----+------------+------------+
+    |Total                          |          |      6|  0| 390|         357|         323|
+    +-------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +------------------------------+----+-----------+-----+-----------+
+    |             Name             | LUT| Input Size| Bits| Total Bits|
+    +------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                     |  27|          5|    1|          5|
+    |ap_done                       |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1       |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter4       |   9|          2|    1|          2|
+    |ap_phi_mux_i_i_phi_fu_105_p4  |   9|          2|   31|         62|
+    |ap_phi_mux_j_i_phi_fu_116_p4  |   9|          2|   31|         62|
+    |i_i_reg_101                   |   9|          2|   31|         62|
+    |indvar_flatten_reg_90         |   9|          2|   64|        128|
+    |j_i_reg_112                   |   9|          2|   31|         62|
+    |src_cols_blk_n                |   9|          2|    1|          2|
+    |src_rows_blk_n                |   9|          2|    1|          2|
+    |threshold_blk_n               |   9|          2|    1|          2|
+    +------------------------------+----+-----------+-----+-----------+
+    |Total                         | 126|         27|  195|        393|
+    +------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------------------+----+----+-----+-----------+
+    |              Name              | FF | LUT| Bits| Const Bits|
+    +--------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                       |   4|   0|    4|          0|
+    |ap_done_reg                     |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter0         |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1         |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2         |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter3         |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter4         |   1|   0|    1|          0|
+    |bound_reg_239                   |  64|   0|   64|          0|
+    |exitcond_flatten_reg_249        |   1|   0|    1|          0|
+    |i_i_reg_101                     |  31|   0|   31|          0|
+    |indvar_flatten_reg_90           |  64|   0|   64|          0|
+    |j_i_reg_112                     |  31|   0|   31|          0|
+    |j_i_reg_112_pp0_iter1_reg       |  31|   0|   31|          0|
+    |j_reg_264                       |  31|   0|   31|          0|
+    |src_cols_read_reg_227           |  32|   0|   32|          0|
+    |src_rows_read_reg_222           |  32|   0|   32|          0|
+    |threshold_read_reg_234          |  32|   0|   32|          0|
+    |tmp_16_i_mid2_reg_269           |  32|   0|   32|          0|
+    |tmp_16_i_mid2_v_v_reg_258       |  31|   0|   31|          0|
+    |tmp_18_i_reg_274                |  64|   0|   64|          0|
+    |tmp_18_i_reg_274_pp0_iter3_reg  |  64|   0|   64|          0|
+    |tmp_20_i_reg_284                |   1|   0|    1|          0|
+    |tmp_i_reg_244                   |   1|   0|    1|          0|
+    |tmp_i_reg_244_pp0_iter1_reg     |   1|   0|    1|          0|
+    |exitcond_flatten_reg_249        |  64|  32|    1|          0|
+    +--------------------------------+----+----+-----+-----------+
+    |Total                           | 617|  32|  554|          0|
+    +--------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------+-----+-----+------------+------------------+--------------+
+|      RTL Ports      | Dir | Bits|  Protocol  |   Source Object  |    C Type    |
++---------------------+-----+-----+------------+------------------+--------------+
+|ap_clk               |  in |    1| ap_ctrl_hs | binary_threshold | return value |
+|ap_rst               |  in |    1| ap_ctrl_hs | binary_threshold | return value |
+|ap_start             |  in |    1| ap_ctrl_hs | binary_threshold | return value |
+|ap_done              | out |    1| ap_ctrl_hs | binary_threshold | return value |
+|ap_continue          |  in |    1| ap_ctrl_hs | binary_threshold | return value |
+|ap_idle              | out |    1| ap_ctrl_hs | binary_threshold | return value |
+|ap_ready             | out |    1| ap_ctrl_hs | binary_threshold | return value |
+|src_rows_dout        |  in |   32|   ap_fifo  |     src_rows     |    pointer   |
+|src_rows_empty_n     |  in |    1|   ap_fifo  |     src_rows     |    pointer   |
+|src_rows_read        | out |    1|   ap_fifo  |     src_rows     |    pointer   |
+|src_cols_dout        |  in |   32|   ap_fifo  |     src_cols     |    pointer   |
+|src_cols_empty_n     |  in |    1|   ap_fifo  |     src_cols     |    pointer   |
+|src_cols_read        | out |    1|   ap_fifo  |     src_cols     |    pointer   |
+|src_data_V_address0  | out |   20|  ap_memory |    src_data_V    |     array    |
+|src_data_V_ce0       | out |    1|  ap_memory |    src_data_V    |     array    |
+|src_data_V_q0        |  in |    8|  ap_memory |    src_data_V    |     array    |
+|dst_data_V_address0  | out |   20|  ap_memory |    dst_data_V    |     array    |
+|dst_data_V_ce0       | out |    1|  ap_memory |    dst_data_V    |     array    |
+|dst_data_V_we0       | out |    1|  ap_memory |    dst_data_V    |     array    |
+|dst_data_V_d0        | out |    1|  ap_memory |    dst_data_V    |     array    |
+|threshold_dout       |  in |   32|   ap_fifo  |     threshold    |    pointer   |
+|threshold_empty_n    |  in |    1|   ap_fifo  |     threshold    |    pointer   |
+|threshold_read       | out |    1|   ap_fifo  |     threshold    |    pointer   |
++---------------------+-----+-----+------------+------------------+--------------+
+

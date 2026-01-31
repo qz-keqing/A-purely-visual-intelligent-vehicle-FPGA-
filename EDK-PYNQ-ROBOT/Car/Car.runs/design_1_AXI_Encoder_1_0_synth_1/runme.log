@@ -1,0 +1,16 @@
+
+*** Running vivado
+    with args -log design_1_AXI_Encoder_1_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_AXI_Encoder_1_0.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source design_1_AXI_Encoder_1_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/robotCourse/hw_design/arch/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2018.3/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_AXI_Encoder_1_0, cache-ID = 892e5d2a0445a515.
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 26 23:12:17 2025...

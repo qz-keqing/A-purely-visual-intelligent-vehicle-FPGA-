@@ -1,0 +1,227 @@
+
+
+================================================================
+== Vivado HLS Report for 'hlsStrm2Array'
+================================================================
+* Date:           Tue Dec 30 00:00:35 2025
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        Canny
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     8.750|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+--------+-----+--------+---------+
+    |    Latency   |   Interval   | Pipeline|
+    | min |   max  | min |   max  |   Type  |
+    +-----+--------+-----+--------+---------+
+    |   11|  921610|   11|  921610|   none  |
+    +-----+--------+-----+--------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+-----+--------+----------+-----------+-----------+------------+----------+
+        |          |    Latency   | Iteration|  Initiation Interval  |    Trip    |          |
+        | Loop Name| min |   max  |  Latency |  achieved |   target  |    Count   | Pipelined|
+        +----------+-----+--------+----------+-----------+-----------+------------+----------+
+        |- Loop 1  |    2|  921601|         3|          1|          1| 1 ~ 921600 |    yes   |
+        +----------+-----+--------+----------+-----------+-----------+------------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      3|       0|    194|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|      -|       -|      -|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|    167|
+|Register         |        -|      -|     243|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|      3|     243|    361|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|      1|   ~0   |   ~0  |
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+-------+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+-------+---+----+------------+------------+
+    |tmp_1_i_i_i_fu_136_p2             |     *    |      3|  0|  20|          32|          32|
+    |i_fu_206_p2                       |     +    |      0|  0|  36|          29|           1|
+    |p_neg_i_i_i_fu_160_p2             |     -    |      0|  0|  39|           1|          32|
+    |p_neg_t_i_i_i_fu_180_p2           |     -    |      0|  0|  37|           1|          30|
+    |ap_block_pp0_stage0_01001         |    and   |      0|  0|   2|           1|           1|
+    |ap_block_state6_pp0_stage0_iter1  |    and   |      0|  0|   2|           1|           1|
+    |ap_block_state7_io                |    and   |      0|  0|   2|           1|           1|
+    |tmp_10_i_i_i_fu_201_p2            |   icmp   |      0|  0|  18|          30|          30|
+    |ap_block_pp0_stage0_11001         |    or    |      0|  0|   2|           1|           1|
+    |ap_block_state1                   |    or    |      0|  0|   2|           1|           1|
+    |loop_count_fu_186_p3              |  select  |      0|  0|  30|           1|          30|
+    |ap_enable_pp0                     |    xor   |      0|  0|   2|           1|           2|
+    |ap_enable_reg_pp0_iter1           |    xor   |      0|  0|   2|           2|           1|
+    +----------------------------------+----------+-------+---+----+------------+------------+
+    |Total                             |          |      3|  0| 194|         102|         163|
+    +----------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +---------------------------------------+----+-----------+-----+-----------+
+    |                  Name                 | LUT| Input Size| Bits| Total Bits|
+    +---------------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                              |  50|         11|    1|         11|
+    |ap_done                                |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1                |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter2                |   9|          2|    1|          2|
+    |ap_sig_ioackin_m_axi_dstPtr_V_AWREADY  |   9|          2|    1|          2|
+    |ap_sig_ioackin_m_axi_dstPtr_V_WREADY   |   9|          2|    1|          2|
+    |dstPtr_V_blk_n_AW                      |   9|          2|    1|          2|
+    |dstPtr_V_blk_n_B                       |   9|          2|    1|          2|
+    |dstPtr_V_blk_n_W                       |   9|          2|    1|          2|
+    |dstPtr_V_offset_blk_n                  |   9|          2|    1|          2|
+    |i_i_i_i_reg_115                        |   9|          2|   29|         58|
+    |srcMat_cols_blk_n                      |   9|          2|    1|          2|
+    |srcMat_rows_blk_n                      |   9|          2|    1|          2|
+    |srcStrm_V_V_blk_n                      |   9|          2|    1|          2|
+    +---------------------------------------+----+-----------+-----+-----------+
+    |Total                                  | 167|         37|   42|         93|
+    +---------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +---------------------------------------+----+----+-----+-----------+
+    |                  Name                 | FF | LUT| Bits| Const Bits|
+    +---------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                              |  10|   0|   10|          0|
+    |ap_done_reg                            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter0                |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1                |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2                |   1|   0|    1|          0|
+    |ap_reg_ioackin_m_axi_dstPtr_V_AWREADY  |   1|   0|    1|          0|
+    |ap_reg_ioackin_m_axi_dstPtr_V_WREADY   |   1|   0|    1|          0|
+    |dstPtr_V_addr_reg_212                  |  32|   0|   32|          0|
+    |i_i_i_i_reg_115                        |  29|   0|   29|          0|
+    |loop_count_reg_243                     |  30|   0|   30|          0|
+    |srcMat_cols_read_reg_223               |  32|   0|   32|          0|
+    |srcMat_rows_read_reg_218               |  32|   0|   32|          0|
+    |tmp_10_i_i_i_reg_249                   |   1|   0|    1|          0|
+    |tmp_10_i_i_i_reg_249_pp0_iter1_reg     |   1|   0|    1|          0|
+    |tmp_1_i_i_i_reg_228                    |  32|   0|   32|          0|
+    |tmp_6_reg_238                          |   1|   0|    1|          0|
+    |tmp_V_reg_258                          |   8|   0|    8|          0|
+    |tmp_reg_233                            |  29|   0|   29|          0|
+    +---------------------------------------+----+----+-----+-----------+
+    |Total                                  | 243|   0|  243|          0|
+    +---------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------------+-----+-----+------------+-----------------+--------------+
+|        RTL Ports        | Dir | Bits|  Protocol  |  Source Object  |    C Type    |
++-------------------------+-----+-----+------------+-----------------+--------------+
+|ap_clk                   |  in |    1| ap_ctrl_hs |  hlsStrm2Array  | return value |
+|ap_rst                   |  in |    1| ap_ctrl_hs |  hlsStrm2Array  | return value |
+|ap_start                 |  in |    1| ap_ctrl_hs |  hlsStrm2Array  | return value |
+|ap_done                  | out |    1| ap_ctrl_hs |  hlsStrm2Array  | return value |
+|ap_continue              |  in |    1| ap_ctrl_hs |  hlsStrm2Array  | return value |
+|ap_idle                  | out |    1| ap_ctrl_hs |  hlsStrm2Array  | return value |
+|ap_ready                 | out |    1| ap_ctrl_hs |  hlsStrm2Array  | return value |
+|srcStrm_V_V_dout         |  in |    8|   ap_fifo  |   srcStrm_V_V   |    pointer   |
+|srcStrm_V_V_empty_n      |  in |    1|   ap_fifo  |   srcStrm_V_V   |    pointer   |
+|srcStrm_V_V_read         | out |    1|   ap_fifo  |   srcStrm_V_V   |    pointer   |
+|m_axi_dstPtr_V_AWVALID   | out |    1|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_AWREADY   |  in |    1|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_AWADDR    | out |   32|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_AWID      | out |    1|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_AWLEN     | out |   32|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_AWSIZE    | out |    3|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_AWBURST   | out |    2|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_AWLOCK    | out |    2|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_AWCACHE   | out |    4|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_AWPROT    | out |    3|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_AWQOS     | out |    4|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_AWREGION  | out |    4|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_AWUSER    | out |    1|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_WVALID    | out |    1|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_WREADY    |  in |    1|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_WDATA     | out |    8|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_WSTRB     | out |    1|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_WLAST     | out |    1|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_WID       | out |    1|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_WUSER     | out |    1|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_ARVALID   | out |    1|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_ARREADY   |  in |    1|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_ARADDR    | out |   32|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_ARID      | out |    1|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_ARLEN     | out |   32|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_ARSIZE    | out |    3|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_ARBURST   | out |    2|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_ARLOCK    | out |    2|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_ARCACHE   | out |    4|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_ARPROT    | out |    3|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_ARQOS     | out |    4|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_ARREGION  | out |    4|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_ARUSER    | out |    1|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_RVALID    |  in |    1|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_RREADY    | out |    1|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_RDATA     |  in |    8|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_RLAST     |  in |    1|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_RID       |  in |    1|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_RUSER     |  in |    1|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_RRESP     |  in |    2|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_BVALID    |  in |    1|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_BREADY    | out |    1|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_BRESP     |  in |    2|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_BID       |  in |    1|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_BUSER     |  in |    1|    m_axi   |     dstPtr_V    |    pointer   |
+|dstPtr_V_offset_dout     |  in |   32|   ap_fifo  | dstPtr_V_offset |    pointer   |
+|dstPtr_V_offset_empty_n  |  in |    1|   ap_fifo  | dstPtr_V_offset |    pointer   |
+|dstPtr_V_offset_read     | out |    1|   ap_fifo  | dstPtr_V_offset |    pointer   |
+|srcMat_rows_dout         |  in |   32|   ap_fifo  |   srcMat_rows   |    pointer   |
+|srcMat_rows_empty_n      |  in |    1|   ap_fifo  |   srcMat_rows   |    pointer   |
+|srcMat_rows_read         | out |    1|   ap_fifo  |   srcMat_rows   |    pointer   |
+|srcMat_cols_dout         |  in |   32|   ap_fifo  |   srcMat_cols   |    pointer   |
+|srcMat_cols_empty_n      |  in |    1|   ap_fifo  |   srcMat_cols   |    pointer   |
+|srcMat_cols_read         | out |    1|   ap_fifo  |   srcMat_cols   |    pointer   |
++-------------------------+-----+-----+------------+-----------------+--------------+
+

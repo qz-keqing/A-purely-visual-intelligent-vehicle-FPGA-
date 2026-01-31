@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# 
+# Start of session at: Tue Jun 13 18:24:47 2023
+# Process ID: 6200
+# Current directory: D:/robotCourse-master/hw_design/arch/Car/Car.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: D:/robotCourse-master/hw_design/arch/Car/Car.sdk/webtalk/webtalk.log
+# Journal file: D:/robotCourse-master/hw_design/arch/Car/Car.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

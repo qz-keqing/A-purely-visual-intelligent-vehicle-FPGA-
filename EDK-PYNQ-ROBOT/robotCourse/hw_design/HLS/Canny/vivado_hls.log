@@ -1,0 +1,332 @@
+
+****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/Vivado/Vivado/2018.3/scripts/vivado_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running 'D:/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'DELL' on host 'desktop-jsm332p' (Windows NT_amd64 version 6.2) on Tue Dec 30 00:00:24 +0800 2025
+INFO: [HLS 200-10] In directory 'D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/robotCourse/hw_design/HLS/Canny'
+INFO: [HLS 200-10] Opening project 'D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/robotCourse/hw_design/HLS/Canny/Canny'.
+INFO: [HLS 200-10] Adding design file './xf_canny_accel.cpp' to the project
+INFO: [HLS 200-10] Opening solution 'D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/robotCourse/hw_design/HLS/Canny/Canny/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file './xf_canny_accel.cpp' ... 
+WARNING: [HLS 214-114] Only function calls and local variable declarations are allowed in a dataflow region: ./include\common/xf_utility.h:639:2
+WARNING: [HLS 214-114] Only function calls and local variable declarations are allowed in a dataflow region: ./include\common/xf_utility.h:714:2
+WARNING: [HLS 200-471] Dataflow form checks found 2 issue(s) in file ./xf_canny_accel.cpp
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 105.914 ; gain = 20.281
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 105.914 ; gain = 20.281
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-489] Unrolling loop 'L3' (./include\common/xf_utility.h:676) in function 'void xf::xfMat2hlsStrm<8, 0, 720, 1280, 1, 1, 8, 8, 1, 921600>(xf::Mat<FORWARD_REFERENCE, FORWARD_REFERENCE, FORWARD_REFERENCE, FORWARD_REFERENCE>&, hls::stream<ap_uint<FORWARD_REFERENCE> >&)' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'L5' (./include\common/xf_utility.h:624) in function 'void xf::hlsStrm2xfMat<8, 0, 720, 1280, 1, 1, 8, 8, 1, 921600>(hls::stream<ap_uint<FORWARD_REFERENCE> >&, xf::Mat<FORWARD_REFERENCE, FORWARD_REFERENCE, FORWARD_REFERENCE, FORWARD_REFERENCE>&)' completely with a factor of 1.
+INFO: [XFORM 203-603] Inlining function 'xf::Mat<0, 720, 1280, 1>::init' into 'xf::Mat<0, 720, 1280, 1>::Mat.1' (./include\common/xf_structs.h:553).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 110.414 ; gain = 24.781
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] ./include\common/xf_utility.h:688: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 114.629 ; gain = 28.996
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'L1' (./include\common/xf_utility.h:665) in function 'xf::xfMat2hlsStrm<8, 0, 720, 1280, 1, 1, 8, 8, 1, 921600>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'L1' (./include\common/xf_utility.h:605) in function 'xf::hlsStrm2xfMat<8, 0, 720, 1280, 1, 1, 8, 8, 1, 921600>' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'L2' (./include\common/xf_utility.h:672) in function 'xf::xfMat2hlsStrm<8, 0, 720, 1280, 1, 1, 8, 8, 1, 921600>' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'L4' (./include\common/xf_utility.h:684) in function 'xf::xfMat2hlsStrm<8, 0, 720, 1280, 1, 1, 8, 8, 1, 921600>' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'L5' (./include\common/xf_utility.h:687) in function 'xf::xfMat2hlsStrm<8, 0, 720, 1280, 1, 1, 8, 8, 1, 921600>' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'L2' (./include\common/xf_utility.h:612) in function 'xf::hlsStrm2xfMat<8, 0, 720, 1280, 1, 1, 8, 8, 1, 921600>' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'L3' (./include\common/xf_utility.h:615) in function 'xf::hlsStrm2xfMat<8, 0, 720, 1280, 1, 1, 8, 8, 1, 921600>' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'L4' (./include\common/xf_utility.h:621) in function 'xf::hlsStrm2xfMat<8, 0, 720, 1280, 1, 1, 8, 8, 1, 921600>' completely with a factor of 1.
+INFO: [XFORM 203-101] Partitioning array 'stmp.V' (./include\common/xf_utility.h:669) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'stmp.V' (./include\common/xf_utility.h:609) in dimension 1 completely.
+WARNING: [XFORM 203-713] All the elements of global array 'dstMat.data.V' should be updated in process function 'xf::hlsStrm2xfMat<8, 0, 720, 1280, 1, 1, 8, 8, 1, 921600>', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'imgInput.data.V' should be updated in process function 'xf::Array2xfMat<8, 0, 720, 1280, 1>', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'imgOutput.data.V' should be updated in process function 'binary_threshold', otherwise it may not be synthesized correctly.
+INFO: [XFORM 203-712] Applying dataflow to function 'xf::Array2xfMat<8, 0, 720, 1280, 1>', detected/extracted 2 process function(s): 
+	 'xf::Array2hlsStrm<8, 720, 1280, 1, 1, 8, 921600>54'
+	 'xf::hlsStrm2xfMat<8, 0, 720, 1280, 1, 1, 8, 8, 1, 921600>'.
+INFO: [XFORM 203-712] Applying dataflow to function 'xf::xfMat2Array<8, 0, 720, 1280, 1>', detected/extracted 2 process function(s): 
+	 'xf::xfMat2hlsStrm<8, 0, 720, 1280, 1, 1, 8, 8, 1, 921600>'
+	 'xf::hlsStrm2Array<8, 720, 1280, 1, 1, 8, 921600>'.
+INFO: [XFORM 203-712] Applying dataflow to function 'Canny_accel', detected/extracted 4 process function(s): 
+	 'Block_Mat.exit45_proc49'
+	 'xf::Array2xfMat<8, 0, 720, 1280, 1>'
+	 'binary_threshold'
+	 'xf::xfMat2Array<8, 0, 720, 1280, 1>'.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 139.297 ; gain = 53.664
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (./xf_canny_accel.cpp:85:16) in function 'binary_threshold'.
+WARNING: [XFORM 203-631] Renaming function 'xf::xfMat2hlsStrm<8, 0, 720, 1280, 1, 1, 8, 8, 1, 921600>' to 'xfMat2hlsStrm' (./include\common/xf_utility.h:660:33)
+WARNING: [XFORM 203-631] Renaming function 'xf::xfMat2Array<8, 0, 720, 1280, 1>' to 'xfMat2Array' (./include\common/xf_utility.h:711:2)
+WARNING: [XFORM 203-631] Renaming function 'xf::hlsStrm2xfMat<8, 0, 720, 1280, 1, 1, 8, 8, 1, 921600>' to 'hlsStrm2xfMat' (./include\common/xf_utility.h:599:33)
+WARNING: [XFORM 203-631] Renaming function 'xf::hlsStrm2Array<8, 720, 1280, 1, 1, 8, 921600>' to 'hlsStrm2Array' (./include\common/xf_utility.h:698:30)
+WARNING: [XFORM 203-631] Renaming function 'xf::Array2xfMat<8, 0, 720, 1280, 1>' to 'Array2xfMat' (./include\common/xf_utility.h:636:2)
+WARNING: [XFORM 203-631] Renaming function 'xf::Array2hlsStrm<8, 720, 1280, 1, 1, 8, 921600>54' to 'Array2hlsStrm54' (./include\common/xf_utility.h:584:30)
+WARNING: [XFORM 203-631] Renaming function 'Block_Mat.exit45_proc49' to 'Block_Mat.exit45_pro' (./xf_canny_accel.cpp:117)
+INFO: [HLS 200-444] Inferring multiple bus burst write of variable length on port 'dstPtr.V' (./include\common/xf_utility.h:706:14). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-444] Inferring multiple bus burst read of variable length on port 'srcPtr.V' (./include\common/xf_utility.h:592:2). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+WARNING: [XFORM 203-631] Renaming function 'Block_Mat.exit45_pro12' to 'Block_Mat.exit45_pro' (./xf_canny_accel.cpp:117)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 213.340 ; gain = 127.707
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'Canny_accel' ...
+WARNING: [SYN 201-103] Legalizing function name 'Block_Mat.exit45_pro' to 'Block_Mat_exit45_pro'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_Mat_exit45_pro' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 9.68 seconds; current allocated memory: 170.869 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.024 seconds; current allocated memory: 171.062 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Array2hlsStrm54' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.207 seconds; current allocated memory: 171.298 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.047 seconds; current allocated memory: 171.753 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'hlsStrm2xfMat' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'L1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.103 seconds; current allocated memory: 171.921 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.036 seconds; current allocated memory: 172.061 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Array2xfMat' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.036 seconds; current allocated memory: 172.109 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.033 seconds; current allocated memory: 172.279 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'binary_threshold' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 5.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.106 seconds; current allocated memory: 172.429 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.038 seconds; current allocated memory: 172.594 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'xfMat2hlsStrm9' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'L1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.178 seconds; current allocated memory: 172.726 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.043 seconds; current allocated memory: 173.134 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'hlsStrm2Array' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 173.245 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.041 seconds; current allocated memory: 173.448 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'xfMat2Array' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.041 seconds; current allocated memory: 173.495 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.043 seconds; current allocated memory: 173.694 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Canny_accel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.05 seconds; current allocated memory: 173.789 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.062 seconds; current allocated memory: 174.105 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Block_Mat_exit45_pro' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_Mat_exit45_pro'.
+INFO: [HLS 200-111]  Elapsed time: 0.071 seconds; current allocated memory: 174.281 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Array2hlsStrm54' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Array2hlsStrm54'.
+INFO: [HLS 200-111]  Elapsed time: 0.082 seconds; current allocated memory: 174.904 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'hlsStrm2xfMat' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'hlsStrm2xfMat'.
+INFO: [HLS 200-111]  Elapsed time: 0.165 seconds; current allocated memory: 175.264 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Array2xfMat' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'start_for_hlsStrm2xfMat_U0' to 'start_for_hlsStrmbkb' due to the length limit 20
+WARNING: [RTGEN 206-101] Setting dangling out port 'Array2xfMat/m_axi_srcPtr_V_AWVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Array2xfMat/m_axi_srcPtr_V_AWADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Array2xfMat/m_axi_srcPtr_V_AWID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Array2xfMat/m_axi_srcPtr_V_AWLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Array2xfMat/m_axi_srcPtr_V_AWSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Array2xfMat/m_axi_srcPtr_V_AWBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Array2xfMat/m_axi_srcPtr_V_AWLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Array2xfMat/m_axi_srcPtr_V_AWCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Array2xfMat/m_axi_srcPtr_V_AWPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Array2xfMat/m_axi_srcPtr_V_AWQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Array2xfMat/m_axi_srcPtr_V_AWREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Array2xfMat/m_axi_srcPtr_V_AWUSER' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Array2xfMat/m_axi_srcPtr_V_WVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Array2xfMat/m_axi_srcPtr_V_WDATA' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Array2xfMat/m_axi_srcPtr_V_WSTRB' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Array2xfMat/m_axi_srcPtr_V_WLAST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Array2xfMat/m_axi_srcPtr_V_WID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Array2xfMat/m_axi_srcPtr_V_WUSER' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Array2xfMat/m_axi_srcPtr_V_BREADY' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Array2xfMat'.
+INFO: [HLS 200-111]  Elapsed time: 0.205 seconds; current allocated memory: 175.927 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'binary_threshold' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'binary_threshold'.
+INFO: [HLS 200-111]  Elapsed time: 0.111 seconds; current allocated memory: 176.353 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'xfMat2hlsStrm9' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'xfMat2hlsStrm9'.
+INFO: [HLS 200-111]  Elapsed time: 0.16 seconds; current allocated memory: 176.791 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'hlsStrm2Array' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'hlsStrm2Array'.
+INFO: [HLS 200-111]  Elapsed time: 0.165 seconds; current allocated memory: 177.278 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'xfMat2Array' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] RTL name 'fifo_w8_d2_A' is changed to 'fifo_w8_d2_A_x' due to conflict.
+WARNING: [RTGEN 206-101] RTL name 'fifo_w32_d2_A' is changed to 'fifo_w32_d2_A_x' due to conflict.
+INFO: [SYN 201-210] Renamed object name 'start_for_hlsStrm2Array_U0' to 'start_for_hlsStrmcud' due to the length limit 20
+WARNING: [RTGEN 206-101] Setting dangling out port 'xfMat2Array/m_axi_dstPtr_V_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'xfMat2Array/m_axi_dstPtr_V_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'xfMat2Array/m_axi_dstPtr_V_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'xfMat2Array/m_axi_dstPtr_V_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'xfMat2Array/m_axi_dstPtr_V_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'xfMat2Array/m_axi_dstPtr_V_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'xfMat2Array/m_axi_dstPtr_V_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'xfMat2Array/m_axi_dstPtr_V_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'xfMat2Array/m_axi_dstPtr_V_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'xfMat2Array/m_axi_dstPtr_V_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'xfMat2Array/m_axi_dstPtr_V_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'xfMat2Array/m_axi_dstPtr_V_ARUSER' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'xfMat2Array/m_axi_dstPtr_V_RREADY' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'xfMat2Array'.
+INFO: [HLS 200-111]  Elapsed time: 0.207 seconds; current allocated memory: 177.959 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Canny_accel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'Canny_accel/gmem0' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Canny_accel/gmem1' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Canny_accel/img_inp_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Canny_accel/img_out_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Canny_accel/rows' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Canny_accel/cols' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Canny_accel/low_threshold' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Canny_accel/high_threshold' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'Canny_accel' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return', 'img_inp_V', 'img_out_V', 'rows', 'cols', 'low_threshold' and 'high_threshold' to AXI-Lite port control.
+INFO: [SYN 201-210] Renamed object name 'Canny_accel_imgInput_data_V' to 'Canny_accel_imgIndEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Canny_accel_imgOutput_data_V' to 'Canny_accel_imgOueOg' due to the length limit 20
+WARNING: [RTGEN 206-101] RTL name 'fifo_w32_d2_A' is changed to 'fifo_w32_d2_A_x_x' due to conflict.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Canny_accel'.
+INFO: [HLS 200-111]  Elapsed time: 0.145 seconds; current allocated memory: 179.617 MB.
+INFO: [RTMG 210-285] Implementing FIFO 'strm_V_V_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'dstMat_rows_c_i_i_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'dstMat_cols_c_i_i_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_hlsStrmbkb_U(start_for_hlsStrmbkb)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'strm_V_V_U(fifo_w8_d2_A_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'srcMat_rows_c_i_i_U(fifo_w32_d2_A_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'srcMat_cols_c_i_i_U(fifo_w32_d2_A_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'dstPtr_V_offset_c_i_U(fifo_w32_d2_A_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_hlsStrmcud_U(start_for_hlsStrmcud)' using Shift Registers.
+INFO: [RTMG 210-278] Implementing memory 'Canny_accel_imgIndEe_memcore_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'Canny_accel_imgOueOg_memcore_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'imgInput_rows_c_U(fifo_w32_d2_A_x_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'imgInput_cols_c_U(fifo_w32_d2_A_x_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'imgOutput_rows_c_U(fifo_w32_d4_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'imgOutput_cols_c_U(fifo_w32_d4_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'low_threshold_c_U(fifo_w32_d3_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'img_inp_V_c_U(fifo_w32_d2_A_x_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'img_out_V_c_U(fifo_w32_d4_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'imgInput_rows_c13_U(fifo_w32_d2_A_x_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'imgInput_cols_c14_U(fifo_w32_d2_A_x_x)' using Shift Registers.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:05 ; elapsed = 00:00:15 . Memory (MB): peak = 239.508 ; gain = 153.875
+INFO: [SYSC 207-301] Generating SystemC RTL for Canny_accel.
+INFO: [VHDL 208-304] Generating VHDL RTL for Canny_accel.
+INFO: [VLOG 209-307] Generating Verilog RTL for Canny_accel.
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+bad lexical cast: source type value could not be interpreted as target
+    while executing
+"rdi::set_property core_revision 2512300000 {component component_1}"
+    invoked from within
+"set_property core_revision $Revision $core"
+    (file "run_ippack.tcl" line 1352)
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 30 00:00:45 2025...
+ERROR: [IMPL 213-28] Failed to generate IP.
+command 'ap_source' returned error code
+    while executing
+"source [lindex $::argv 1] "
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel \#0 { source [lindex $::argv 1] } "
+
+INFO: [HLS 200-112] Total elapsed time: 21.776 seconds; peak allocated memory: 179.617 MB.
+INFO: [Common 17-206] Exiting vivado_hls at Tue Dec 30 00:00:45 2025...

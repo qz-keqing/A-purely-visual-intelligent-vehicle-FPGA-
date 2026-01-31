@@ -1,0 +1,585 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Dec 26 23:13:49 2025
+# Process ID: 24720
+# Current directory: D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_a0_demosaic_0_synth_1
+# Command line: vivado.exe -log design_1_a0_demosaic_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_a0_demosaic_0.tcl
+# Log file: D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_a0_demosaic_0_synth_1/design_1_a0_demosaic_0.vds
+# Journal file: D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_a0_demosaic_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_a0_demosaic_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/robotCourse/hw_design/arch/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2018.3/data/ip'.
+Converted RTL already exists. Skipping compile_c
+Command: synth_design -top design_1_a0_demosaic_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 35044 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 479.227 ; gain = 104.910
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_a0_demosaic_0' [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/synth/design_1_a0_demosaic_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'design_1_a0_demosaic_0_v_demosaic_CTRL_s_axi' [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_v_demosaic_CTRL_s_axi.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_v_demosaic_CTRL_s_axi.v:213]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_a0_demosaic_0_v_demosaic_CTRL_s_axi' (1#1) [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_v_demosaic_CTRL_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'design_1_a0_demosaic_0_AXIvideo2MultiBayer2' [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_AXIvideo2MultiBayer2.v:10]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_AXIvideo2MultiBayer2.v:89]
+INFO: [Synth 8-6157] synthesizing module 'design_1_a0_demosaic_0_reg_unsigned_short_s' [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_reg_unsigned_short_s.v:10]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_reg_unsigned_short_s.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_a0_demosaic_0_reg_unsigned_short_s' (2#1) [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_reg_unsigned_short_s.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_a0_demosaic_0_AXIvideo2MultiBayer2' (3#1) [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_AXIvideo2MultiBayer2.v:10]
+INFO: [Synth 8-6157] synthesizing module 'design_1_a0_demosaic_0_DebayerG_DIV1_TABLE' [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_DebayerG_DIV1_TABLE.v:115]
+INFO: [Synth 8-6157] synthesizing module 'design_1_a0_demosaic_0_DebayerG_DIV1_TABLE_rom' [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_DebayerG_DIV1_TABLE.v:9]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_DebayerG_DIV1_TABLE.v:30]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_DebayerG_DIV1_TABLE.v:31]
+INFO: [Synth 8-3876] $readmem data file './design_1_a0_demosaic_0_DebayerG_DIV1_TABLE_rom.dat' is read successfully [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_DebayerG_DIV1_TABLE.v:42]
+INFO: [Synth 8-3876] $readmem data file './design_1_a0_demosaic_0_DebayerG_DIV1_TABLE_rom.dat' is read successfully [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_DebayerG_DIV1_TABLE.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_a0_demosaic_0_DebayerG_DIV1_TABLE_rom' (4#1) [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_DebayerG_DIV1_TABLE.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_a0_demosaic_0_DebayerG_DIV1_TABLE' (5#1) [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_DebayerG_DIV1_TABLE.v:115]
+INFO: [Synth 8-6157] synthesizing module 'design_1_a0_demosaic_0_DebayerG_DIV2_TABLE' [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_DebayerG_DIV2_TABLE.v:53]
+INFO: [Synth 8-6157] synthesizing module 'design_1_a0_demosaic_0_DebayerG_DIV2_TABLE_rom' [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_DebayerG_DIV2_TABLE.v:9]
+INFO: [Synth 8-3876] $readmem data file './design_1_a0_demosaic_0_DebayerG_DIV2_TABLE_rom.dat' is read successfully [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_DebayerG_DIV2_TABLE.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_a0_demosaic_0_DebayerG_DIV2_TABLE_rom' (6#1) [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_DebayerG_DIV2_TABLE.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_a0_demosaic_0_DebayerG_DIV2_TABLE' (7#1) [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_DebayerG_DIV2_TABLE.v:53]
+INFO: [Synth 8-6157] synthesizing module 'design_1_a0_demosaic_0_DebayerG_linebuf_bkb' [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_DebayerG_linebuf_bkb.v:53]
+INFO: [Synth 8-6157] synthesizing module 'design_1_a0_demosaic_0_DebayerG_linebuf_bkb_ram' [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_DebayerG_linebuf_bkb.v:9]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_DebayerG_linebuf_bkb.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_a0_demosaic_0_DebayerG_linebuf_bkb_ram' (8#1) [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_DebayerG_linebuf_bkb.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_a0_demosaic_0_DebayerG_linebuf_bkb' (9#1) [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_DebayerG_linebuf_bkb.v:53]
+INFO: [Synth 8-6157] synthesizing module 'design_1_a0_demosaic_0_v_demosaic_mux_53fYi' [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_v_demosaic_mux_53fYi.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_a0_demosaic_0_v_demosaic_mux_53fYi' (10#1) [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_v_demosaic_mux_53fYi.v:11]
+INFO: [Synth 8-6157] synthesizing module 'design_1_a0_demosaic_0_v_demosaic_mul_mug8j' [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_v_demosaic_mul_mug8j.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_a0_demosaic_0_v_demosaic_mul_mug8j_DSP48_0' [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_v_demosaic_mul_mug8j.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_a0_demosaic_0_v_demosaic_mul_mug8j_DSP48_0' (11#1) [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_v_demosaic_mul_mug8j.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_a0_demosaic_0_v_demosaic_mul_mug8j' (12#1) [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_v_demosaic_mul_mug8j.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_a0_demosaic_0_v_demosaic_mul_muhbi' [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_v_demosaic_mul_muhbi.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_a0_demosaic_0_v_demosaic_mul_muhbi_DSP48_1' [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_v_demosaic_mul_muhbi.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_a0_demosaic_0_v_demosaic_mul_muhbi_DSP48_1' (13#1) [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_v_demosaic_mul_muhbi.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_a0_demosaic_0_v_demosaic_mul_muhbi' (14#1) [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_v_demosaic_mul_muhbi.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_a0_demosaic_0_v_demosaic_mul_muibs' [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_v_demosaic_mul_muibs.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_a0_demosaic_0_v_demosaic_mul_muibs_DSP48_2' [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_v_demosaic_mul_muibs.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_a0_demosaic_0_v_demosaic_mul_muibs_DSP48_2' (15#1) [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_v_demosaic_mul_muibs.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_a0_demosaic_0_v_demosaic_mul_muibs' (16#1) [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_v_demosaic_mul_muibs.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_a0_demosaic_0_v_demosaic_mac_mujbC' [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_v_demosaic_mac_mujbC.v:33]
+INFO: [Synth 8-6157] synthesizing module 'design_1_a0_demosaic_0_v_demosaic_mac_mujbC_DSP48_3' [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_v_demosaic_mac_mujbC.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_a0_demosaic_0_v_demosaic_mac_mujbC_DSP48_3' (17#1) [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_v_demosaic_mac_mujbC.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_a0_demosaic_0_v_demosaic_mac_mujbC' (18#1) [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_v_demosaic_mac_mujbC.v:33]
+INFO: [Synth 8-6157] synthesizing module 'design_1_a0_demosaic_0_DebayerRatBorBatRkbM' [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_DebayerRatBorBatRkbM.v:53]
+INFO: [Synth 8-6157] synthesizing module 'design_1_a0_demosaic_0_DebayerRatBorBatRkbM_ram' [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_DebayerRatBorBatRkbM.v:9]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_DebayerRatBorBatRkbM.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_a0_demosaic_0_DebayerRatBorBatRkbM_ram' (20#1) [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_DebayerRatBorBatRkbM.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_a0_demosaic_0_DebayerRatBorBatRkbM' (21#1) [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_DebayerRatBorBatRkbM.v:53]
+INFO: [Synth 8-6157] synthesizing module 'design_1_a0_demosaic_0_v_demosaic_mux_32mb6' [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_v_demosaic_mux_32mb6.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_a0_demosaic_0_v_demosaic_mux_32mb6' (22#1) [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_v_demosaic_mux_32mb6.v:11]
+INFO: [Synth 8-6157] synthesizing module 'design_1_a0_demosaic_0_fifo_w8_d2_A' [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_fifo_w8_d2_A.v:45]
+INFO: [Synth 8-6157] synthesizing module 'design_1_a0_demosaic_0_fifo_w8_d2_A_shiftReg' [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_fifo_w8_d2_A.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_a0_demosaic_0_fifo_w8_d2_A_shiftReg' (25#1) [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_fifo_w8_d2_A.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_a0_demosaic_0_fifo_w8_d2_A' (26#1) [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_fifo_w8_d2_A.v:45]
+INFO: [Synth 8-6157] synthesizing module 'design_1_a0_demosaic_0_fifo_w16_d2_A' [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_fifo_w16_d2_A.v:45]
+INFO: [Synth 8-6157] synthesizing module 'design_1_a0_demosaic_0_fifo_w16_d2_A_shiftReg' [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_fifo_w16_d2_A.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_a0_demosaic_0_fifo_w16_d2_A_shiftReg' (27#1) [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_fifo_w16_d2_A.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_a0_demosaic_0_fifo_w16_d2_A' (28#1) [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_fifo_w16_d2_A.v:45]
+INFO: [Synth 8-6157] synthesizing module 'design_1_a0_demosaic_0_MultiPixStream2AXIvi' [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_MultiPixStream2AXIvi.v:10]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_MultiPixStream2AXIvi.v:78]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_dest_V_1_sel_rd_reg was removed.  [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_MultiPixStream2AXIvi.v:262]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_id_V_1_sel_rd_reg was removed.  [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_MultiPixStream2AXIvi.v:288]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_keep_V_1_sel_rd_reg was removed.  [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_MultiPixStream2AXIvi.v:314]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_strb_V_1_sel_rd_reg was removed.  [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_MultiPixStream2AXIvi.v:376]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_a0_demosaic_0_MultiPixStream2AXIvi' (31#1) [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_MultiPixStream2AXIvi.v:10]
+INFO: [Synth 8-6157] synthesizing module 'design_1_a0_demosaic_0_fifo_w8_d2_A_x' [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_fifo_w8_d2_A_x.v:45]
+INFO: [Synth 8-6157] synthesizing module 'design_1_a0_demosaic_0_fifo_w8_d2_A_x_shiftReg' [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_fifo_w8_d2_A_x.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_a0_demosaic_0_fifo_w8_d2_A_x_shiftReg' (32#1) [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_fifo_w8_d2_A_x.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_a0_demosaic_0_fifo_w8_d2_A_x' (33#1) [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_fifo_w8_d2_A_x.v:45]
+INFO: [Synth 8-6157] synthesizing module 'design_1_a0_demosaic_0_fifo_w16_d2_A_x' [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_fifo_w16_d2_A_x.v:45]
+INFO: [Synth 8-6157] synthesizing module 'design_1_a0_demosaic_0_fifo_w16_d2_A_x_shiftReg' [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_fifo_w16_d2_A_x.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_a0_demosaic_0_fifo_w16_d2_A_x_shiftReg' (34#1) [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_fifo_w16_d2_A_x.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_a0_demosaic_0_fifo_w16_d2_A_x' (35#1) [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_fifo_w16_d2_A_x.v:45]
+INFO: [Synth 8-6157] synthesizing module 'design_1_a0_demosaic_0_start_for_DebayerpcA' [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_start_for_DebayerpcA.v:45]
+INFO: [Synth 8-6157] synthesizing module 'design_1_a0_demosaic_0_start_for_DebayerpcA_shiftReg' [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_start_for_DebayerpcA.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_a0_demosaic_0_start_for_DebayerpcA_shiftReg' (36#1) [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_start_for_DebayerpcA.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_a0_demosaic_0_start_for_DebayerpcA' (37#1) [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_start_for_DebayerpcA.v:45]
+INFO: [Synth 8-6157] synthesizing module 'design_1_a0_demosaic_0_start_for_ZipperRqcK' [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_start_for_ZipperRqcK.v:45]
+INFO: [Synth 8-6157] synthesizing module 'design_1_a0_demosaic_0_start_for_ZipperRqcK_shiftReg' [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_start_for_ZipperRqcK.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_a0_demosaic_0_start_for_ZipperRqcK_shiftReg' (38#1) [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_start_for_ZipperRqcK.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_a0_demosaic_0_start_for_ZipperRqcK' (39#1) [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_start_for_ZipperRqcK.v:45]
+INFO: [Synth 8-6157] synthesizing module 'design_1_a0_demosaic_0_start_for_MultiPircU' [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_start_for_MultiPircU.v:45]
+INFO: [Synth 8-6157] synthesizing module 'design_1_a0_demosaic_0_start_for_MultiPircU_shiftReg' [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_start_for_MultiPircU.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_a0_demosaic_0_start_for_MultiPircU_shiftReg' (40#1) [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_start_for_MultiPircU.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_a0_demosaic_0_start_for_MultiPircU' (41#1) [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/hdl/verilog/design_1_a0_demosaic_0_start_for_MultiPircU.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_a0_demosaic_0' (43#1) [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/synth/design_1_a0_demosaic_0.v:57]
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_DebayerRatBorBatRkbM has unconnected port reset
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_DebayerG_linebuf_bkb has unconnected port reset
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_DebayerG_DIV2_TABLE has unconnected port reset
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_DebayerG_DIV1_TABLE has unconnected port reset
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_Debayer has unconnected port height_ap_vld
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_Debayer has unconnected port width_ap_vld
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_AXIvideo2MultiBayer2 has unconnected port s_axis_video_TKEEP[0]
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_AXIvideo2MultiBayer2 has unconnected port s_axis_video_TSTRB[0]
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_AXIvideo2MultiBayer2 has unconnected port s_axis_video_TID[0]
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_AXIvideo2MultiBayer2 has unconnected port s_axis_video_TDEST[0]
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_v_demosaic_CTRL_s_axi has unconnected port WDATA[31]
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_v_demosaic_CTRL_s_axi has unconnected port WDATA[30]
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_v_demosaic_CTRL_s_axi has unconnected port WDATA[29]
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_v_demosaic_CTRL_s_axi has unconnected port WDATA[28]
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_v_demosaic_CTRL_s_axi has unconnected port WDATA[27]
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_v_demosaic_CTRL_s_axi has unconnected port WDATA[26]
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_v_demosaic_CTRL_s_axi has unconnected port WDATA[25]
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_v_demosaic_CTRL_s_axi has unconnected port WDATA[24]
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_v_demosaic_CTRL_s_axi has unconnected port WDATA[23]
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_v_demosaic_CTRL_s_axi has unconnected port WDATA[22]
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_v_demosaic_CTRL_s_axi has unconnected port WDATA[21]
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_v_demosaic_CTRL_s_axi has unconnected port WDATA[20]
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_v_demosaic_CTRL_s_axi has unconnected port WDATA[19]
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_v_demosaic_CTRL_s_axi has unconnected port WDATA[18]
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_v_demosaic_CTRL_s_axi has unconnected port WDATA[17]
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_v_demosaic_CTRL_s_axi has unconnected port WDATA[16]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 577.480 ; gain = 203.164
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 577.480 ; gain = 203.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 577.480 ; gain = 203.164
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/design_1_a0_demosaic_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/design_1_a0_demosaic_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_a0_demosaic_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_a0_demosaic_0_synth_1/dont_touch.xdc]
+Parsing XDC File [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/design_1_a0_demosaic_0.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/ip/design_1_a0_demosaic_0/design_1_a0_demosaic_0.xdc] for cell 'inst'
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 943.434 ; gain = 0.031
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 945.219 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.099 . Memory (MB): peak = 946.578 ; gain = 3.145
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 946.578 ; gain = 572.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 946.578 ; gain = 572.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_a0_demosaic_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 946.578 ; gain = 572.262
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'design_1_a0_demosaic_0_v_demosaic_CTRL_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'design_1_a0_demosaic_0_v_demosaic_CTRL_s_axi'
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5547] Trying to map ROM "ram0" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "ram0" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "ram1" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "ram1" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "tmp_105_i_i_fu_878_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5544] ROM "icmp_fu_1975_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "icmp1_fu_2032_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "tmp_22_i_fu_927_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "tmp_57_i_fu_643_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "tmp_1_fu_312_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'design_1_a0_demosaic_0_v_demosaic_CTRL_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'design_1_a0_demosaic_0_v_demosaic_CTRL_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 946.578 ; gain = 572.262
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "tmp_105_i_i_fu_878_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_22_i_fu_927_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_57_i_fu_643_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ZipperRemoval_U0/tmp_1_fu_312_p2" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_Debayer has unconnected port height_ap_vld
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_Debayer has unconnected port width_ap_vld
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_v_demosaic has unconnected port s_axi_CTRL_WDATA[31]
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_v_demosaic has unconnected port s_axi_CTRL_WDATA[30]
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_v_demosaic has unconnected port s_axi_CTRL_WDATA[29]
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_v_demosaic has unconnected port s_axi_CTRL_WDATA[28]
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_v_demosaic has unconnected port s_axi_CTRL_WDATA[27]
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_v_demosaic has unconnected port s_axi_CTRL_WDATA[26]
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_v_demosaic has unconnected port s_axi_CTRL_WDATA[25]
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_v_demosaic has unconnected port s_axi_CTRL_WDATA[24]
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_v_demosaic has unconnected port s_axi_CTRL_WDATA[23]
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_v_demosaic has unconnected port s_axi_CTRL_WDATA[22]
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_v_demosaic has unconnected port s_axi_CTRL_WDATA[21]
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_v_demosaic has unconnected port s_axi_CTRL_WDATA[20]
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_v_demosaic has unconnected port s_axi_CTRL_WDATA[19]
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_v_demosaic has unconnected port s_axi_CTRL_WDATA[18]
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_v_demosaic has unconnected port s_axi_CTRL_WDATA[17]
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_v_demosaic has unconnected port s_axi_CTRL_WDATA[16]
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_v_demosaic has unconnected port s_axi_CTRL_WSTRB[3]
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_v_demosaic has unconnected port s_axi_CTRL_WSTRB[2]
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_v_demosaic has unconnected port s_axis_video_TKEEP[0]
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_v_demosaic has unconnected port s_axis_video_TSTRB[0]
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_v_demosaic has unconnected port s_axis_video_TID[0]
+WARNING: [Synth 8-3331] design design_1_a0_demosaic_0_v_demosaic has unconnected port s_axis_video_TDEST[0]
+INFO: [Synth 8-3886] merging instance 'inst/Debayer_U0/DebayerG_U0/y_phase_reg_3781_reg[0]' (FDE) to 'inst/Debayer_U0/DebayerG_U0/y_phase_2_reg_3786_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Debayer_U0/DebayerG_U0/y_phase_reg_3781_reg[1]' (FDE) to 'inst/Debayer_U0/DebayerG_U0/y_phase_2_reg_3786_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/Debayer_U0/DebayerG_U0/y_phase_reg_3781_reg[2]' (FDE) to 'inst/Debayer_U0/DebayerG_U0/y_phase_2_reg_3786_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/Debayer_U0/DebayerG_U0/y_phase_reg_3781_reg[3]' (FDE) to 'inst/Debayer_U0/DebayerG_U0/y_phase_2_reg_3786_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/Debayer_U0/DebayerG_U0/y_phase_reg_3781_reg[4]' (FDE) to 'inst/Debayer_U0/DebayerG_U0/y_phase_2_reg_3786_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/Debayer_U0/DebayerG_U0/y_phase_reg_3781_reg[5]' (FDE) to 'inst/Debayer_U0/DebayerG_U0/y_phase_2_reg_3786_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/Debayer_U0/DebayerG_U0/y_phase_reg_3781_reg[6]' (FDE) to 'inst/Debayer_U0/DebayerG_U0/y_phase_2_reg_3786_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/Debayer_U0/DebayerG_U0/y_phase_reg_3781_reg[7]' (FDE) to 'inst/Debayer_U0/DebayerG_U0/y_phase_2_reg_3786_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/Debayer_U0/DebayerG_U0/y_phase_reg_3781_reg[8]' (FDE) to 'inst/Debayer_U0/DebayerG_U0/y_phase_2_reg_3786_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/Debayer_U0/DebayerG_U0/y_phase_reg_3781_reg[9]' (FDE) to 'inst/Debayer_U0/DebayerG_U0/y_phase_2_reg_3786_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/Debayer_U0/DebayerG_U0/y_phase_reg_3781_reg[10]' (FDE) to 'inst/Debayer_U0/DebayerG_U0/y_phase_2_reg_3786_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/Debayer_U0/DebayerG_U0/y_phase_reg_3781_reg[11]' (FDE) to 'inst/Debayer_U0/DebayerG_U0/y_phase_2_reg_3786_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/Debayer_U0/DebayerG_U0/y_phase_reg_3781_reg[12]' (FDE) to 'inst/Debayer_U0/DebayerG_U0/y_phase_2_reg_3786_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/Debayer_U0/DebayerG_U0/y_phase_reg_3781_reg[13]' (FDE) to 'inst/Debayer_U0/DebayerG_U0/y_phase_2_reg_3786_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/Debayer_U0/DebayerG_U0/y_phase_reg_3781_reg[14]' (FDE) to 'inst/Debayer_U0/DebayerG_U0/y_phase_2_reg_3786_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/Debayer_U0/DebayerRatBorBatR_U0/y_phase_reg_2220_reg[0]' (FDE) to 'inst/Debayer_U0/DebayerRatBorBatR_U0/y_phase_1_reg_2225_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Debayer_U0/DebayerRatBorBatR_U0/y_phase_reg_2220_reg[1]' (FDE) to 'inst/Debayer_U0/DebayerRatBorBatR_U0/y_phase_1_reg_2225_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/Debayer_U0/DebayerRatBorBatR_U0/y_phase_reg_2220_reg[2]' (FDE) to 'inst/Debayer_U0/DebayerRatBorBatR_U0/y_phase_1_reg_2225_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/Debayer_U0/DebayerRatBorBatR_U0/y_phase_reg_2220_reg[3]' (FDE) to 'inst/Debayer_U0/DebayerRatBorBatR_U0/y_phase_1_reg_2225_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/Debayer_U0/DebayerRatBorBatR_U0/y_phase_reg_2220_reg[4]' (FDE) to 'inst/Debayer_U0/DebayerRatBorBatR_U0/y_phase_1_reg_2225_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/Debayer_U0/DebayerRatBorBatR_U0/y_phase_reg_2220_reg[5]' (FDE) to 'inst/Debayer_U0/DebayerRatBorBatR_U0/y_phase_1_reg_2225_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/Debayer_U0/DebayerRatBorBatR_U0/y_phase_reg_2220_reg[6]' (FDE) to 'inst/Debayer_U0/DebayerRatBorBatR_U0/y_phase_1_reg_2225_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/Debayer_U0/DebayerRatBorBatR_U0/y_phase_reg_2220_reg[7]' (FDE) to 'inst/Debayer_U0/DebayerRatBorBatR_U0/y_phase_1_reg_2225_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/Debayer_U0/DebayerRatBorBatR_U0/y_phase_reg_2220_reg[8]' (FDE) to 'inst/Debayer_U0/DebayerRatBorBatR_U0/y_phase_1_reg_2225_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/Debayer_U0/DebayerRatBorBatR_U0/y_phase_reg_2220_reg[9]' (FDE) to 'inst/Debayer_U0/DebayerRatBorBatR_U0/y_phase_1_reg_2225_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/Debayer_U0/DebayerRatBorBatR_U0/y_phase_reg_2220_reg[10]' (FDE) to 'inst/Debayer_U0/DebayerRatBorBatR_U0/y_phase_1_reg_2225_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/Debayer_U0/DebayerRatBorBatR_U0/y_phase_reg_2220_reg[11]' (FDE) to 'inst/Debayer_U0/DebayerRatBorBatR_U0/y_phase_1_reg_2225_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/Debayer_U0/DebayerRatBorBatR_U0/y_phase_reg_2220_reg[12]' (FDE) to 'inst/Debayer_U0/DebayerRatBorBatR_U0/y_phase_1_reg_2225_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/Debayer_U0/DebayerRatBorBatR_U0/y_phase_reg_2220_reg[13]' (FDE) to 'inst/Debayer_U0/DebayerRatBorBatR_U0/y_phase_1_reg_2225_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/Debayer_U0/DebayerRatBorBatR_U0/y_phase_reg_2220_reg[14]' (FDE) to 'inst/Debayer_U0/DebayerRatBorBatR_U0/y_phase_1_reg_2225_reg[14]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Debayer_U0/DebayerRandBatG_U0/\tmp_53_cast_i_reg_2057_reg[15] )
+INFO: [Synth 8-3886] merging instance 'inst/Debayer_U0/DebayerRandBatG_U0/tmp_33_reg_2219_reg[0]' (FDE) to 'inst/Debayer_U0/DebayerRandBatG_U0/neg6_i_reg_2224_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Debayer_U0/DebayerRandBatG_U0/tmp_32_reg_2204_reg[0]' (FDE) to 'inst/Debayer_U0/DebayerRandBatG_U0/neg5_i_reg_2209_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Debayer_U0/DebayerRandBatG_U0/tmp_30_reg_2174_reg[0]' (FDE) to 'inst/Debayer_U0/DebayerRandBatG_U0/neg_i_reg_2179_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Debayer_U0/DebayerRandBatG_U0/tmp_31_reg_2189_reg[0]' (FDE) to 'inst/Debayer_U0/DebayerRandBatG_U0/neg4_i_reg_2194_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Debayer_U0/DebayerRandBatG_U0/tmp_42_reg_2306_reg[0]' (FDE) to 'inst/Debayer_U0/DebayerRandBatG_U0/tmp_43_reg_2312_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Debayer_U0/DebayerRatBorBatR_U0/\y_phase_1_reg_2225_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Debayer_U0/DebayerG_U0/\y_phase_2_reg_3786_reg[15] )
+INFO: [Synth 8-3886] merging instance 'inst/Debayer_U0/DebayerG_U0/tmp_518_cast_i_i_reg_4263_reg[0]' (FDE) to 'inst/Debayer_U0/DebayerG_U0/bayerWindow_val_V_2_5_reg_644_pp0_iter13_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Debayer_U0/DebayerG_U0/tmp_518_cast_i_i_reg_4263_reg[1]' (FDE) to 'inst/Debayer_U0/DebayerG_U0/bayerWindow_val_V_2_5_reg_644_pp0_iter13_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/Debayer_U0/DebayerG_U0/tmp_518_cast_i_i_reg_4263_reg[2]' (FDE) to 'inst/Debayer_U0/DebayerG_U0/bayerWindow_val_V_2_5_reg_644_pp0_iter13_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/Debayer_U0/DebayerG_U0/tmp_518_cast_i_i_reg_4263_reg[3]' (FDE) to 'inst/Debayer_U0/DebayerG_U0/bayerWindow_val_V_2_5_reg_644_pp0_iter13_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/Debayer_U0/DebayerG_U0/tmp_518_cast_i_i_reg_4263_reg[4]' (FDE) to 'inst/Debayer_U0/DebayerG_U0/bayerWindow_val_V_2_5_reg_644_pp0_iter13_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/Debayer_U0/DebayerG_U0/tmp_518_cast_i_i_reg_4263_reg[5]' (FDE) to 'inst/Debayer_U0/DebayerG_U0/bayerWindow_val_V_2_5_reg_644_pp0_iter13_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/Debayer_U0/DebayerG_U0/tmp_518_cast_i_i_reg_4263_reg[6]' (FDE) to 'inst/Debayer_U0/DebayerG_U0/bayerWindow_val_V_2_5_reg_644_pp0_iter13_reg_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Debayer_U0/DebayerG_U0/\tmp_518_cast_i_i_reg_4263_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Debayer_U0/DebayerG_U0/\tmp_518_cast_i_i_reg_4263_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Debayer_U0/DebayerG_U0/\tmp_518_cast_i_i_reg_4263_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Debayer_U0/DebayerG_U0/\tmp_518_cast_i_i_reg_4263_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Debayer_U0/DebayerG_U0/\tmp_518_cast_i_i_reg_4263_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Debayer_U0/DebayerG_U0/\tmp_518_cast_i_i_reg_4263_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Debayer_U0/DebayerG_U0/\tmp_518_cast_i_i_reg_4263_reg[14] )
+INFO: [Synth 8-3886] merging instance 'inst/Debayer_U0/DebayerG_U0/tmp_518_cast_i_i_reg_4263_reg[7]' (FDE) to 'inst/Debayer_U0/DebayerG_U0/bayerWindow_val_V_2_5_reg_644_pp0_iter13_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/ZipperRemoval_U0/luma_1_V_fu_166_reg[5]' (FD) to 'inst/ZipperRemoval_U0/luma_1_V_fu_166_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/ZipperRemoval_U0/luma_1_V_fu_166_reg[6]' (FD) to 'inst/ZipperRemoval_U0/luma_1_V_fu_166_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\ZipperRemoval_U0/luma_1_V_fu_166_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\ZipperRemoval_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\AXIvideo2MultiBayer2_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Debayer_U0/DebayerRatBorBatR_U0/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Debayer_U0/DebayerG_U0/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Debayer_U0/DebayerRandBatG_U0/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\MultiPixStream2AXIvi_U0/ap_done_reg_reg )
+INFO: [Synth 8-3886] merging instance 'inst/v_demosaic_CTRL_s_axi_U/rdata_reg[16]' (FDE) to 'inst/v_demosaic_CTRL_s_axi_U/rdata_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/v_demosaic_CTRL_s_axi_U/rdata_reg[17]' (FDE) to 'inst/v_demosaic_CTRL_s_axi_U/rdata_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/v_demosaic_CTRL_s_axi_U/rdata_reg[18]' (FDE) to 'inst/v_demosaic_CTRL_s_axi_U/rdata_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/v_demosaic_CTRL_s_axi_U/rdata_reg[19]' (FDE) to 'inst/v_demosaic_CTRL_s_axi_U/rdata_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/v_demosaic_CTRL_s_axi_U/rdata_reg[20]' (FDE) to 'inst/v_demosaic_CTRL_s_axi_U/rdata_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/v_demosaic_CTRL_s_axi_U/rdata_reg[21]' (FDE) to 'inst/v_demosaic_CTRL_s_axi_U/rdata_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/v_demosaic_CTRL_s_axi_U/rdata_reg[22]' (FDE) to 'inst/v_demosaic_CTRL_s_axi_U/rdata_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/v_demosaic_CTRL_s_axi_U/rdata_reg[23]' (FDE) to 'inst/v_demosaic_CTRL_s_axi_U/rdata_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/v_demosaic_CTRL_s_axi_U/rdata_reg[24]' (FDE) to 'inst/v_demosaic_CTRL_s_axi_U/rdata_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/v_demosaic_CTRL_s_axi_U/rdata_reg[25]' (FDE) to 'inst/v_demosaic_CTRL_s_axi_U/rdata_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/v_demosaic_CTRL_s_axi_U/rdata_reg[26]' (FDE) to 'inst/v_demosaic_CTRL_s_axi_U/rdata_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/v_demosaic_CTRL_s_axi_U/rdata_reg[27]' (FDE) to 'inst/v_demosaic_CTRL_s_axi_U/rdata_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/v_demosaic_CTRL_s_axi_U/rdata_reg[28]' (FDE) to 'inst/v_demosaic_CTRL_s_axi_U/rdata_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/v_demosaic_CTRL_s_axi_U/rdata_reg[29]' (FDE) to 'inst/v_demosaic_CTRL_s_axi_U/rdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/v_demosaic_CTRL_s_axi_U/rdata_reg[30]' (FDE) to 'inst/v_demosaic_CTRL_s_axi_U/rdata_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\v_demosaic_CTRL_s_axi_U/rdata_reg[31] )
+WARNING: [Synth 8-3332] Sequential element (v_demosaic_CTRL_s_axi_U/FSM_onehot_wstate_reg[0]) is unused and will be removed from module design_1_a0_demosaic_0_v_demosaic.
+WARNING: [Synth 8-3332] Sequential element (v_demosaic_CTRL_s_axi_U/FSM_onehot_rstate_reg[0]) is unused and will be removed from module design_1_a0_demosaic_0_v_demosaic.
+INFO: [Synth 8-3886] merging instance 'inst/Debayer_U0/DebayerRatBorBatR_U0/ap_phi_reg_pp0_iter5_b2_i_reg_780_reg[8]' (FDRE) to 'inst/Debayer_U0/DebayerRatBorBatR_U0/ap_phi_reg_pp0_iter5_r2_i_reg_771_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/Debayer_U0/DebayerRatBorBatR_U0/ap_phi_reg_pp0_iter5_b2_i_reg_780_reg[9]' (FDRE) to 'inst/Debayer_U0/DebayerRatBorBatR_U0/ap_phi_reg_pp0_iter5_r2_i_reg_771_reg[9]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 946.578 ; gain = 572.262
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance inst/Debayer_U0/DebayerG_U0/i_0/DIV1_TABLE_U/design_1_a0_demosaic_0_DebayerG_DIV1_TABLE_rom_U/q0_t0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Debayer_U0/DebayerG_U0/i_1/DIV1_TABLE_U/design_1_a0_demosaic_0_DebayerG_DIV1_TABLE_rom_U/q1_t0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Debayer_U0/DebayerG_U0/i_2/DIV1_TABLE_U/design_1_a0_demosaic_0_DebayerG_DIV1_TABLE_rom_U/q2_t0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Debayer_U0/DebayerG_U0/i_4/DIV1_TABLE_U/design_1_a0_demosaic_0_DebayerG_DIV1_TABLE_rom_U/q3_t0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Debayer_U0/DebayerG_U0/i_5/linebuf_yuv_val_0_V_U/design_1_a0_demosaic_0_DebayerG_linebuf_bkb_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Debayer_U0/DebayerG_U0/i_124/DIV2_TABLE_U/design_1_a0_demosaic_0_DebayerG_DIV2_TABLE_rom_U/q0_t0_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Debayer_U0/DebayerG_U0/i_124/DIV2_TABLE_U/design_1_a0_demosaic_0_DebayerG_DIV2_TABLE_rom_U/q0_t0_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Debayer_U0/DebayerRatBorBatR_U0/i_0/lineBuffer_val_0_V_U/design_1_a0_demosaic_0_DebayerRatBorBatRkbM_ram_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Debayer_U0/DebayerRatBorBatR_U0/i_0/lineBuffer_val_0_V_U/design_1_a0_demosaic_0_DebayerRatBorBatRkbM_ram_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Debayer_U0/DebayerRatBorBatR_U0/i_0/lineBuffer_val_0_V_U/design_1_a0_demosaic_0_DebayerRatBorBatRkbM_ram_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Debayer_U0/DebayerRatBorBatR_U0/i_2/lineBuffer_val_1_V_U/design_1_a0_demosaic_0_DebayerRatBorBatRkbM_ram_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Debayer_U0/DebayerRatBorBatR_U0/i_2/lineBuffer_val_1_V_U/design_1_a0_demosaic_0_DebayerRatBorBatRkbM_ram_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Debayer_U0/DebayerRatBorBatR_U0/i_2/lineBuffer_val_1_V_U/design_1_a0_demosaic_0_DebayerRatBorBatRkbM_ram_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Debayer_U0/DebayerRandBatG_U0/i_0/lineBuffer_val_0_V_U/design_1_a0_demosaic_0_DebayerRatBorBatRkbM_ram_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Debayer_U0/DebayerRandBatG_U0/i_0/lineBuffer_val_0_V_U/design_1_a0_demosaic_0_DebayerRatBorBatRkbM_ram_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Debayer_U0/DebayerRandBatG_U0/i_0/lineBuffer_val_0_V_U/design_1_a0_demosaic_0_DebayerRatBorBatRkbM_ram_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Debayer_U0/DebayerRandBatG_U0/i_1/lineBuffer_val_1_V_U/design_1_a0_demosaic_0_DebayerRatBorBatRkbM_ram_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Debayer_U0/DebayerRandBatG_U0/i_1/lineBuffer_val_1_V_U/design_1_a0_demosaic_0_DebayerRatBorBatRkbM_ram_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Debayer_U0/DebayerRandBatG_U0/i_1/lineBuffer_val_1_V_U/design_1_a0_demosaic_0_DebayerRatBorBatRkbM_ram_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 991.824 ; gain = 617.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 1044.043 ; gain = 669.727
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance inst/Debayer_U0/DebayerG_U0/linebuf_yuv_val_0_V_U/design_1_a0_demosaic_0_DebayerG_linebuf_bkb_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Debayer_U0/DebayerG_U0/DIV2_TABLE_U/design_1_a0_demosaic_0_DebayerG_DIV2_TABLE_rom_U/q0_t0_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Debayer_U0/DebayerG_U0/DIV2_TABLE_U/design_1_a0_demosaic_0_DebayerG_DIV2_TABLE_rom_U/q0_t0_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Debayer_U0/DebayerRatBorBatR_U0/lineBuffer_val_0_V_U/design_1_a0_demosaic_0_DebayerRatBorBatRkbM_ram_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Debayer_U0/DebayerRatBorBatR_U0/lineBuffer_val_0_V_U/design_1_a0_demosaic_0_DebayerRatBorBatRkbM_ram_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Debayer_U0/DebayerRatBorBatR_U0/lineBuffer_val_0_V_U/design_1_a0_demosaic_0_DebayerRatBorBatRkbM_ram_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Debayer_U0/DebayerRatBorBatR_U0/lineBuffer_val_1_V_U/design_1_a0_demosaic_0_DebayerRatBorBatRkbM_ram_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Debayer_U0/DebayerRatBorBatR_U0/lineBuffer_val_1_V_U/design_1_a0_demosaic_0_DebayerRatBorBatRkbM_ram_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Debayer_U0/DebayerRatBorBatR_U0/lineBuffer_val_1_V_U/design_1_a0_demosaic_0_DebayerRatBorBatRkbM_ram_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Debayer_U0/DebayerRandBatG_U0/lineBuffer_val_0_V_U/design_1_a0_demosaic_0_DebayerRatBorBatRkbM_ram_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Debayer_U0/DebayerRandBatG_U0/lineBuffer_val_0_V_U/design_1_a0_demosaic_0_DebayerRatBorBatRkbM_ram_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Debayer_U0/DebayerRandBatG_U0/lineBuffer_val_0_V_U/design_1_a0_demosaic_0_DebayerRatBorBatRkbM_ram_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Debayer_U0/DebayerRandBatG_U0/lineBuffer_val_1_V_U/design_1_a0_demosaic_0_DebayerRatBorBatRkbM_ram_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Debayer_U0/DebayerRandBatG_U0/lineBuffer_val_1_V_U/design_1_a0_demosaic_0_DebayerRatBorBatRkbM_ram_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Debayer_U0/DebayerRandBatG_U0/lineBuffer_val_1_V_U/design_1_a0_demosaic_0_DebayerRatBorBatRkbM_ram_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:46 ; elapsed = 00:00:49 . Memory (MB): peak = 1065.547 ; gain = 691.230
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1065.547 ; gain = 691.230
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1065.547 ; gain = 691.230
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 1065.547 ; gain = 691.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 1065.547 ; gain = 691.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 1065.547 ; gain = 691.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 1065.547 ; gain = 691.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |CARRY4     |   630|
+|2     |DSP48E1    |     2|
+|3     |DSP48E1_3  |     4|
+|4     |DSP48E1_4  |     2|
+|5     |LUT1       |   408|
+|6     |LUT2       |   850|
+|7     |LUT3       |   702|
+|8     |LUT4       |   878|
+|9     |LUT5       |   456|
+|10    |LUT6       |   784|
+|11    |MUXF7      |     2|
+|12    |RAMB18E1_1 |     2|
+|13    |RAMB36E1   |    13|
+|14    |RAMB36E1_1 |     1|
+|15    |RAMB36E1_2 |     1|
+|16    |RAMB36E1_3 |     3|
+|17    |SRL16E     |    60|
+|18    |FDRE       |  3155|
+|19    |FDSE       |    57|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 1065.547 ; gain = 691.230
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 26 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:36 ; elapsed = 00:00:44 . Memory (MB): peak = 1065.547 ; gain = 322.133
+Synthesis Optimization Complete : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 1065.547 ; gain = 691.230
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 660 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1065.547 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+247 Infos, 56 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:00:55 . Memory (MB): peak = 1065.547 ; gain = 699.676
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1065.547 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_a0_demosaic_0_synth_1/design_1_a0_demosaic_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_a0_demosaic_0, cache-ID = d9679bbb98371ea0
+INFO: [Coretcl 2-1174] Renamed 74 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1065.547 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_a0_demosaic_0_synth_1/design_1_a0_demosaic_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_a0_demosaic_0_utilization_synth.rpt -pb design_1_a0_demosaic_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 26 23:14:58 2025...

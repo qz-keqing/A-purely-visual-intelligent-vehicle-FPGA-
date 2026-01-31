@@ -1,0 +1,8 @@
+1.电脑连接到PYNQ，并进入\\pynq\xilinx,第一次登陆需要密码xilinx；
+2.将Pynq-CV-OV5640-master.zip解压到该文件夹下；
+3.在串口助手输入以下命令：“cd robotCourse-master”运行完后继续输入命令“sudo pip3 install -e . ” (密码为xilinx）
+
+
+
+4.网络OK的话可跳过123，直接在串口助手输入“sudo pip3 install git+http://github.com/Siuudya/robotCourse.git”
+

@@ -1,0 +1,231 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="design_1_axi_intc_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_axi_intc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_xbar_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_AXI_Encoder_0_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_AXI_Encoder_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_AXI_Encoder_1_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_AXI_Encoder_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_AXI_Encoder_0_0_synth_1"/>
+	</Run>
+	<Run Id="design_1_AXI_PWM_Servo_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_AXI_PWM_Servo_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_AXI_ultrasonic_ranger_0_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_AXI_ultrasonic_ranger_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_analog2digital_0_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_analog2digital_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_arduino_gpio_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_arduino_gpio_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_axi_iic_0_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_axi_iic_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_xbar_1_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_xbar_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_dff_en_reset_vector_0_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_dff_en_reset_vector_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_intr_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_intr_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_io_switch_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_io_switch_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_mb_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_mb_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_mb_bram_ctrl_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_mb_bram_ctrl_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_mb_intc_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_mb_intc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_dlmb_bram_if_cntlr_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_dlmb_bram_if_cntlr_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_dlmb_v10_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_dlmb_v10_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_ilmb_v10_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_ilmb_v10_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_dlmb_v10_0_synth_1"/>
+	</Run>
+	<Run Id="design_1_lmb_bram_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_lmb_bram_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_AXI_PWM_Motor_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_AXI_PWM_Motor_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_AXI_PWM_Servo_0_synth_1"/>
+	</Run>
+	<Run Id="design_1_xbar_2_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_xbar_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_axi_motor_ctrl_sel_0_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_axi_motor_ctrl_sel_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_AXI_PWM_Motor_1_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_AXI_PWM_Motor_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_AXI_PWM_Servo_0_synth_1"/>
+	</Run>
+	<Run Id="design_1_xbar_3_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_xbar_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_axi_motor_ctrl_sel_0_1_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_axi_motor_ctrl_sel_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_axi_motor_ctrl_sel_0_0_synth_1"/>
+	</Run>
+	<Run Id="design_1_proc_sys_reset_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_proc_sys_reset_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_timer_0_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_timer_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_timer_1_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_timer_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_timer_0_0_synth_1"/>
+	</Run>
+	<Run Id="design_1_xadc_wiz_0_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_xadc_wiz_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_Canny_accel_0_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_Canny_accel_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_SobelX_accel_0_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_SobelX_accel_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_SobelY_accel_0_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_SobelY_accel_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_axi_dma_proc_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_axi_dma_proc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_xbar_4_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_xbar_4_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_xbar_5_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_xbar_5_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_xbar_6_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_xbar_6_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_axis_subset_converter_0_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_axis_subset_converter_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_axis_subset_converter_1_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_axis_subset_converter_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_axis_subset_converter_2_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_axis_subset_converter_2_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_axis_subset_converter_3_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_axis_subset_converter_3_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_axis_subset_converter_4_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_axis_subset_converter_4_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_axis_subset_converter_5_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_axis_subset_converter_5_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_color_detect_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_color_detect_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_pixel_pack_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_pixel_pack_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_pixel_unpack_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_pixel_unpack_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_proc_sys_reset_0_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_proc_sys_reset_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_proc_sys_reset_0_synth_1"/>
+	</Run>
+	<Run Id="design_1_mdm_0_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_mdm_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_a0_demosaic_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_a0_demosaic_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_xbar_7_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_xbar_7_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_axi_sccb_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_axi_sccb_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_axi_iic_0_0_synth_1"/>
+	</Run>
+	<Run Id="design_1_axi_vdma_cam_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_axi_vdma_cam_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_xbar_8_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_xbar_8_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_xbar_9_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_xbar_9_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_gbr2rgb_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_gbr2rgb_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_pixel_pack_1_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_pixel_pack_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_pixel_pack_0_synth_1"/>
+	</Run>
+	<Run Id="design_1_rgb2gray_0_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_rgb2gray_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_subset_cvt_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_subset_cvt_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_v_vid_in_axi4s_0_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_v_vid_in_axi4s_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_proc_sys_reset_100m_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_proc_sys_reset_100m_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_processing_system7_0_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_processing_system7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_smartconnect_0_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_smartconnect_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_util_vector_logic_0_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_util_vector_logic_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_RGBA2GBR_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_RGBA2GBR_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_xbar_10_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_xbar_10_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_axi_vdma_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_axi_vdma_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_clk_wiz_0_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_clk_wiz_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_pixel_unpack_1_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_pixel_unpack_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_rgb2dvi_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_rgb2dvi_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_v_axi4s_vid_out_0_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_v_axi4s_vid_out_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_v_tc_0_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_v_tc_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_auto_ss_k_1_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_auto_ss_k_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_auto_pc_2_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_auto_pc_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_auto_pc_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_auto_pc_2_synth_1"/>
+	</Run>
+	<Run Id="design_1_auto_pc_4_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_auto_pc_4_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_auto_pc_1_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_auto_pc_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_auto_pc_2_synth_1"/>
+	</Run>
+	<Run Id="design_1_auto_pc_3_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_auto_pc_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_auto_pc_2_synth_1"/>
+	</Run>
+	<Run Id="design_1_auto_ss_slid_3_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_auto_ss_slid_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_auto_ss_k_6_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_auto_ss_k_6_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_auto_ss_slid_4_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_auto_ss_slid_4_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_auto_ss_slidr_4_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_auto_ss_slidr_4_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_auto_ss_slidr_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_auto_ss_slidr_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_auto_ss_u_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_auto_ss_u_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_auto_ss_u_1_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_auto_ss_u_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_auto_ss_slid_1_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_auto_ss_slid_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_auto_ss_u_2_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_auto_ss_u_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_auto_ss_k_2_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_auto_ss_k_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_auto_ss_slid_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_auto_ss_slid_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_auto_ss_slid_2_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_auto_ss_slid_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_auto_ss_k_0_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_auto_ss_k_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_auto_ss_k_3_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_auto_ss_k_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_auto_ss_k_5_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_auto_ss_k_5_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_auto_ss_slidr_3_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_auto_ss_slidr_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_auto_ss_u_4_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_auto_ss_u_4_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_auto_ss_u_3_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_auto_ss_u_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_auto_ss_slidr_1_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_auto_ss_slidr_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_auto_ss_k_4_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_auto_ss_k_4_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_auto_ss_slidr_2_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_auto_ss_slidr_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_auto_ss_u_5_synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/design_1_auto_ss_u_5_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="design_1_axi_intc_0_synth_1"/>
+		<Parent Id="design_1_xbar_0_synth_1"/>
+		<Parent Id="design_1_AXI_Encoder_0_0_synth_1"/>
+		<Parent Id="design_1_AXI_Encoder_1_0_synth_1"/>
+		<Parent Id="design_1_AXI_PWM_Servo_0_synth_1"/>
+		<Parent Id="design_1_AXI_ultrasonic_ranger_0_0_synth_1"/>
+		<Parent Id="design_1_analog2digital_0_0_synth_1"/>
+		<Parent Id="design_1_arduino_gpio_0_synth_1"/>
+		<Parent Id="design_1_axi_iic_0_0_synth_1"/>
+		<Parent Id="design_1_xbar_1_synth_1"/>
+		<Parent Id="design_1_dff_en_reset_vector_0_0_synth_1"/>
+		<Parent Id="design_1_intr_0_synth_1"/>
+		<Parent Id="design_1_io_switch_0_synth_1"/>
+		<Parent Id="design_1_mb_0_synth_1"/>
+		<Parent Id="design_1_mb_bram_ctrl_0_synth_1"/>
+		<Parent Id="design_1_mb_intc_0_synth_1"/>
+		<Parent Id="design_1_dlmb_bram_if_cntlr_0_synth_1"/>
+		<Parent Id="design_1_dlmb_v10_0_synth_1"/>
+		<Parent Id="design_1_ilmb_v10_0_synth_1"/>
+		<Parent Id="design_1_lmb_bram_0_synth_1"/>
+		<Parent Id="design_1_AXI_PWM_Motor_0_synth_1"/>
+		<Parent Id="design_1_xbar_2_synth_1"/>
+		<Parent Id="design_1_axi_motor_ctrl_sel_0_0_synth_1"/>
+		<Parent Id="design_1_AXI_PWM_Motor_1_synth_1"/>
+		<Parent Id="design_1_xbar_3_synth_1"/>
+		<Parent Id="design_1_axi_motor_ctrl_sel_0_1_synth_1"/>
+		<Parent Id="design_1_proc_sys_reset_0_synth_1"/>
+		<Parent Id="design_1_timer_0_0_synth_1"/>
+		<Parent Id="design_1_timer_1_0_synth_1"/>
+		<Parent Id="design_1_xadc_wiz_0_0_synth_1"/>
+		<Parent Id="design_1_Canny_accel_0_0_synth_1"/>
+		<Parent Id="design_1_SobelX_accel_0_0_synth_1"/>
+		<Parent Id="design_1_SobelY_accel_0_0_synth_1"/>
+		<Parent Id="design_1_axi_dma_proc_0_synth_1"/>
+		<Parent Id="design_1_xbar_4_synth_1"/>
+		<Parent Id="design_1_xbar_5_synth_1"/>
+		<Parent Id="design_1_xbar_6_synth_1"/>
+		<Parent Id="design_1_axis_subset_converter_0_0_synth_1"/>
+		<Parent Id="design_1_axis_subset_converter_1_0_synth_1"/>
+		<Parent Id="design_1_axis_subset_converter_2_0_synth_1"/>
+		<Parent Id="design_1_axis_subset_converter_3_0_synth_1"/>
+		<Parent Id="design_1_axis_subset_converter_4_0_synth_1"/>
+		<Parent Id="design_1_axis_subset_converter_5_0_synth_1"/>
+		<Parent Id="design_1_color_detect_0_synth_1"/>
+		<Parent Id="design_1_pixel_pack_0_synth_1"/>
+		<Parent Id="design_1_pixel_unpack_0_synth_1"/>
+		<Parent Id="design_1_proc_sys_reset_0_0_synth_1"/>
+		<Parent Id="design_1_mdm_0_0_synth_1"/>
+		<Parent Id="design_1_a0_demosaic_0_synth_1"/>
+		<Parent Id="design_1_xbar_7_synth_1"/>
+		<Parent Id="design_1_axi_sccb_0_synth_1"/>
+		<Parent Id="design_1_axi_vdma_cam_0_synth_1"/>
+		<Parent Id="design_1_xbar_8_synth_1"/>
+		<Parent Id="design_1_xbar_9_synth_1"/>
+		<Parent Id="design_1_gbr2rgb_0_synth_1"/>
+		<Parent Id="design_1_pixel_pack_1_synth_1"/>
+		<Parent Id="design_1_rgb2gray_0_0_synth_1"/>
+		<Parent Id="design_1_subset_cvt_0_synth_1"/>
+		<Parent Id="design_1_v_vid_in_axi4s_0_0_synth_1"/>
+		<Parent Id="design_1_proc_sys_reset_100m_0_synth_1"/>
+		<Parent Id="design_1_processing_system7_0_0_synth_1"/>
+		<Parent Id="design_1_smartconnect_0_0_synth_1"/>
+		<Parent Id="design_1_util_vector_logic_0_0_synth_1"/>
+		<Parent Id="design_1_RGBA2GBR_0_synth_1"/>
+		<Parent Id="design_1_xbar_10_synth_1"/>
+		<Parent Id="design_1_axi_vdma_0_synth_1"/>
+		<Parent Id="design_1_clk_wiz_0_0_synth_1"/>
+		<Parent Id="design_1_pixel_unpack_1_synth_1"/>
+		<Parent Id="design_1_rgb2dvi_0_synth_1"/>
+		<Parent Id="design_1_v_axi4s_vid_out_0_0_synth_1"/>
+		<Parent Id="design_1_v_tc_0_0_synth_1"/>
+		<Parent Id="design_1_auto_ss_k_1_synth_1"/>
+		<Parent Id="design_1_auto_pc_2_synth_1"/>
+		<Parent Id="design_1_auto_pc_0_synth_1"/>
+		<Parent Id="design_1_auto_pc_4_synth_1"/>
+		<Parent Id="design_1_auto_pc_1_synth_1"/>
+		<Parent Id="design_1_auto_pc_3_synth_1"/>
+		<Parent Id="design_1_auto_ss_slid_3_synth_1"/>
+		<Parent Id="design_1_auto_ss_k_6_synth_1"/>
+		<Parent Id="design_1_auto_ss_slid_4_synth_1"/>
+		<Parent Id="design_1_auto_ss_slidr_4_synth_1"/>
+		<Parent Id="design_1_auto_ss_slidr_0_synth_1"/>
+		<Parent Id="design_1_auto_ss_u_0_synth_1"/>
+		<Parent Id="design_1_auto_ss_u_1_synth_1"/>
+		<Parent Id="design_1_auto_ss_slid_1_synth_1"/>
+		<Parent Id="design_1_auto_ss_u_2_synth_1"/>
+		<Parent Id="design_1_auto_ss_k_2_synth_1"/>
+		<Parent Id="design_1_auto_ss_slid_0_synth_1"/>
+		<Parent Id="design_1_auto_ss_slid_2_synth_1"/>
+		<Parent Id="design_1_auto_ss_k_0_synth_1"/>
+		<Parent Id="design_1_auto_ss_k_3_synth_1"/>
+		<Parent Id="design_1_auto_ss_k_5_synth_1"/>
+		<Parent Id="design_1_auto_ss_slidr_3_synth_1"/>
+		<Parent Id="design_1_auto_ss_u_4_synth_1"/>
+		<Parent Id="design_1_auto_ss_u_3_synth_1"/>
+		<Parent Id="design_1_auto_ss_slidr_1_synth_1"/>
+		<Parent Id="design_1_auto_ss_k_4_synth_1"/>
+		<Parent Id="design_1_auto_ss_slidr_2_synth_1"/>
+		<Parent Id="design_1_auto_ss_u_5_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

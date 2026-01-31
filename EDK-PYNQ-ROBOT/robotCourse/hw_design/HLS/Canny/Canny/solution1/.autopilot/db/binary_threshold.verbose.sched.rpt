@@ -1,0 +1,222 @@
+
+
+================================================================
+== Vivado HLS Report for 'binary_threshold'
+================================================================
+* Date:           Tue Dec 30 00:00:33 2025
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        Canny
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     8.510|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    ?|    ?|    ?|    ?|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |          |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name| min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |- Loop 1  |    ?|    ?|         5|          1|          1|     ?|    yes   |
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 5
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 8
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 5, States = { 3 4 5 6 7 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	8  / (exitcond_flatten)
+	4  / (!exitcond_flatten)
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	3  / true
+8 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.63>
+ST_1 : Operation 9 [1/1] (3.63ns)   --->   "%src_rows_read = call i32 @_ssdm_op_Read.ap_fifo.i32P(i32* %src_rows)"   --->   Operation 9 'read' 'src_rows_read' <Predicate = true> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 10 [1/1] (3.63ns)   --->   "%src_cols_read = call i32 @_ssdm_op_Read.ap_fifo.i32P(i32* %src_cols)"   --->   Operation 10 'read' 'src_cols_read' <Predicate = true> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 11 [1/1] (3.63ns)   --->   "%threshold_read = call i32 @_ssdm_op_Read.ap_fifo.i32P(i32* %threshold)"   --->   Operation 11 'read' 'threshold_read' <Predicate = true> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+
+State 2 <SV = 1> <Delay = 8.51>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %threshold, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [11 x i8]* @ScalarProp_str)"   --->   Operation 12 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %src_cols, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [11 x i8]* @ScalarProp_str)"   --->   Operation 13 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %src_rows, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [11 x i8]* @ScalarProp_str)"   --->   Operation 14 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%cast = zext i32 %src_rows_read to i64"   --->   Operation 15 'zext' 'cast' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%cast1 = zext i32 %src_cols_read to i64"   --->   Operation 16 'zext' 'cast1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 17 [1/1] (8.51ns)   --->   "%bound = mul i64 %cast1, %cast"   --->   Operation 17 'mul' 'bound' <Predicate = true> <Delay = 8.51> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 8.51> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 18 [1/1] (1.76ns)   --->   "br label %.preheader.i" [./xf_canny_accel.cpp:85]   --->   Operation 18 'br' <Predicate = true> <Delay = 1.76>
+
+State 3 <SV = 2> <Delay = 3.75>
+ST_3 : Operation 19 [1/1] (0.00ns)   --->   "%indvar_flatten = phi i64 [ 0, %entry ], [ %indvar_flatten_next, %.preheader.i.preheader ]"   --->   Operation 19 'phi' 'indvar_flatten' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 20 [1/1] (0.00ns)   --->   "%i_i = phi i31 [ 0, %entry ], [ %tmp_16_i_mid2_v_v, %.preheader.i.preheader ]" [./xf_canny_accel.cpp:89]   --->   Operation 20 'phi' 'i_i' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 21 [1/1] (0.00ns)   --->   "%j_i = phi i31 [ 0, %entry ], [ %j, %.preheader.i.preheader ]"   --->   Operation 21 'phi' 'j_i' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 22 [1/1] (0.00ns)   --->   "%j_i_cast = zext i31 %j_i to i32" [./xf_canny_accel.cpp:86]   --->   Operation 22 'zext' 'j_i_cast' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 23 [1/1] (2.47ns)   --->   "%tmp_i = icmp slt i32 %j_i_cast, %src_cols_read" [./xf_canny_accel.cpp:86]   --->   Operation 23 'icmp' 'tmp_i' <Predicate = true> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 24 [1/1] (2.77ns)   --->   "%exitcond_flatten = icmp eq i64 %indvar_flatten, %bound"   --->   Operation 24 'icmp' 'exitcond_flatten' <Predicate = true> <Delay = 2.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 25 [1/1] (3.52ns)   --->   "%indvar_flatten_next = add i64 %indvar_flatten, 1"   --->   Operation 25 'add' 'indvar_flatten_next' <Predicate = true> <Delay = 3.52> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.52> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 26 [1/1] (0.00ns)   --->   "br i1 %exitcond_flatten, label %.exit, label %.preheader.i.preheader"   --->   Operation 26 'br' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 27 [1/1] (2.52ns)   --->   "%i = add i31 %i_i, 1" [./xf_canny_accel.cpp:85]   --->   Operation 27 'add' 'i' <Predicate = (!exitcond_flatten)> <Delay = 2.52> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.52> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 28 [1/1] (0.73ns)   --->   "%tmp_16_i_mid2_v_v = select i1 %tmp_i, i31 %i_i, i31 %i" [./xf_canny_accel.cpp:89]   --->   Operation 28 'select' 'tmp_16_i_mid2_v_v' <Predicate = (!exitcond_flatten)> <Delay = 0.73> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.73> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 29 [1/1] (2.52ns)   --->   "%j_i_op = add i31 %j_i, 1" [./xf_canny_accel.cpp:86]   --->   Operation 29 'add' 'j_i_op' <Predicate = (!exitcond_flatten)> <Delay = 2.52> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.52> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 30 [1/1] (0.73ns)   --->   "%j = select i1 %tmp_i, i31 %j_i_op, i31 1" [./xf_canny_accel.cpp:86]   --->   Operation 30 'select' 'j' <Predicate = (!exitcond_flatten)> <Delay = 0.73> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.73> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+
+State 4 <SV = 3> <Delay = 8.51>
+ST_4 : Operation 31 [1/1] (0.00ns)   --->   "%tmp_16_i_mid2_v = zext i31 %tmp_16_i_mid2_v_v to i32" [./xf_canny_accel.cpp:89]   --->   Operation 31 'zext' 'tmp_16_i_mid2_v' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_4 : Operation 32 [1/1] (8.51ns)   --->   "%tmp_16_i_mid2 = mul i32 %src_cols_read, %tmp_16_i_mid2_v" [./xf_canny_accel.cpp:89]   --->   Operation 32 'mul' 'tmp_16_i_mid2' <Predicate = (!exitcond_flatten)> <Delay = 8.51> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 8.51> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 5.80>
+ST_5 : Operation 33 [1/1] (0.00ns) (grouped into LUT with out node tmp_17_i)   --->   "%j_i_cast_mid2 = select i1 %tmp_i, i31 %j_i, i31 0" [./xf_canny_accel.cpp:86]   --->   Operation 33 'select' 'j_i_cast_mid2' <Predicate = (!exitcond_flatten)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.73> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_5 : Operation 34 [1/1] (0.00ns) (grouped into LUT with out node tmp_17_i)   --->   "%j_i_cast_mid2_cast = zext i31 %j_i_cast_mid2 to i32" [./xf_canny_accel.cpp:86]   --->   Operation 34 'zext' 'j_i_cast_mid2_cast' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_5 : Operation 35 [1/1] (2.55ns) (out node of the LUT)   --->   "%tmp_17_i = add nsw i32 %j_i_cast_mid2_cast, %tmp_16_i_mid2" [./xf_canny_accel.cpp:89]   --->   Operation 35 'add' 'tmp_17_i' <Predicate = (!exitcond_flatten)> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.52> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 36 [1/1] (0.00ns)   --->   "%tmp_18_i = sext i32 %tmp_17_i to i64" [./xf_canny_accel.cpp:89]   --->   Operation 36 'sext' 'tmp_18_i' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_5 : Operation 37 [1/1] (0.00ns)   --->   "%src_data_V_addr = getelementptr [921600 x i8]* %src_data_V, i64 0, i64 %tmp_18_i" [./xf_canny_accel.cpp:89]   --->   Operation 37 'getelementptr' 'src_data_V_addr' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_5 : Operation 38 [2/2] (3.25ns)   --->   "%val_V = load i8* %src_data_V_addr, align 1" [./xf_canny_accel.cpp:89]   --->   Operation 38 'load' 'val_V' <Predicate = (!exitcond_flatten)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 921600> <RAM>
+
+State 6 <SV = 5> <Delay = 5.72>
+ST_6 : Operation 39 [1/2] (3.25ns)   --->   "%val_V = load i8* %src_data_V_addr, align 1" [./xf_canny_accel.cpp:89]   --->   Operation 39 'load' 'val_V' <Predicate = (!exitcond_flatten)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 921600> <RAM>
+ST_6 : Operation 40 [1/1] (0.00ns)   --->   "%tmp_19_i = zext i8 %val_V to i32" [./xf_canny_accel.cpp:91]   --->   Operation 40 'zext' 'tmp_19_i' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_6 : Operation 41 [1/1] (2.47ns)   --->   "%tmp_20_i = icmp sgt i32 %tmp_19_i, %threshold_read" [./xf_canny_accel.cpp:91]   --->   Operation 41 'icmp' 'tmp_20_i' <Predicate = (!exitcond_flatten)> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+
+State 7 <SV = 6> <Delay = 3.25>
+ST_7 : Operation 42 [1/1] (0.00ns)   --->   "%tmp_1_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([13 x i8]* @p_str3)" [./xf_canny_accel.cpp:86]   --->   Operation 42 'specregionbegin' 'tmp_1_i' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_7 : Operation 43 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind" [./xf_canny_accel.cpp:87]   --->   Operation 43 'specpipeline' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_7 : Operation 44 [1/1] (0.00ns)   --->   "%dst_data_V_addr = getelementptr [921600 x i1]* %dst_data_V, i64 0, i64 %tmp_18_i" [./xf_canny_accel.cpp:92]   --->   Operation 44 'getelementptr' 'dst_data_V_addr' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_7 : Operation 45 [1/1] (3.25ns)   --->   "store i1 %tmp_20_i, i1* %dst_data_V_addr, align 1" [./xf_canny_accel.cpp:92]   --->   Operation 45 'store' <Predicate = (!exitcond_flatten)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 921600> <RAM>
+ST_7 : Operation 46 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([13 x i8]* @p_str3, i32 %tmp_1_i)" [./xf_canny_accel.cpp:95]   --->   Operation 46 'specregionend' 'empty' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_7 : Operation 47 [1/1] (0.00ns)   --->   "br label %.preheader.i" [./xf_canny_accel.cpp:86]   --->   Operation 47 'br' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+
+State 8 <SV = 3> <Delay = 0.00>
+ST_8 : Operation 48 [1/1] (0.00ns)   --->   "ret void"   --->   Operation 48 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 3.63ns
+The critical path consists of the following:
+	fifo read on port 'src_rows' [9]  (3.63 ns)
+
+ <State 2>: 8.51ns
+The critical path consists of the following:
+	'mul' operation ('bound') [14]  (8.51 ns)
+
+ <State 3>: 3.75ns
+The critical path consists of the following:
+	'icmp' operation ('exitcond_flatten') [22]  (2.78 ns)
+	blocking operation 0.978 ns on control path)
+
+ <State 4>: 8.51ns
+The critical path consists of the following:
+	'mul' operation ('tmp_16_i_mid2', ./xf_canny_accel.cpp:89) [29]  (8.51 ns)
+
+ <State 5>: 5.81ns
+The critical path consists of the following:
+	'select' operation ('j_i_cast_mid2', ./xf_canny_accel.cpp:86) [30]  (0 ns)
+	'add' operation ('tmp_17_i', ./xf_canny_accel.cpp:89) [34]  (2.55 ns)
+	'getelementptr' operation ('src_data_V_addr', ./xf_canny_accel.cpp:89) [36]  (0 ns)
+	'load' operation ('val.V', ./xf_canny_accel.cpp:89) on array 'src_data_V' [37]  (3.25 ns)
+
+ <State 6>: 5.73ns
+The critical path consists of the following:
+	'load' operation ('val.V', ./xf_canny_accel.cpp:89) on array 'src_data_V' [37]  (3.25 ns)
+	'icmp' operation ('tmp_20_i', ./xf_canny_accel.cpp:91) [39]  (2.47 ns)
+
+ <State 7>: 3.25ns
+The critical path consists of the following:
+	'getelementptr' operation ('dst_data_V_addr', ./xf_canny_accel.cpp:92) [40]  (0 ns)
+	'store' operation (./xf_canny_accel.cpp:92) of variable 'tmp_20_i', ./xf_canny_accel.cpp:91 on array 'dst_data_V' [41]  (3.25 ns)
+
+ <State 8>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

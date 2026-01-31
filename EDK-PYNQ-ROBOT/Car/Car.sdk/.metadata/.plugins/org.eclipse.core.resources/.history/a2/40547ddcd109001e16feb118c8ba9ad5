@@ -1,0 +1,69 @@
+#include "icm20600.h"
+#include "i2c.h"
+
+void icm20600_init()
+{
+	iic_writeByte(_addr, ICM20600_CONFIG, 0x00);
+	iic_writeByte(_addr, ICM20600_FIFO_EN, 0x00);
+
+}
+
+
+void ICM20600_setPowerMode(icm20600_power_type_t mode) {
+    uint8_t data_pwr1;
+    uint8_t data_pwr2 = 0x00;
+    uint8_t data_gyro_lp;
+    I2Cdev::readByte(_addr, ICM20600_PWR_MGMT_1, _buffer);
+    data_pwr1 = _buffer[0];
+    data_pwr1 &= 0x8f;                  // 0b10001111
+    I2Cdev::readByte(_addr, ICM20600_GYRO_LP_MODE_CFG, _buffer);
+    data_gyro_lp = _buffer[0];
+    // When set to ¡®1¡¯ low-power gyroscope mode is enabled. Default setting is 0
+    data_gyro_lp &= 0x7f;               // 0b01111111
+    switch (mode) {
+        case ICM_SLEEP_MODE:
+            data_pwr1 |= 0x40;          // set 0b01000000
+            break;
+
+        case ICM_STANDYBY_MODE:
+            data_pwr1 |= 0x10;          // set 0b00010000
+            data_pwr2 = 0x38;           // 0x00111000 disable acc
+            break;
+
+        case ICM_ACC_LOW_POWER:
+            data_pwr1 |= 0x20;          // set bit5 0b00100000
+            data_pwr2 = 0x07;           //0x00000111 disable gyro
+            break;
+
+        case ICM_ACC_LOW_NOISE:
+            data_pwr1 |= 0x00;
+            data_pwr2 = 0x07;           //0x00000111 disable gyro
+            break;
+
+        case ICM_GYRO_LOW_POWER:
+            data_pwr1 |= 0x00;          // dont set bit5 0b00000000
+            data_pwr2 = 0x38;           // 0x00111000 disable acc
+            data_gyro_lp |= 0x80;
+            break;
+
+        case ICM_GYRO_LOW_NOISE:
+            data_pwr1 |= 0x00;
+            data_pwr2 = 0x38;           // 0x00111000 disable acc
+            break;
+
+        case ICM_6AXIS_LOW_POWER:
+            data_pwr1 |= 0x00;          // dont set bit5 0b00100000
+            data_gyro_lp |= 0x80;
+            break;
+
+        case ICM_6AXIS_LOW_NOISE:
+            data_pwr1 |= 0x00;
+            break;
+
+        default:
+            break;
+    }
+    iic_writeByte(_addr, ICM20600_PWR_MGMT_1, data_pwr1);
+    iic_writeByte(_addr, ICM20600_PWR_MGMT_2, data_pwr2);
+    iic_writeByte(_addr, ICM20600_GYRO_LP_MODE_CFG, data_gyro_lp);
+}

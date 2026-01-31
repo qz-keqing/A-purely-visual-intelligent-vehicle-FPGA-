@@ -1,0 +1,507 @@
+
+****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/Vivado/Vivado/2018.3/scripts/vivado_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running 'D:/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'DELL' on host 'desktop-jsm332p' (Windows NT_amd64 version 6.2) on Fri Dec 26 03:14:50 +0800 2025
+INFO: [HLS 200-10] In directory 'D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/robotCourse/hw_design/HLS'
+INFO: [HLS 200-10] Opening project 'D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/robotCourse/hw_design/HLS/Canny/Canny'.
+INFO: [HLS 200-10] Adding design file './xf_canny_accel.cpp' to the project
+INFO: [HLS 200-10] Opening solution 'D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/robotCourse/hw_design/HLS/Canny/Canny/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file './xf_canny_accel.cpp' ... 
+WARNING: [HLS 214-111] Static variables and non-static stream cannot be used inside a dataflow region: ./xf_canny_accel.cpp:84:27
+WARNING: [HLS 214-111] Static variables and non-static stream cannot be used inside a dataflow region: ./include\imgproc/xf_canny.hpp:133:54
+WARNING: [HLS 214-111] Static variables and non-static stream cannot be used inside a dataflow region: ./include\imgproc/xf_canny.hpp:162:53
+WARNING: [HLS 200-471] Dataflow form checks found 3 issue(s) in file ./xf_canny_accel.cpp
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 106.195 ; gain = 21.426
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 106.195 ; gain = 21.426
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-489] Unrolling loop 'Extract_pixels_loop' (./include\common/xf_utility.h:73) in function 'void xfExtractPixels<1, 1, 3>(PixelType<FORWARD_REFERENCE>::name*, StreamType<FORWARD_REFERENCE>::name&, int)' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Extract_pixels_loop' (./include\common/xf_utility.h:73) in function 'void xfExtractPixels<1, 0, 0>(PixelType<FORWARD_REFERENCE>::name*, StreamType<FORWARD_REFERENCE>::name&, int)' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'ComputeMaxLoop' (./include\imgproc/xf_canny_utils.hpp:182) in function 'void xFNMS3x3<1, 3, 0, 12>(PixelType<FORWARD_REFERENCE>::name*, PixelType<FORWARD_REFERENCE>::name*, PixelType<FORWARD_REFERENCE>::name*, PixelType<FORWARD_REFERENCE>::name*, PixelType<FORWARD_REFERENCE>::name*, unsigned char, unsigned char)' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'procLoop' (./include\imgproc/xf_canny_utils.hpp:439) in function 'void xFAngleKernel<720, 1280, 3, 0, 1, 1, 0, 1280>(hls::stream<StreamType<FORWARD_REFERENCE>::name>&, hls::stream<StreamType<FORWARD_REFERENCE>::name>&, hls::stream<StreamType<FORWARD_REFERENCE>::name>&, unsigned short, unsigned short)' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'procLoop' (./include\imgproc/xf_magnitude.hpp:94) in function 'void xFMagnitudeKernel<720, 1280, 3, 3, 1, 1, 1, 1280>(hls::stream<StreamType<FORWARD_REFERENCE>::name>&, hls::stream<StreamType<FORWARD_REFERENCE>::name>&, hls::stream<StreamType<FORWARD_REFERENCE>::name>&, int, unsigned short&, unsigned short&)' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-8.1' (./include\imgproc/xf_canny_sobel.hpp:447) in function 'void xFSobel3x3<720, 1280, 0, 3, 1, 0, 1, 1281, 3, 9, false>(hls::stream<StreamType<FORWARD_REFERENCE>::name>&, hls::stream<StreamType<FORWARD_REFERENCE>::name>&, hls::stream<StreamType<FORWARD_REFERENCE>::name>&, ap_uint<8>, unsigned short, unsigned short)' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Compute_Grad_Loop' (./include\imgproc/xf_averagegaussianmask.hpp:76) in function 'void xFAverageGaussian3x3<1, 0>(PixelType<FORWARD_REFERENCE>::name*, PixelType<FORWARD_REFERENCE>::name*, PixelType<FORWARD_REFERENCE>::name*, PixelType<FORWARD_REFERENCE>::name*)' completely with a factor of 1.
+INFO: [XFORM 203-603] Inlining function 'xFGaussianFixed3x3<0>' into 'xFAverageGaussian3x3<1, 0>' (./include\imgproc/xf_averagegaussianmask.hpp:78).
+INFO: [XFORM 203-603] Inlining function 'xFGaussianFixed3x3<0>' into 'xFAverageGaussianMask3x3<720, 1280, 0, 1, 0, 1280>' (./include\imgproc/xf_averagegaussianmask.hpp:238).
+INFO: [XFORM 203-603] Inlining function 'xFAverageGaussian3x3<1, 0>' into 'ProcessAverageGaussian3x3<720, 1280, 0, 1, 0, 1280>' (./include\imgproc/xf_averagegaussianmask.hpp:117).
+INFO: [XFORM 203-603] Inlining function 'xfPackPixels<1, 0, 0>' into 'ProcessAverageGaussian3x3<720, 1280, 0, 1, 0, 1280>' (./include\imgproc/xf_averagegaussianmask.hpp:138).
+INFO: [XFORM 203-603] Inlining function 'xfPackPixels<1, 0, 0>' into 'ProcessAverageGaussian3x3<720, 1280, 0, 1, 0, 1280>' (./include\imgproc/xf_averagegaussianmask.hpp:130).
+INFO: [XFORM 203-603] Inlining function 'xfPackPixels<1, 0, 0>' into 'ProcessAverageGaussian3x3<720, 1280, 0, 1, 0, 1280>' (./include\imgproc/xf_averagegaussianmask.hpp:125).
+INFO: [XFORM 203-603] Inlining function 'xfPackPixels<1, 0, 0>' into 'xFAverageGaussianMask3x3<720, 1280, 0, 1, 0, 1280>' (./include\imgproc/xf_averagegaussianmask.hpp:243).
+INFO: [XFORM 203-603] Inlining function 'ProcessAverageGaussian3x3<720, 1280, 0, 1, 0, 1280>' into 'xFAverageGaussianMask3x3<720, 1280, 0, 1, 0, 1280>' (./include\imgproc/xf_averagegaussianmask.hpp:219).
+INFO: [XFORM 203-603] Inlining function 'xFSobelProcx<1, 0, 3, 3, 9>' into 'ProcessSobelfunc<720, 1280, 0, 3, 1, 0, 1, 1281, 3, 9>' (./include\imgproc/xf_canny_sobel.hpp:353).
+INFO: [XFORM 203-603] Inlining function 'xFSobelProcy<1, 0, 3, 3, 9>' into 'ProcessSobelfunc<720, 1280, 0, 3, 1, 0, 1, 1281, 3, 9>' (./include\imgproc/xf_canny_sobel.hpp:354).
+INFO: [XFORM 203-603] Inlining function 'ProcessSobelfunc<720, 1280, 0, 3, 1, 0, 1, 1281, 3, 9>' into 'xFSobel3x3<720, 1280, 0, 3, 1, 0, 1, 1281, 3, 9, false>' (./include\imgproc/xf_canny_sobel.hpp:461).
+INFO: [XFORM 203-603] Inlining function 'xFMagnitude<720, 1280, 3, 3, 1, 1, 1>' into 'xf::xFCannyKernel<720, 1280, 0, 12, 1, 0, 24, 1280, 3840, 3, false>' (./include\imgproc/xf_canny.hpp:183).
+INFO: [XFORM 203-603] Inlining function 'xFAngle<720, 1280, 3, 0, 1, 1, 0>' into 'xf::xFCannyKernel<720, 1280, 0, 12, 1, 0, 24, 1280, 3840, 3, false>' (./include\imgproc/xf_canny.hpp:184).
+INFO: [XFORM 203-603] Inlining function 'xFNMS3x3<1, 3, 0, 12>' into 'ProcessNms3x3canny<720, 1280, 3, 0, 12, 1, 1, 0, 24, 1280>' (./include\imgproc/xf_canny_utils.hpp:244).
+INFO: [XFORM 203-603] Inlining function 'ProcessNms3x3canny<720, 1280, 3, 0, 12, 1, 1, 0, 24, 1280>' into 'xFSuppression3x3<720, 1280, 3, 0, 12, 1, 1, 0, 24, 1280>' (./include\imgproc/xf_canny_utils.hpp:368).
+INFO: [XFORM 203-603] Inlining function 'intense' into 'post_process' (./xf_canny_accel.cpp:68).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 131.414 ; gain = 46.645
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 142.062 ; gain = 57.293
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Col_Loop' (./include\imgproc/xf_canny_sobel.hpp:193) in function 'xFSobel3x3<720, 1280, 0, 3, 1, 0, 1, 1281, 3, 9, false>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Col_Loop' (./include\imgproc/xf_averagegaussianmask.hpp:101) in function 'xFAverageGaussianMask3x3<720, 1280, 0, 1, 0, 1280>' for pipelining.
+WARNING: [XFORM 203-561] Updating loop upper bound from 1281 to 1280 for loop 'Loop-1-0' (./include\imgproc/xf_canny_sobel.hpp:436:1) in function 'xFSobel3x3<720, 1280, 0, 3, 1, 0, 1, 1281, 3, 9, false>'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 1281 to 1280 for loop 'Loop-1-0' (./include\imgproc/xf_canny_sobel.hpp:436:1) in function 'xFSobel3x3<720, 1280, 0, 3, 1, 0, 1, 1281, 3, 9, false>'.
+WARNING: [XFORM 203-561] Updating loop upper bound from 1281 to 1280 for loop 'Loop-2' (./include\imgproc/xf_canny_sobel.hpp:446:1) in function 'xFSobel3x3<720, 1280, 0, 3, 1, 0, 1, 1281, 3, 9, false>'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 1281 to 1280 for loop 'Loop-2' (./include\imgproc/xf_canny_sobel.hpp:446:1) in function 'xFSobel3x3<720, 1280, 0, 3, 1, 0, 1, 1281, 3, 9, false>'.
+WARNING: [XFORM 203-561] Updating loop upper bound from 3 to 2 for loop 'Loop-3-1-2-0' (./include\imgproc/xf_canny_sobel.hpp:373:1) in function 'xFSobel3x3<720, 1280, 0, 3, 1, 0, 1, 1281, 3, 9, false>'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 3 to 2 for loop 'Loop-3-1-2-0' (./include\imgproc/xf_canny_sobel.hpp:373:1) in function 'xFSobel3x3<720, 1280, 0, 3, 1, 0, 1, 1281, 3, 9, false>'.
+WARNING: [XFORM 203-561] Updating loop upper bound from 3 to 2 for loop 'Loop-3-2' (./include\imgproc/xf_canny_sobel.hpp:467:1) in function 'xFSobel3x3<720, 1280, 0, 3, 1, 0, 1, 1281, 3, 9, false>'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 3 to 2 for loop 'Loop-3-2' (./include\imgproc/xf_canny_sobel.hpp:467:1) in function 'xFSobel3x3<720, 1280, 0, 3, 1, 0, 1, 1281, 3, 9, false>'.
+INFO: [HLS 200-489] Unrolling loop 'Loop-4.1' (./include\imgproc/xf_canny_sobel.hpp:180) in function 'xFSobel3x3<720, 1280, 0, 3, 1, 0, 1, 1281, 3, 9, false>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-4.1.1' (./include\imgproc/xf_canny_sobel.hpp:184) in function 'xFSobel3x3<720, 1280, 0, 3, 1, 0, 1, 1281, 3, 9, false>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-4.2.1' (./include\imgproc/xf_canny_sobel.hpp:325) in function 'xFSobel3x3<720, 1280, 0, 3, 1, 0, 1, 1281, 3, 9, false>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-4.2.2' (./include\imgproc/xf_canny_sobel.hpp:338) in function 'xFSobel3x3<720, 1280, 0, 3, 1, 0, 1, 1281, 3, 9, false>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-4.2.3' (./include\imgproc/xf_canny_sobel.hpp:366) in function 'xFSobel3x3<720, 1280, 0, 3, 1, 0, 1, 1281, 3, 9, false>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-4.2.3.1' (./include\imgproc/xf_canny_sobel.hpp:370) in function 'xFSobel3x3<720, 1280, 0, 3, 1, 0, 1, 1281, 3, 9, false>' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-4.3' (./include\imgproc/xf_canny_sobel.hpp:465) in function 'xFSobel3x3<720, 1280, 0, 3, 1, 0, 1, 1281, 3, 9, false>' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.1' (./include\common/xf_utility.h:51) in function 'xFAverageGaussianMask3x3<720, 1280, 0, 1, 0, 1280>' completely with a factor of 0.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.2' (./include\common/xf_utility.h:51) in function 'xFAverageGaussianMask3x3<720, 1280, 0, 1, 0, 1280>' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.3' (./include\common/xf_utility.h:51) in function 'xFAverageGaussianMask3x3<720, 1280, 0, 1, 0, 1280>' completely with a factor of 0.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.2' (./include\common/xf_utility.h:51) in function 'xFAverageGaussianMask3x3<720, 1280, 0, 1, 0, 1280>' completely with a factor of 1.
+INFO: [XFORM 203-101] Partitioning array 'nmsvalue.V' (./include\imgproc/xf_canny_utils.hpp:310) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'l00_buf.V' (./include\imgproc/xf_canny_utils.hpp:314) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'l10_buf.V' (./include\imgproc/xf_canny_utils.hpp:314) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'l20_buf.V' (./include\imgproc/xf_canny_utils.hpp:314) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'angle.V' (./include\imgproc/xf_canny_utils.hpp:321) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'buf.V' (./include\imgproc/xf_canny_utils.hpp:325) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'angle_buf.V' (./include\imgproc/xf_canny_utils.hpp:327) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'row_ind.V' (./include\imgproc/xf_canny_sobel.hpp:395) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'OutputValues.V' (./include\imgproc/xf_canny_sobel.hpp:400) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'OutputValues1.V' (./include\imgproc/xf_canny_sobel.hpp:401) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'src_buf'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'buf.V' (./include\imgproc/xf_canny_sobel.hpp:412) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'buf_cop.V' (./include\imgproc/xf_canny_sobel.hpp:167) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'OutputValues.V' (./include\imgproc/xf_averagegaussianmask.hpp:169) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'src_buf1.V' (./include\imgproc/xf_averagegaussianmask.hpp:174) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'src_buf2.V' (./include\imgproc/xf_averagegaussianmask.hpp:174) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'src_buf3.V' (./include\imgproc/xf_averagegaussianmask.hpp:174) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'buf.V' (./include\imgproc/xf_averagegaussianmask.hpp:181) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'src_buf'  in dimension 2 completely.
+INFO: [XFORM 203-712] Applying dataflow to function 'xf::xFCannyKernel<720, 1280, 0, 12, 1, 0, 24, 1280, 3840, 3, false>', detected/extracted 6 process function(s): 
+	 'xFAverageGaussianMask3x3<720, 1280, 0, 1, 0, 1280>174'
+	 'xFSobel<720, 1280, 0, 3, 1, 0, 1, 3, false>'
+	 'xf::xFDuplicate_rows<720, 1280, 3, 1, 1, 1280>'
+	 'xFMagnitudeKernel<720, 1280, 3, 3, 1, 1, 1, 1280>'
+	 'xFAngleKernel<720, 1280, 3, 0, 1, 1, 0, 1280>'
+	 'xFSuppression3x3<720, 1280, 3, 0, 12, 1, 1, 0, 24, 1280>'.
+INFO: [XFORM 203-712] Applying dataflow to function 'Canny_accel', detected/extracted 3 process function(s): 
+	 'pre_process211'
+	 'xf::xFCannyEdgeDetector<720, 1280, 0, 12, 1, 0, 24, 3, false>'
+	 'post_process'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (./include\imgproc/xf_canny_utils.hpp:233:14) to (./include\imgproc/xf_canny_utils.hpp:247:6) in function 'xFSuppression3x3<720, 1280, 3, 0, 12, 1, 1, 0, 24, 1280>'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (./include\imgproc/xf_canny_utils.hpp:345:3) to (./include\imgproc/xf_canny_utils.hpp:218:25) in function 'xFSuppression3x3<720, 1280, 3, 0, 12, 1, 1, 0, 24, 1280>'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (./include\imgproc/xf_canny_sobel.hpp:331:78) to (./include\imgproc/xf_canny_sobel.hpp:361:7) in function 'xFSobel3x3<720, 1280, 0, 3, 1, 0, 1, 1281, 3, 9, false>'... converting 9 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (./include\imgproc/xf_canny_sobel.hpp:374:5) to (./include\imgproc/xf_canny_sobel.hpp:192:98) in function 'xFSobel3x3<720, 1280, 0, 3, 1, 0, 1, 1281, 3, 9, false>'... converting 9 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (./include\imgproc/xf_canny_utils.hpp:47:11) to (./include\imgproc/xf_canny_utils.hpp:162:2) in function 'xFFindmax3x3<3, 0, 12>'... converting 14 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (./include\imgproc/xf_averagegaussianmask.hpp:198:3) to (./include\imgproc/xf_averagegaussianmask.hpp:100:25) in function 'xFAverageGaussianMask3x3<720, 1280, 0, 1, 0, 1280>174'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (./include\imgproc/xf_canny_utils.hpp:428:57) to (./include\imgproc/xf_canny_utils.hpp:428:51) in function 'xFAngleKernel<720, 1280, 3, 0, 1, 1, 0, 1280>'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (./xf_canny_accel.cpp:65:4) to (./xf_canny_accel.cpp:64:24) in function 'post_process'... converting 3 basic blocks.
+INFO: [XFORM 203-602] Inlining function 'xFFindmax3x3<3, 0, 12>' into 'xFSuppression3x3<720, 1280, 3, 0, 12, 1, 1, 0, 24, 1280>' (./include\imgproc/xf_canny_utils.hpp:186->./include\imgproc/xf_canny_utils.hpp:244->./include\imgproc/xf_canny_utils.hpp:368) automatically.
+INFO: [XFORM 203-11] Balancing expressions in function 'xFSuppression3x3<720, 1280, 3, 0, 12, 1, 1, 0, 24, 1280>' (./include\imgproc/xf_canny_utils.hpp:296)...6 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 173.730 ; gain = 88.961
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'rowLoop' (./include\imgproc/xf_canny_utils.hpp:345:3) in function 'xFSuppression3x3<720, 1280, 3, 0, 12, 1, 1, 0, 24, 1280>' : 
+
+the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Row_Loop' (./include\imgproc/xf_averagegaussianmask.hpp:198:3) in function 'xFAverageGaussianMask3x3<720, 1280, 0, 1, 0, 1280>174' : 
+
+the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (./xf_canny_accel.cpp:35:15) in function 'pre_process211'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (./xf_canny_accel.cpp:62:15) in function 'post_process'.
+WARNING: [XFORM 203-631] Renaming function 'xfExtractPixels<1, 1, 3>' to 'xfExtractPixels' (./include\common/xf_utility.h:78:1)
+WARNING: [XFORM 203-631] Renaming function 'xfExtractPixels<1, 0, 0>' to 'xfExtractPixels.1' (./include\common/xf_utility.h:78:1)
+WARNING: [XFORM 203-631] Renaming function 'xf::xFDuplicate_rows<720, 1280, 3, 1, 1, 1280>' to 'xFDuplicate_rows' (./include\imgproc/xf_canny.hpp:70:33)
+WARNING: [XFORM 203-631] Renaming function 'xf::xFCannyKernel<720, 1280, 0, 12, 1, 0, 24, 1280, 3840, 3, false>' to 'xFCannyKernel' (./include\imgproc/xf_canny.hpp:128:1)
+WARNING: [XFORM 203-631] Renaming function 'xf::xFCannyEdgeDetector<720, 1280, 0, 12, 1, 0, 24, 3, false>' to 'xFCannyEdgeDetector' (./include\imgproc/xf_canny.hpp:205:2)
+WARNING: [XFORM 203-631] Renaming function 'xFSuppression3x3<720, 1280, 3, 0, 12, 1, 1, 0, 24, 1280>' to 'xFSuppression3x3' (./include\imgproc/xf_canny_utils.hpp:53:4)
+WARNING: [XFORM 203-631] Renaming function 'xFSobel<720, 1280, 0, 3, 1, 0, 1, 3, false>' to 'xFSobel' (./include\imgproc/xf_canny_sobel.hpp:486:1)
+WARNING: [XFORM 203-631] Renaming function 'xFSobel3x3<720, 1280, 0, 3, 1, 0, 1, 1281, 3, 9, false>' to 'xFSobel3x3' (./include\imgproc/xf_canny_sobel.hpp:120:36)
+WARNING: [XFORM 203-631] Renaming function 'xFMagnitudeKernel<720, 1280, 3, 3, 1, 1, 1, 1280>' to 'xFMagnitudeKernel' (./include\imgproc/xf_magnitude.hpp:75:34)
+WARNING: [XFORM 203-631] Renaming function 'xFAverageGaussianMask3x3<720, 1280, 0, 1, 0, 1280>174' to 'xFAverageGaussianMas' (./include\imgproc/xf_averagegaussianmask.hpp:51:4)
+WARNING: [XFORM 203-631] Renaming function 'xFAngleKernel<720, 1280, 3, 0, 1, 1, 0, 1280>' to 'xFAngleKernel' (./include\imgproc/xf_canny_utils.hpp:424:51)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 300.949 ; gain = 216.180
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'Canny_accel' ...
+WARNING: [SYN 201-103] Legalizing function name 'xfExtractPixels.1' to 'xfExtractPixels_1'.
+WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'MulnS' (./include\imgproc/xf_canny_utils.hpp:455) on 'alloca' operation ('tg22x', ./include\imgproc/xf_canny_utils.hpp:454) due to incompatible operation sets.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pre_process211' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 13.399 seconds; current allocated memory: 253.127 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.043 seconds; current allocated memory: 253.706 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'xfExtractPixels_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'xfExtractPixels.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.044 seconds; current allocated memory: 253.721 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.022 seconds; current allocated memory: 253.752 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'xFAverageGaussianMas' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Clear_Row_Loop'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-61] Pipelining loop 'Col_Loop'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 8.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.181 seconds; current allocated memory: 254.238 MB.
+INFO: [HLS 200-434] Only 2 loops out of a total 3 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+WARNING: [BIND 205-102] The specified resource core for memory 'buf_0_V' will be ignored if a simpler one can be used.
+WARNING: [BIND 205-102] The specified resource core for memory 'buf_1_V' will be ignored if a simpler one can be used.
+WARNING: [BIND 205-102] The specified resource core for memory 'buf_2_V' will be ignored if a simpler one can be used.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.113 seconds; current allocated memory: 254.832 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'xFSobel3x3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'read_lines.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-61] Pipelining loop 'Col_Loop'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 9.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.235 seconds; current allocated memory: 255.396 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+WARNING: [BIND 205-102] The specified resource core for memory 'buf_0_V' will be ignored if a simpler one can be used.
+WARNING: [BIND 205-102] The specified resource core for memory 'buf_1_V' will be ignored if a simpler one can be used.
+WARNING: [BIND 205-102] The specified resource core for memory 'buf_2_V' will be ignored if a simpler one can be used.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.122 seconds; current allocated memory: 256.144 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'xFSobel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.116 seconds; current allocated memory: 256.214 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.038 seconds; current allocated memory: 256.280 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'xFDuplicate_rows' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Col_Loop'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.173 seconds; current allocated memory: 256.374 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 256.575 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'xFMagnitudeKernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'colLoop'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.103 seconds; current allocated memory: 256.667 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.044 seconds; current allocated memory: 256.828 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'xFAngleKernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'colLoop'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 9.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.116 seconds; current allocated memory: 257.022 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.059 seconds; current allocated memory: 257.305 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'xfExtractPixels' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'xfExtractPixels'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.061 seconds; current allocated memory: 257.335 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.026 seconds; current allocated memory: 257.366 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'xFSuppression3x3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'bufColLoop'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-61] Pipelining loop 'colLoop1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 8.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.232 seconds; current allocated memory: 258.044 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.15 seconds; current allocated memory: 258.921 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'xFCannyKernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.184 seconds; current allocated memory: 259.137 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.242 seconds; current allocated memory: 259.671 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'xFCannyEdgeDetector' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.232 seconds; current allocated memory: 259.895 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.082 seconds; current allocated memory: 260.016 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'post_process' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 4.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.223 seconds; current allocated memory: 260.348 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.049 seconds; current allocated memory: 260.527 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Canny_accel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.058 seconds; current allocated memory: 260.657 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.257 seconds; current allocated memory: 261.109 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pre_process211' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pre_process211'.
+INFO: [HLS 200-111]  Elapsed time: 0.228 seconds; current allocated memory: 262.003 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'xfExtractPixels_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'xfExtractPixels_1'.
+INFO: [HLS 200-111]  Elapsed time: 0.096 seconds; current allocated memory: 262.114 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'xFAverageGaussianMas' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'xFAverageGaussianMas_buf_0_V' to 'xFAverageGaussianbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'xFAverageGaussianMas_buf_1_V' to 'xFAverageGaussiancud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'xFAverageGaussianMas_buf_2_V' to 'xFAverageGaussiandEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Canny_accel_mux_32_8_1_1' to 'Canny_accel_mux_3eOg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'Canny_accel_mux_3eOg': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'xFAverageGaussianMas'.
+INFO: [HLS 200-111]  Elapsed time: 0.084 seconds; current allocated memory: 263.256 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'xFSobel3x3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'Canny_accel_mux_32_13_1_1' to 'Canny_accel_mux_3fYi' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'Canny_accel_mux_3eOg': 5 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Canny_accel_mux_3fYi': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'xFSobel3x3'.
+INFO: [HLS 200-111]  Elapsed time: 0.633 seconds; current allocated memory: 264.680 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'xFSobel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'xFSobel'.
+INFO: [HLS 200-111]  Elapsed time: 0.69 seconds; current allocated memory: 265.092 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'xFDuplicate_rows' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'xFDuplicate_rows'.
+INFO: [HLS 200-111]  Elapsed time: 0.108 seconds; current allocated memory: 265.427 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'xFMagnitudeKernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'xFMagnitudeKernel'.
+INFO: [HLS 200-111]  Elapsed time: 0.136 seconds; current allocated memory: 265.789 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'xFAngleKernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'Canny_accel_mul_mul_16ns_15ns_31_3_1' to 'Canny_accel_mul_mg8j' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'Canny_accel_mul_mg8j': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'xFAngleKernel'.
+INFO: [HLS 200-111]  Elapsed time: 0.174 seconds; current allocated memory: 266.304 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'xfExtractPixels' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'xfExtractPixels'.
+INFO: [HLS 200-111]  Elapsed time: 0.239 seconds; current allocated memory: 266.443 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'xFSuppression3x3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'xFSuppression3x3_angle_0_V' to 'xFSuppression3x3_hbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'xFSuppression3x3_angle_1_V' to 'xFSuppression3x3_ibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'xFSuppression3x3_buf_0_V' to 'xFSuppression3x3_jbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'xFSuppression3x3_buf_1_V' to 'xFSuppression3x3_kbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'xFSuppression3x3_buf_2_V' to 'xFSuppression3x3_lbW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Canny_accel_mux_32_16_1_1' to 'Canny_accel_mux_3mb6' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'Canny_accel_mux_3mb6': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'xFSuppression3x3'.
+INFO: [HLS 200-111]  Elapsed time: 0.124 seconds; current allocated memory: 268.037 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'xFCannyKernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'start_for_xFSobel_U0' to 'start_for_xFSobelncg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_xFSuppression3x3_U0' to 'start_for_xFSupprocq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_xFDuplicate_rows_U0' to 'start_for_xFDuplipcA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_xFMagnitudeKernel_U0' to 'start_for_xFMagniqcK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_xFAngleKernel_U0' to 'start_for_xFAnglercU' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'xFCannyKernel'.
+INFO: [HLS 200-111]  Elapsed time: 0.965 seconds; current allocated memory: 269.274 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'xFCannyEdgeDetector' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'xFCannyEdgeDetector'.
+INFO: [HLS 200-111]  Elapsed time: 0.341 seconds; current allocated memory: 269.769 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'post_process' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'post_process'.
+INFO: [HLS 200-111]  Elapsed time: 0.244 seconds; current allocated memory: 270.769 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Canny_accel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'Canny_accel/in_strm_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'Canny_accel/in_strm_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'Canny_accel/in_strm_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'Canny_accel/in_strm_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'Canny_accel/in_strm_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'Canny_accel/in_strm_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'Canny_accel/in_strm_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'Canny_accel/out_strm_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'Canny_accel/out_strm_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'Canny_accel/out_strm_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'Canny_accel/out_strm_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'Canny_accel/out_strm_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'Canny_accel/out_strm_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'Canny_accel/out_strm_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'Canny_accel/low_threshold' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Canny_accel/high_threshold' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'Canny_accel' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return' and 'high_threshold' to AXI-Lite port AXILiteS.
+WARNING: [RTGEN 206-101] RTL name 'fifo_w8_d2_A' is changed to 'fifo_w8_d2_A_x' due to conflict.
+INFO: [SYN 201-210] Renamed object name 'start_for_xFCannyEdgeDetector_U0' to 'start_for_xFCannysc4' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_post_process_U0' to 'start_for_post_prtde' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Canny_accel'.
+INFO: [HLS 200-111]  Elapsed time: 0.285 seconds; current allocated memory: 271.332 MB.
+INFO: [RTMG 210-278] Implementing memory 'xFAverageGaussianbkb_ram (RAM_S2P_BRAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'xFSuppression3x3_hbi_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'xFSuppression3x3_jbC_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'gaussian_mat_V_V_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'p_lowthreshold_c_U(fifo_w8_d5_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'p_highthreshold_c_U(fifo_w8_d5_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'gradx_mat_V_V_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'grady_mat_V_V_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'gradx1_mat_V_V_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'gradx2_mat_V_V_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'grady1_mat_V_V_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'grady2_mat_V_V_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'magnitude_mat_V_V_U(fifo_w16_d3840_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'phase_mat_V_V_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_xFSobelncg_U(start_for_xFSobelncg)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_xFSupprocq_U(start_for_xFSupprocq)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_xFDuplipcA_U(start_for_xFDuplipcA)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_xFMagniqcK_U(start_for_xFMagniqcK)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_xFAnglercU_U(start_for_xFAnglercU)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'strm_src_V_V_U(fifo_w8_d2_A_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'low_threshold_c_U(fifo_w8_d2_A_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'high_threshold_c_U(fifo_w8_d2_A_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'strm_dst_V_V_U(fifo_w2_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_xFCannysc4_U(start_for_xFCannysc4)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_post_prtde_U(start_for_post_prtde)' using Shift Registers.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:10 ; elapsed = 00:00:24 . Memory (MB): peak = 341.879 ; gain = 257.109
+INFO: [SYSC 207-301] Generating SystemC RTL for Canny_accel.
+INFO: [VHDL 208-304] Generating VHDL RTL for Canny_accel.
+INFO: [VLOG 209-307] Generating Verilog RTL for Canny_accel.
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+bad lexical cast: source type value could not be interpreted as target
+    while executing
+"rdi::set_property core_revision 2512260315 {component component_1}"
+    invoked from within
+"set_property core_revision $Revision $core"
+    (file "run_ippack.tcl" line 1004)
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 26 03:15:20 2025...
+ERROR: [IMPL 213-28] Failed to generate IP.
+command 'ap_source' returned error code
+    while executing
+"source build_hls_proj.tcl"
+    (file "build_ip.tcl" line 2)
+    invoked from within
+"source [lindex $::argv 1] "
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel \#0 { source [lindex $::argv 1] } "
+
+INFO: [HLS 200-112] Total elapsed time: 30.551 seconds; peak allocated memory: 271.332 MB.
+INFO: [Common 17-206] Exiting vivado_hls at Fri Dec 26 03:15:20 2025...

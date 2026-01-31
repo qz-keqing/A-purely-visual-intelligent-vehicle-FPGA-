@@ -1,0 +1,199 @@
+
+
+================================================================
+== Vivado HLS Report for 'xfMat2Array'
+================================================================
+* Date:           Tue Dec 30 00:00:35 2025
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        Canny
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     8.750|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+--------+-----+--------+----------+
+    |    Latency   |   Interval   | Pipeline |
+    | min |   max  | min |   max  |   Type   |
+    +-----+--------+-----+--------+----------+
+    |   12|  921611|   12|  921611| dataflow |
+    +-----+--------+-----+--------+----------+
+
+    + Detail: 
+        * Instance: 
+        +-------------------+----------------+-----+--------+-----+--------+---------+
+        |                   |                |    Latency   |   Interval   | Pipeline|
+        |      Instance     |     Module     | min |   max  | min |   max  |   Type  |
+        +-------------------+----------------+-----+--------+-----+--------+---------+
+        |xfMat2hlsStrm9_U0  |xfMat2hlsStrm9  |    5|  921604|    5|  921604|   none  |
+        |hlsStrm2Array_U0   |hlsStrm2Array   |   11|  921610|   11|  921610|   none  |
+        +-------------------+----------------+-----+--------+-----+--------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       0|      2|
+|FIFO             |        0|      -|      20|    152|
+|Instance         |        -|      6|     500|    719|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|      -|
+|Register         |        -|      -|       -|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|      6|     520|    873|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|      2|   ~0   |      1|
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    +-------------------+----------------+---------+-------+-----+-----+
+    |      Instance     |     Module     | BRAM_18K| DSP48E|  FF | LUT |
+    +-------------------+----------------+---------+-------+-----+-----+
+    |hlsStrm2Array_U0   |hlsStrm2Array   |        0|      3|  243|  361|
+    |xfMat2hlsStrm9_U0  |xfMat2hlsStrm9  |        0|      3|  257|  358|
+    +-------------------+----------------+---------+-------+-----+-----+
+    |Total              |                |        0|      6|  500|  719|
+    +-------------------+----------------+---------+-------+-----+-----+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    +-----------------------+---------+---+----+------+-----+---------+
+    |          Name         | BRAM_18K| FF| LUT| Depth| Bits| Size:D*B|
+    +-----------------------+---------+---+----+------+-----+---------+
+    |dstPtr_V_offset_c_i_U  |        0|  5|  44|     2|   32|       64|
+    |srcMat_cols_c_i_i_U    |        0|  5|  44|     2|   32|       64|
+    |srcMat_rows_c_i_i_U    |        0|  5|  44|     2|   32|       64|
+    |strm_V_V_U             |        0|  5|  20|     2|    8|       16|
+    +-----------------------+---------+---+----+------+-----+---------+
+    |Total                  |        0| 20| 152|     8|  104|      208|
+    +-----------------------+---------+---+----+------+-----+---------+
+
+    * Expression: 
+    +--------------+----------+-------+---+----+------------+------------+
+    | Variable Name| Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------+----------+-------+---+----+------------+------------+
+    |ap_idle       |    and   |      0|  0|   2|           1|           1|
+    +--------------+----------+-------+---+----+------------+------------+
+    |Total         |          |      0|  0|   2|           1|           1|
+    +--------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------------+-----+-----+------------+-----------------+--------------+
+|        RTL Ports        | Dir | Bits|  Protocol  |  Source Object  |    C Type    |
++-------------------------+-----+-----+------------+-----------------+--------------+
+|srcMat_rows_dout         |  in |   32|   ap_fifo  |   srcMat_rows   |    pointer   |
+|srcMat_rows_empty_n      |  in |    1|   ap_fifo  |   srcMat_rows   |    pointer   |
+|srcMat_rows_read         | out |    1|   ap_fifo  |   srcMat_rows   |    pointer   |
+|srcMat_cols_dout         |  in |   32|   ap_fifo  |   srcMat_cols   |    pointer   |
+|srcMat_cols_empty_n      |  in |    1|   ap_fifo  |   srcMat_cols   |    pointer   |
+|srcMat_cols_read         | out |    1|   ap_fifo  |   srcMat_cols   |    pointer   |
+|srcMat_data_V_address0   | out |   20|  ap_memory |  srcMat_data_V  |     array    |
+|srcMat_data_V_ce0        | out |    1|  ap_memory |  srcMat_data_V  |     array    |
+|srcMat_data_V_d0         | out |    1|  ap_memory |  srcMat_data_V  |     array    |
+|srcMat_data_V_q0         |  in |    1|  ap_memory |  srcMat_data_V  |     array    |
+|srcMat_data_V_we0        | out |    1|  ap_memory |  srcMat_data_V  |     array    |
+|srcMat_data_V_address1   | out |   20|  ap_memory |  srcMat_data_V  |     array    |
+|srcMat_data_V_ce1        | out |    1|  ap_memory |  srcMat_data_V  |     array    |
+|srcMat_data_V_d1         | out |    1|  ap_memory |  srcMat_data_V  |     array    |
+|srcMat_data_V_q1         |  in |    1|  ap_memory |  srcMat_data_V  |     array    |
+|srcMat_data_V_we1        | out |    1|  ap_memory |  srcMat_data_V  |     array    |
+|m_axi_dstPtr_V_AWVALID   | out |    1|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_AWREADY   |  in |    1|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_AWADDR    | out |   32|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_AWID      | out |    1|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_AWLEN     | out |   32|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_AWSIZE    | out |    3|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_AWBURST   | out |    2|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_AWLOCK    | out |    2|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_AWCACHE   | out |    4|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_AWPROT    | out |    3|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_AWQOS     | out |    4|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_AWREGION  | out |    4|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_AWUSER    | out |    1|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_WVALID    | out |    1|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_WREADY    |  in |    1|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_WDATA     | out |    8|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_WSTRB     | out |    1|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_WLAST     | out |    1|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_WID       | out |    1|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_WUSER     | out |    1|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_ARVALID   | out |    1|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_ARREADY   |  in |    1|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_ARADDR    | out |   32|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_ARID      | out |    1|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_ARLEN     | out |   32|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_ARSIZE    | out |    3|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_ARBURST   | out |    2|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_ARLOCK    | out |    2|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_ARCACHE   | out |    4|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_ARPROT    | out |    3|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_ARQOS     | out |    4|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_ARREGION  | out |    4|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_ARUSER    | out |    1|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_RVALID    |  in |    1|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_RREADY    | out |    1|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_RDATA     |  in |    8|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_RLAST     |  in |    1|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_RID       |  in |    1|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_RUSER     |  in |    1|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_RRESP     |  in |    2|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_BVALID    |  in |    1|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_BREADY    | out |    1|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_BRESP     |  in |    2|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_BID       |  in |    1|    m_axi   |     dstPtr_V    |    pointer   |
+|m_axi_dstPtr_V_BUSER     |  in |    1|    m_axi   |     dstPtr_V    |    pointer   |
+|dstPtr_V_offset_dout     |  in |   32|   ap_fifo  | dstPtr_V_offset |    pointer   |
+|dstPtr_V_offset_empty_n  |  in |    1|   ap_fifo  | dstPtr_V_offset |    pointer   |
+|dstPtr_V_offset_read     | out |    1|   ap_fifo  | dstPtr_V_offset |    pointer   |
+|ap_clk                   |  in |    1| ap_ctrl_hs |   xfMat2Array   | return value |
+|ap_rst                   |  in |    1| ap_ctrl_hs |   xfMat2Array   | return value |
+|srcMat_data_V_empty_n    |  in |    1| ap_ctrl_hs |   xfMat2Array   | return value |
+|srcMat_data_V_read       | out |    1| ap_ctrl_hs |   xfMat2Array   | return value |
+|ap_start                 |  in |    1| ap_ctrl_hs |   xfMat2Array   | return value |
+|ap_done                  | out |    1| ap_ctrl_hs |   xfMat2Array   | return value |
+|ap_ready                 | out |    1| ap_ctrl_hs |   xfMat2Array   | return value |
+|ap_idle                  | out |    1| ap_ctrl_hs |   xfMat2Array   | return value |
+|ap_continue              |  in |    1| ap_ctrl_hs |   xfMat2Array   | return value |
++-------------------------+-----+-----+------------+-----------------+--------------+
+

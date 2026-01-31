@@ -1,0 +1,9 @@
+#include "icm20600.h"
+#include "i2c.h"
+
+void icm20600_init()
+{
+	iic_writeByte(_addr, ICM20600_CONFIG, 0x00);
+	iic_writeByte(_addr, ICM20600_FIFO_EN, 0x00);
+
+}

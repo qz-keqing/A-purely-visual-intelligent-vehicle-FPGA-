@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Dec 26 23:04:15 2025
+# Process ID: 6348
+# Current directory: D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17364 D:\FPGA\Vision_Car\EDK-PYNQ-ROBOT\EDK-PYNQ-ROBOT\Car\Car.xpr
+# Log file: D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/vivado.log
+# Journal file: D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.xpr
+update_ip_catalog -rebuild
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1

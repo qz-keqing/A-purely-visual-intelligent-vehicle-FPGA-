@@ -1,0 +1,154 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Dec 29 11:58:36 2025
+# Process ID: 37932
+# Current directory: D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18792 D:\FPGA\Vision_Car\EDK-PYNQ-ROBOT\EDK-PYNQ-ROBOT\Car\Car.xpr
+# Log file: D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/vivado.log
+# Journal file: D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/robotCourse/hw_design/arch/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:21 . Memory (MB): peak = 1353.980 ; gain = 744.266
+open_bd_design {D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/design_1.bd}
+Adding cell -- xilinx.com:ip:axi_intc:4.1 - axi_intc
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:xlslice:1.0 - camera_reset
+Adding cell -- xilinx.com:user:AXI_Encoder:1.0 - AXI_Encoder_0
+Adding cell -- xilinx.com:user:AXI_Encoder:1.0 - AXI_Encoder_1
+Adding cell -- xilinx.com:user:AXI_PWM:1.0 - AXI_PWM_Servo
+Adding cell -- xilinx.com:user:AXI_ultrasonic_ranger:1.0 - AXI_ultrasonic_ranger_0
+Adding cell -- xilinx.com:user:analog2digital:1.0 - analog2digital_0
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - arduino_gpio
+Adding cell -- xilinx.com:ip:axi_iic:2.0 - axi_iic_0
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:user:dff_en_reset_vector:1.0 - dff_en_reset_vector_0
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - intr
+Adding cell -- xilinx.com:user:io_switch:1.1 - io_switch
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - logic_1
+Adding cell -- xilinx.com:ip:microblaze:11.0 - mb
+Adding cell -- xilinx.com:ip:axi_bram_ctrl:4.1 - mb_bram_ctrl
+Adding cell -- xilinx.com:ip:axi_intc:4.1 - mb_intc
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Adding cell -- xilinx.com:user:AXI_PWM:1.0 - AXI_PWM_Motor
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:user:axi_motor_ctrl_sel:1.0 - axi_motor_ctrl_sel_0
+Adding cell -- xilinx.com:user:AXI_PWM:1.0 - AXI_PWM_Motor
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:user:axi_motor_ctrl_sel:1.0 - axi_motor_ctrl_sel_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset
+Adding cell -- xilinx.com:ip:axi_timer:2.0 - timer_0
+Adding cell -- xilinx.com:ip:axi_timer:2.0 - timer_1
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - timer_intr
+Adding cell -- xilinx.com:ip:xadc_wiz:3.3 - xadc_wiz_0
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - xlconcat_PWM
+WARNING: [BD 41-1731] Type mismatch between connected pins: /car_iop_arduino/Clk(clk) and /car_iop_arduino/dff_en_reset_vector_0/clk(undef)
+Adding cell -- xilinx.com:ip:xlslice:1.0 - image_process_reset
+Adding cell -- xilinx.com:hls:Canny_accel:1.0 - Canny_accel_0
+Adding cell -- xilinx.com:hls:SobelX_accel:1.0 - SobelX_accel_0
+Adding cell -- xilinx.com:hls:SobelY_accel:1.0 - SobelY_accel_0
+Adding cell -- xilinx.com:ip:axi_dma:7.1 - axi_dma_proc
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axis_interconnect:2.1 - axis_interconnect_back
+Adding cell -- xilinx.com:ip:axis_switch:1.1 - xbar
+Adding cell -- xilinx.com:ip:axis_subset_converter:1.1 - auto_ss_k
+Adding cell -- xilinx.com:ip:axis_subset_converter:1.1 - auto_ss_slid
+Adding cell -- xilinx.com:ip:axis_subset_converter:1.1 - auto_ss_u
+Adding cell -- xilinx.com:ip:axis_subset_converter:1.1 - auto_ss_slid
+Adding cell -- xilinx.com:ip:axis_subset_converter:1.1 - auto_ss_u
+Adding cell -- xilinx.com:ip:axis_subset_converter:1.1 - auto_ss_slid
+Adding cell -- xilinx.com:ip:axis_subset_converter:1.1 - auto_ss_u
+Adding cell -- xilinx.com:ip:axis_subset_converter:1.1 - auto_ss_k
+Adding cell -- xilinx.com:ip:axis_interconnect:2.1 - axis_interconnect_front
+Adding cell -- xilinx.com:ip:axis_switch:1.1 - xbar
+Adding cell -- xilinx.com:ip:axis_subset_converter:1.1 - auto_ss_k
+Adding cell -- xilinx.com:ip:axis_subset_converter:1.1 - auto_ss_slidr
+Adding cell -- xilinx.com:ip:axis_subset_converter:1.1 - auto_ss_u
+Adding cell -- xilinx.com:ip:axis_subset_converter:1.1 - auto_ss_k
+Adding cell -- xilinx.com:ip:axis_subset_converter:1.1 - auto_ss_slidr
+Adding cell -- xilinx.com:ip:axis_subset_converter:1.1 - auto_ss_u
+Adding cell -- xilinx.com:ip:axis_subset_converter:1.1 - auto_ss_k
+Adding cell -- xilinx.com:ip:axis_subset_converter:1.1 - auto_ss_slidr
+Adding cell -- xilinx.com:ip:axis_subset_converter:1.1 - auto_ss_u
+Adding cell -- xilinx.com:ip:axis_subset_converter:1.1 - auto_ss_k
+Adding cell -- xilinx.com:ip:axis_subset_converter:1.1 - auto_ss_slidr
+Adding cell -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_0
+Adding cell -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_1
+Adding cell -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_2
+Adding cell -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_3
+Adding cell -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_4
+Adding cell -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_5
+Adding cell -- xilinx.com:hls:color_detect:1.0 - color_detect
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - logic_1
+Adding cell -- xilinx.com:hls:pixel_pack:1.0 - pixel_pack
+Adding cell -- xilinx.com:hls:pixel_unpack:1.0 - pixel_unpack
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - interrupt
+Adding cell -- xilinx.com:ip:xlslice:1.0 - mb_car_iop_arduino_intr_ack
+Adding cell -- xilinx.com:ip:xlslice:1.0 - mb_car_iop_arduino_reset
+Adding cell -- xilinx.com:ip:mdm:3.2 - mdm_0
+Adding cell -- xilinx.com:ip:v_demosaic:1.0 - a0_demosaic
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_iic:2.0 - axi_sccb
+Adding cell -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_cam
+Adding cell -- xilinx.com:ip:axis_interconnect:2.1 - axis_interconnect_back
+Adding cell -- xilinx.com:ip:axis_switch:1.1 - xbar
+Adding cell -- xilinx.com:ip:axis_subset_converter:1.1 - auto_ss_slid
+Adding cell -- xilinx.com:ip:axis_subset_converter:1.1 - auto_ss_k
+Adding cell -- xilinx.com:ip:axis_interconnect:2.1 - axis_interconnect_front
+Adding cell -- xilinx.com:ip:axis_switch:1.1 - xbar
+Adding cell -- xilinx.com:ip:axis_subset_converter:1.1 - auto_ss_slid
+Adding cell -- xilinx.com:ip:axis_subset_converter:1.1 - auto_ss_slidr
+Adding cell -- xilinx.com:ip:axis_subset_converter:1.1 - gbr2rgb
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - logic0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - logic1
+Adding cell -- xilinx.com:hls:pixel_pack:1.0 - pixel_pack
+Adding cell -- xilinx.com:hls:rgb2gray:1.0 - rgb2gray_0
+Adding cell -- xilinx.com:ip:axis_subset_converter:1.1 - subset_cvt
+Adding cell -- xilinx.com:ip:v_vid_in_axi4s:4.0 - v_vid_in_axi4s_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_100m
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:smartconnect:1.0 - smartconnect_0
+Adding cell -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Adding cell -- xilinx.com:ip:axis_subset_converter:1.1 - RGBA2GBR
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma
+Adding cell -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding cell -- xilinx.com:hls:pixel_unpack:1.0 - pixel_unpack
+Adding cell -- digilentinc.com:ip:rgb2dvi:1.2 - rgb2dvi
+Adding cell -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
+Adding cell -- xilinx.com:ip:v_tc:6.1 - v_tc_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /video_output/clk_wiz_0/locked(undef) and /video_output/RGBA2GBR/aresetn(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /video_output/clk_wiz_0/locked(undef) and /video_output/pixel_unpack/ap_rst_n(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /video_output/clk_wiz_0/locked(undef) and /video_output/rgb2dvi/aRst_n(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /video_output/clk_wiz_0/locked(undef) and /video_output/v_axi4s_vid_out_0/aresetn(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /video_output/clk_wiz_0/locked(undef) and /video_output/v_tc_0/resetn(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /axi_intc/irq(undef) and /processing_system7_0/IRQ_F2P(intr)
+Successfully read diagram <design_1> from BD file <D:/FPGA/Vision_Car/EDK-PYNQ-ROBOT/EDK-PYNQ-ROBOT/Car/Car.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2371.391 ; gain = 20.715
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 29 12:00:41 2025...
