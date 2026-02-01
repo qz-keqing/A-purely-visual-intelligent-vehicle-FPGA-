@@ -4,6 +4,7 @@ This project just base on the version vehicle of a company named YI-yuansu. We h
 克隆仓库的人要装 Git LFS
 
 以后 clone 这个仓库时，需要：
+
 git lfs install
 
 git clone this url
